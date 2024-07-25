@@ -1,0 +1,115 @@
+-- theorical skills
+[x] - understanding of the entire development lifecycle (SDLC).
+    [x] - CI/CD.
+[x] - basic understanding of design patterns.
+    [x] - What are creational, structural and behavioral patterns.
+    - Creational
+    [x] - Factory method.
+    [x] - Abstract factory.
+    [x] - Singleton.
+    - Structural
+    [x] - Adapter.
+    [x] - Decorator.
+    [x] - Proxy.
+    - Behavioral
+    [x] - Observer.
+    [x] - Strategy.
+    [x] - Command.
+    [x] - State.
+    [x] - Template method.
+[x] - basic understanding of design principles.
+    [x] - SOLID
+    [x] - OOP
+    [x] - DRY
+    [x] - YAGNI
+    [x] - KISS
+[x] - basic understanding of software architecure.
+    - Messaging
+    [x] - Event-Driven.
+    - Structual
+    [x] - Monolithic.
+    [x] - Layered.
+    - Distributed
+    [x] - Client-Server.
+    [x] - Peer-To-Peer
+    - Architectural patterns.
+    [x] - Microservices.
+    [x] - Service-Oriented.
+[x] - good understanding of the basic data structures.
+    [x] - asymptotic analysis.
+    [x] - common runtimes.
+    [x] - array.
+    [x] - dynamic array.
+    [x] - linked lists.
+    [x] - stacks. 
+    [x] - queues. 
+    [x] - hash tables.
+    [x] - trees. 
+    [x] - heaps.
+    [x] - tries.
+    [x] - graphs.
+    [x] - sets.
+[ ] - good understanding of the basic algorithms.
+    [x] - linear search.
+    [x] - binary search.
+    [x] - breadth-fisrt search.
+    [x] - breadth-first search in graphs.
+    [x] - depth-first search in graphs.
+    [x] - depth-first search.
+    [x] - bubble sort.
+    [x] - selection sort.
+    [x] - insertion sort.
+    [x] - merge sort.
+    [x] - quick sort.
+    [x] - dijkstra.
+    [ ] - kruskal.
+    [ ] - prim.
+    [ ] - knuth-morris-pratt.
+    [ ] - rabin-karp.
+    [ ] - ford-fulkerson.
+    [ ] - edmonds-karp.
+    [ ] - geometric algorithms.
+[x] - understand some algorithm concepts and when to apply them.
+    [x] - dynamic programing.
+    [x] - greedy algorithms.
+    [x] - recursion.
+    [x] - backtracking.
+    [x] - divide and conquer.
+[x] - understand relational database, its benefits and limitation.
+[x] - understand NoSQL databases, its benefits and limitation.
+[x] - understand database design principles, normalization, query optimization.
+[x] - understand testing principles and patterns.
+    [x] - White box.
+    [x] - Black box.
+    [x] - TDD.
+    [x] - Unit testing.
+    [x] - Integration testing.
+    [x] - Branch coverage.
+    [x] - Path coverage.
+    [x] - Test objects.
+
+
+[ ] - Tecnologies.
+    [ ] - Python.
+    [ ] - Flask.
+    [ ] - Django.
+    [ ] - FastAPI.
+    [ ] - PostgreSQL.
+    [ ] - MySQL.
+    [ ] - SQLite.
+    [ ] - Redis.
+    [ ] - Docker.
+    [ ] - Kubernetes.
+    [ ] - Kafka.
+    [ ] - Elasticsearch.
+    [ ] - MongoDB.
+    [ ] - SQL.
+    ------JOB READY-----
+    [ ] - NodeJs.
+    [ ] - JavaScript.
+    [ ] - Git.
+    [ ] - Nginx.
+    [ ] - Firebase.
+    [ ] - InfluxDB.
+    [ ] - Cassandra.
+    [ ] - Neo4j.

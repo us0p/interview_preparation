@@ -1,0 +1,70 @@
+Terms:
+- root: the first node.
+- height: the longest path from the root to the most recent childish node.
+- binary tree: nodes in this tree can have any number of children betwee
+  0 and 2.
+- general tree: nodes in this tree can have any number of children.
+- leaves: a node without children.
+- branching factor: the average number of child nodes that each non-leaf 
+  node posseses.
+
+Tree
+
+It's a data structure in which, starting from a single point, you have many 
+possible paths.
+For example, the file system of your computer is a tree, you have the 
+origin of your file system at / and then you have other directories inside 
+of it, which can have more directories within then and so on.
+
+Each element of a tree is a node. The structure of the node depends of the
+format of the tree:
+- Binary tree node structure:
+  - left: *Node
+  - right: *Node
+  - value: any
+- General tree node structure:
+  - children: *Node[]
+  - value: any
+
+Traversing a tree:
+Traversing is the action of visiting every node.
+There are three traversal techniques:
+- preorder: visit the node and then you go to the next node, the root will
+  always be the the first visited node in this strategy.
+- inorder: follow a path until the end, visit the node in your way back up,
+  the root will always be the middle node in this strategy.
+- postorder: follow a path until the end, then visit the node and adjacent
+  nodes, the root will always be the last node in this strategy.
+
+inorder, and postorder traversals are known as Depth-First Search as you
+first traverse a path as deep as possible to only then visit the node.
+In Depth First Traversal we’ve implicit used a Stack data structure as we first
+traverse all nodes in one direction (create our stack) and only then start to 
+visit each node (First in, Last Out).
+Depth First preserves the shape of the traversing (the direction of the arrows) 
+of the tree.
+
+Breadth-First Search:
+This is the opposite of a Depth First Search so instead of using a Stack we’ll 
+using a Queue.
+it visits each node of the current level, before going to the next one. This is
+valid for every tree, not only binary trees.
+Breadth First doesn’t preserves the shape of the traversing (the direction of 
+the arrows) of the tree.
+
+Binary Search Tree (BST):
+A binary search tree is just a binary tree with two rules:
+- Everything at the left side of the root is less or equal to the root.
+- Everything at the right side of the root is greater than it.
+
+Remember that each individual node is also a tree, as it also has children, so 
+when we say root, we’re not specifically saying the root of the tree, but each 
+individual point.
+It’s good to know that in a BST an in-order traversal produces an ordered array.
+
+Methods:
+The time complexit of the methods will depend on which type of tree your are
+working with.
+- Find
+- Insert
+- Delete

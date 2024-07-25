@@ -1,0 +1,70 @@
+review                   - 1h
+English                  - 1h
+tecnologies              - 4h
+practice problem solving - 1h
+Python                   - 5h
+
+English:
+    expressions and slangs - ask AI, it shoud be based on context.
+    vocabulary - note every word you don't know and search for its meaning.
+	- read a English book every day for 1 hour, note every expression or word you don't known, and search
+	  for its meaning.
+    grammar - create a curiculumn grid and calendar with AI. AI should also provide the exercises for practice.
+	parts of speech
+	    - nouns
+	    - verbs
+	    - adjectives
+	    - adverbs
+	    - pronouns
+	    - prepositions
+	    - conjuctions
+	    - interjections
+	sentence structure
+	    - simple
+	    - coumpound
+	    - complex
+	    - coumpoud-complex
+	    - coordinating conjuctions
+	    - subordinating conjuctions
+	verb tenses
+	    - 12 main verb tenses
+	    - present
+	    - past
+	    - future
+	    - perfect forms
+	    - progressive forms
+	    - how to conjugate irregular verbs
+	subject-verb agreement
+	pronouns
+	    - learn different types of pronouns, shuch as:
+	    - personal
+	    - reflexive
+	    - relative
+	    - etc
+	    - how to use them correctly, including their antecedents and proper case 
+	      (subjective, objective, possessive).
+	prepositions
+	    - time
+	    - place
+	    - direction
+	conditionals
+	    - zero
+	    - first
+	    - second
+	    - third
+	modals
+	    - modal verbs and their various usages, including ability, permission, 
+	      obligation, and possibility. 
+	phrasal verbs
+	passive voice
+	question formation
+    speak - gemmini voice. the assistant goal is to keep me speaking for the most time as possible.
+
+    calendar:
+    mon - speak
+    tue - grammar
+    wed - speak
+    thu - grammar
+    fri - speak
+    sat - grammar review
+    sun - speak
