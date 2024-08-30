@@ -1,8 +1,8 @@
 SQL - Structure Query Language
-It’s used for relational databases. A SQL database is a collection of tables 
-that stores a specific set of structured data.
-SQL databases usually scalle vertically (Increase the size of the machine you
-have).
+It’s used for relational databases. A SQL database is a collection of 
+tables that stores a specific set of structured data.
+SQL databases usually scalle vertically (Increase the size of the machine 
+you have).
 SQL is a query language.
 
 Relational Databases

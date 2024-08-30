@@ -11,3 +11,16 @@ and fault-tolerance of the system. Additionally, it allows for loose
 coupling between components, meaning that the components are not aware 
 of each other’s existence, and can be developed, deployed, and scaled 
 independently.
+
+It's important to differentiate between EDA and MDA:
+- EDA: Are decoupled from their consumers. It's used to send a state
+  change or ocurrence.
+- MDA: Are coupled with their consumers. It's used to send a instruction
+  or request.
+
+Event-driven architecture models:
+1. Pub/Sub: This is a messaging infrastructure based on subscriptions to
+   an event stream.
+2. Event streaming: Events are written to a log. Event consumers don't
+   subscribe to an event stream. Instead, they can read from any part of
+   the stream and can join the stream at any time.

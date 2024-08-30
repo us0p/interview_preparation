@@ -2,10 +2,27 @@ Client-Server
 
 The client-server architecture is a common architecture pattern used 
 in distributed systems, where a client (or multiple clients) send requests 
-to a server, and the server responds to those requests. The client and server 
-are separate entities that communicate over a network, such as the Internet 
-or a local network.
-The client is responsible for presenting the user interface and handling user 
-input, while the server is responsible for processing the requests and returning 
-the appropriate response. The server can also handle tasks such as data storage, 
-security, and business logic.
+to a server, and the server responds to those requests. The client and 
+server are separate entities that communicate over a network, such as the 
+Internet or a local network.
+The client is responsible for presenting the user interface and handling 
+user input, while the server is responsible for processing the requests and
+returning the appropriate response. The server can also handle tasks such 
+as data storage, security, and business logic.
+The servers need not know about clients, but the clients must know the 
+identity of servers.
+
+Advantages
+1. Single point of administration.
+2. Implementing security measures is easier with centralized control over
+   data and access permissions.
+3. Access control, user permissions can be strictly managed to prevent
+   unauthorized access.
+4. Data backup.
+5. Server redundancy.
+
+Disadivantages
+1. Could be a greater potential for failure because of centralized control.
+2. Particularly vulnerable to Denial of Service (DOS) attacks because the
+   number of servers is considerably smaller than the number of clients.
+3. Very expensive to install and manage the network.

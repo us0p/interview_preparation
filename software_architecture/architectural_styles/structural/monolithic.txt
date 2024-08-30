@@ -10,3 +10,32 @@ the complexity of the system is manageable and the need for scalability and
 flexibility is not as high. In a monolithic architecture, the entire system is 
 typically built, deployed, and executed as a single unit, which can make it easier 
 to understand and manage the system.
+
+The advantages of a monolithic architecture include: 
+1. Easy deployment – One executable file or directory makes deployment 
+   easier.
+2. Development – When an application is built with one code base, it is 
+   easier to develop.
+3. Performance – In a centralized code base and repository, one API can 
+   often perform the same function that numerous APIs perform with microservices.
+4. Simplified testing – Since a monolithic application is a single, 
+   centralized unit, end-to-end testing can be performed faster than with a distributed application. 
+5. Easy debugging – With all code located in one place, it’s easier to 
+   follow a request and find an issue.
+
+Monolithic applications can be quite effective until they grow too large 
+and scaling becomes a challenge.
+
+The disadvantages of a monolith include: 
+1. Slower development speed – A large, monolithic application makes 
+   development more complex and slower.
+2. Scalability – You can’t scale individual components.
+3. Reliability – If there’s an error in any module, it could affect the 
+   entire application’s availability.
+4. Barrier to technology adoption – Any changes in the framework or 
+   language affects the entire application, making changes often expensive
+   and time-consuming.
+5. Lack of flexibility – A monolith is constrained by the technologies 
+   already used in the monolith.
+6. Deployment – A small change to a monolithic application requires the 
+   redeployment of the entire monolith.

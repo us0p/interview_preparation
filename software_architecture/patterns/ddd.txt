@@ -1,0 +1,78 @@
+Domain Driven Design
+Is an architectural pattern that is used to design software systems based 
+on the core business domain and business entities.
+It provides several advantages over other architectural patterns, such as 
+alignment with business goals and objectives, improved communication 
+between domain experts and developers, a clear and expressive model of the
+business domain and improved scalability and maintainability. It’s 
+implemented using a set of principles and patterns such as strategic 
+design, subdomains, bounded context, entities, value objects, aggregate, 
+and repository.
+DDD is not a technology, rather it introduces terms, practices and 
+principles to support decision making in complex business domains
+- The primary focus of the project is the core domain and domain logic.
+- Complex designs are based on models of the domain.
+- Collaboration between technical and domain experts is crucial to creating
+  an application model that will solve particular domain problems.
+
+In DDD, it’s important to pay attention to the following terms:
+- Domain logic: Most commonly, it’s referred to as the business logic. This
+  is where your business rules define the way data gets created, stored, 
+  and modified.
+- Domain model: Includes the ideas, knowledge, data, metrics, and goals 
+  that revolve around that problem you’re trying to solve. It contains all
+  the rules and patterns that will help you deal with complex 
+  business logic.
+- Subdomain: A domain consists of several subdomains that refer to 
+  different parts of the business logic.
+- Bounded context: Is a central pattern in domain-driven design that 
+  contains the complexity of the application. This is where you implement 
+  the code, after you’ve defined the domain and the subdomains.
+  Bounded contexts actually represent boundaries in which a certain 
+  subdomain is defined and applicable. One entity can have different names in 
+  different contexts. When a subdomain within the bounded context changes,
+  the entire system doesn’t have to change too. That’s why developers use 
+  adapters between contexts.
+- The Ubiquitous Language: The Ubiquitous Language is a methodology that 
+  refers to the same language domain experts and developers use when they 
+  talk about the domain they are working on.
+  There’s a gap between the terminology used in daily discussions and the 
+  terms used in the code. That’s why it’s necessary to define a set of 
+  terms that everyone uses. All the terms in the ubiquitous language are 
+  structured around the domain model.
+- Value objects and aggregates: Value objects have attributes, but can’t 
+  exist on their own. For example, the shipping address can be a value 
+  object. Large and complicated systems have countless entities and value 
+  objects. That’s why the domain model needs some kind of structure. This 
+  will put them into logical groups that will be easier to manage. These 
+  groups are called aggregates. They represent a collection of objects that
+  are connected to each other, with the goal to treat them as units. 
+  Moreover, they also have an aggregate root. This is the only entity that 
+  any object outside of the aggregate can reference to.
+- Domain service: The domain service is an additional layer that also 
+  contains domain logic. It’s part of the domain model, just like entities 
+  and value objects. At the same time, the application service is another 
+  layer that doesn’t contain business logic. However, it’s here to 
+  coordinate the activity of the application, placed above the domain 
+  model.
+
+Advantages:
+- Simpler communication: Thanks to the Ubiquitous Language, communication 
+  between developers and teams becomes much easier. As the ubiquitous 
+  language is likely to contain simpler terms developers refer to, there’s
+  no need for complicated technical terms.
+
+Downsides:
+- Deep domain knowledge is needed. Even for the most technologically 
+  advanced teams working on development, there has to be at least one 
+  domain specialist on the team who understands the precise 
+  characteristics of the subject area that’s the center of the application.
+  Sometimes there’s a need for several team members who thoroughly know 
+  the domain to incorporate in the development team.
+- It might not work best for highly-technical projects. Domain-driven 
+  design is perfect for applications that have complex business logic. 
+  However, it might not be the best solution for applications with minor 
+  domain complexity but high technical complexity. Applications with great
+  technical complexity can be very challenging for business-oriented domain
+  experts. This could cause many limitations that might not be solvable for
+  all team members.

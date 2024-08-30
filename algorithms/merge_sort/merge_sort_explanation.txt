@@ -25,16 +25,16 @@ Merge Sort Steps:
 8. Copy the elements of each side to its respective temp array.
 9. Loop over both temp array and compare their positions, insert them in
    the correct order in the original array.
-10. There might be cases when te division between left and right isn't exact
-    and one side might have more elements than the other. To include the
-    remaining elements, loop over the remaining elements from the left side
-    and add them to the remaining positions in the original array, then
-    loop over the remaining elements in the right side and add them to the
-    remaining positions in the original array.
+10. There might be cases when te division between left and right isn't 
+    exact and one side might have more elements than the other. To include 
+    the remaining elements, loop over the remaining elements from the left 
+    side and add them to the remaining positions in the original array, 
+    then loop over the remaining elements in the right side and add them 
+    to the remaining positions in the original array.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)
-    - Merge sort needs two temporary arrays to merge the left and right side
-      of the divisions, in the end the sum of the legth of those arrays will
-      be equal to the number of elements in the original array, so it needs,
-      an n amount of memory to sort an array of size n;
+    - Merge sort needs two temporary arrays to merge the left and right 
+      side of the divisions, in the end the sum of the legth of those 
+      arrays will be equal to the number of elements in the original array,
+      so it needs, an n amount of memory to sort an array of size n;

@@ -5,7 +5,7 @@ for testing purposes.
   just used to fill parameter lists.
 - Fake: objects actually have working implementations, but usually take some
   shortcut which makes them not suitable for production (an in memory datab-
-  ase is a goos example).
+  ase is a good example).
 - Stubs: it's a simulated object that provides hard-coded answers to calls 
   made during the test.
 - Spies: allows you to track the calls made to its methods, including inform-

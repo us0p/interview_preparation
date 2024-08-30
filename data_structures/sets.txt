@@ -1,7 +1,7 @@
 Set
 It's a data structure which stores a collection of distinct elements.
-Values within sets are immutable. You add and remove new values but you can't
-change existing values within the set.
+Values within sets are immutable. You add and remove new values but you 
+can't change existing values within the set.
 
 A set can be implemented in various ways, the most common are:
 - Hash-Based Set: the set is represented as a hash table where each element in

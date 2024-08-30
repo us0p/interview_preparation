@@ -1,4 +1,14 @@
+-- Software architecture further topics
+[ ] - Load balancing
+[ ] - Partitioning
+[ ] - Sharding
+
 -- theorical skills
+[ ] - APIs
+[ ] - Caching
+[ ] - Architecture principles
+[ ] - Architectural patterns
+[ ] - PoSA patterns
 [x] - understanding of the entire development lifecycle (SDLC).
     [x] - CI/CD.
 [x] - basic understanding of design patterns.
@@ -88,28 +98,26 @@
     [x] - Path coverage.
     [x] - Test objects.
 
-
-[ ] - Tecnologies.
-    [ ] - Python.
-    [ ] - Flask.
-    [ ] - Django.
-    [ ] - FastAPI.
-    [ ] - PostgreSQL.
-    [ ] - MySQL.
-    [ ] - SQLite.
-    [ ] - Redis.
-    [ ] - Docker.
-    [ ] - Kubernetes.
-    [ ] - Kafka.
-    [ ] - Elasticsearch.
-    [ ] - MongoDB.
-    [ ] - SQL.
-    ------JOB READY-----
-    [ ] - NodeJs.
-    [ ] - JavaScript.
-    [ ] - Git.
-    [ ] - Nginx.
-    [ ] - Firebase.
-    [ ] - InfluxDB.
-    [ ] - Cassandra.
-    [ ] - Neo4j.
+[ ] - tecnologies.
+    [ ] - python.
+    [ ] - django.
+    [ ] - docker.
+    [ ] - kubernetes.
+    [ ] - kafka.
+    [ ] - redis.
+    [ ] - postgresql.
+    [ ] - mongodb.
+    [ ] - lambda.
+    ------job ready-----
+    [ ] - sql.
+    [ ] - sqlite.
+    [ ] - flask.
+    [ ] - fastapi.
+    [ ] - nodejs.
+    [ ] - javascript.
+    [ ] - git.
+    [ ] - nginx.
+    [ ] - firebase.
+    [ ] - influxdb.
+    [ ] - cassandra.
+    [ ] - neo4j.

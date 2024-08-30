@@ -1,32 +1,41 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-void merge(int haystack[], int start, int middle, int inclusive_end) {
-    int haystack_left_size = middle - start + 1;
-    int haystack_right_size = inclusive_end - middle;
+void merge(int arr[], int start, int middle, int inclusive_end) {
+    // if division is not equal it's possible to left and right side
+    // to have different sizes.
+    int arr_left_size = middle - start + 1;
+    int arr_right_size = inclusive_end - middle;
 
-    int temp_left_haystack[haystack_left_size];
-    int temp_right_haystack[haystack_right_size];
+    int temp_left_arr[arr_left_size];
+    int temp_right_arr[arr_right_size];
 
     // copy respective elements from original arr to temp left array;
-    for (int i = 0; i < haystack_left_size; i++) {
-	temp_left_haystack[i] = haystack[start + i];
+    for (int i = 0; i < arr_left_size; i++) {
+	temp_left_arr[i] = arr[start + i];
     }
 
     // copy respective elements from original arr to temp right array;
-    for (int i = 0; i < haystack_right_size; i++) {
-	temp_right_haystack[i] = haystack[middle + 1 + i];
+    for (int i = 0; i < arr_right_size; i++) {
+	temp_right_arr[i] = arr[middle + 1 + i];
     }
 
     int i = 0, j = 0, k = start;
 
     // merge left and right temp array in original array at their
     // respective positions;
-    while (i < haystack_left_size && j < haystack_right_size) {
-	if (temp_left_haystack[i] <= temp_right_haystack[j]) {
-	    haystack[k] = temp_left_haystack[i];
+    // i = temp left arr index
+    // j = temp right arr index
+    // k = original view index
+    // note that after each interation, only the side that was
+    // replaced is increased.
+    while (i < arr_left_size && j < arr_right_size) {
+	if (temp_left_arr[i] <= temp_right_arr[j]) {
+	    arr[k] = temp_left_arr[i];
 	    i++;
 	} else {
-	    haystack[k] = temp_right_haystack[j];
+	    arr[k] = temp_right_arr[j];
 	    j++;
 	}
 	k++;
@@ -34,42 +43,42 @@ void merge(int haystack[], int start, int middle, int inclusive_end) {
 
     // if left and right temp array sizes are different, merge remaining
     // left elements in following positions;
-    while (i < haystack_left_size) {
-	haystack[k] = temp_left_haystack[i];
+    while (i < arr_left_size) {
+	arr[k] = temp_left_arr[i];
 	i++;
 	k++;
     }
 
     // if left and right temp array sizes are different, merge remaining
     // right elements in following positions;
-    while (j < haystack_right_size) {
-	haystack[k] = temp_right_haystack[j];
+    while (j < arr_right_size) {
+	arr[k] = temp_right_arr[j];
 	j++;
 	k++;
     }
 }
 
-void merge_sort(int haystack[], int start, int inclusive_end) {
+void merge_sort(int arr[], int start, int inclusive_end) {
     if (start >= inclusive_end) return;
 
     int middle = start + (inclusive_end - start) / 2;
 
-    merge_sort(haystack, start, middle);
-    merge_sort(haystack, middle + 1, inclusive_end);
+    merge_sort(arr, start, middle);
+    merge_sort(arr, middle + 1, inclusive_end);
 
-    merge(haystack, start, middle, inclusive_end);
+    merge(arr, start, middle, inclusive_end);
 }
 
-void print_haystack(int haystack[]) {
-    for (int i = 0; i < 4; i++) {
-	printf("%d\n", haystack[i]);
+void print_arr(int *arr, int arrSize) {
+    for (int i = 0; i < arrSize; i++) {
+	printf("%d\n", arr[i]);
     }
 }
 
 int main(void) {
-    int haystack[] = {38,27,48,10};
-    print_haystack(haystack);
+    int arr[] = {38,27,48,10};
+    print_arr(arr, 4);
     printf("----\n");
-    merge_sort(haystack, 0, 3);
-    print_haystack(haystack);
+    merge_sort(arr, 0, 3);
+    print_arr(arr, 4);
 }
