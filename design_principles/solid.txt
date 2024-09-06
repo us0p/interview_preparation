@@ -23,7 +23,8 @@ changing the class, you simply want to extend it.
 You should be able to extend a class’s behavior without modifying it.
 Your class complies with this principle if it is:
 - Open for extension, meaning that the class’s behavior can be extended.
-- Closed for modification, meaning that the source code is set and cannot be changed.
+- Closed for modification, meaning that the source code is set and cannot 
+  be changed.
 
 The way to comply with these principles and to make sure that your class 
 is easily extendable without having to modify the code is through the use 
@@ -51,6 +52,18 @@ composition over inheritance and for decoupling over coupling.
 
 DIP:
 This principle offers a way to decouple software modules.
-Depend on abstractions, not on concretions. High level modules should not depend 
-upon low level modules. Both should depend on abstractions. Abstractions should 
-not depend on details. Details should depend upon abstractions.
+Depend on abstractions, not on concretions. High level modules should not 
+depend upon low level modules. Both should depend on abstractions. 
+Abstractions should not depend on details. Details should depend upon 
+abstractions.
+We can't never reference concrete classes. That's how we actually hook 
+things up to get stuff to happen. These are called Main components. 
+They're messy but they're necessary.
+However, we shouldn't refer to concrete classes from another concrete class 
+directly.
+When we need to include a class as a dependency, we should try to refrain 
+from referring to concrete classes (the actual implementation), but 
+instead, refer to abstractions, like the interfaces or abstract classes 
+that the concrete classes implement or subclass.
+When we refer to the abstractions rather than the concrete classes, the 
+flow of dependencies gets inverted.

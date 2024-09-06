@@ -21,7 +21,7 @@ DECORATOR_PATTERN	./design_patterns/structural/decorator.txt	0
 DEPTH_FIRST_SEARCH	./algorithms/depth_first/depth_first_explanation.txt	0
 DIVIDE_CONQER_ALGORITHMS	./algorithms/divide_and_conquer_algorithms.txt	0
 DOCKER	./docker/introduction.txt	0
-DYNAMIC_ARRAYS_DS	./data_structures/arrays/dynamic_array.txt	0
+DYNAMIC_ARRAYS_DS	./data_structures/arrays/dynamic_array/dynamic_array.txt	0
 DYNAMIC_PROGRAMMING	./algorithms/dynamic_programming.txt	0
 EVENT_DRIVEN_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/messaging/event_driven.txt	0
 EVENT_SOURCING_ARCHITECTURE_PATTERN	./software_architecture/patterns/event_sourcing.txt	0
@@ -31,7 +31,7 @@ GOF_DESIGN_PATTERNS	./design_patterns/classification.txt	0
 GOLDEN_HAMMER_ANTI_PATTERN	./design_patterns/anti_patterns/golden_hammer.txt	0
 GRAPH_DS	./data_structures/graphs/graphs.txt	0
 GREEDY_ALGORITHMS	./algorithms/greedy_algorithms.txt	0
-HASH_TABLE_DS	./data_structures/arrays/hash_table.txt	0
+HASH_TABLE_DS	./data_structures/arrays/hash_table/hash_table.txt	0
 HEAP_DS	./data_structures/graphs/heap.txt	0
 INSERTION_SORT	./algorithms/insertion_sort/insertion_sort_explanation.txt	0
 LAYERED_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/structural/layered.txt	0
@@ -68,4 +68,5 @@ STRATEGY_PATTERN	./design_patterns/behavioral/strategy.txt	0
 TEMPLATE_METHOD_PATTERN	./design_patterns/behavioral/template_method.txt	0
 TREE_DS	./data_structures/graphs/trees.txt	0
 TRIE_DS	./data_structures/graphs/tries.txt	0
+TWO_POINTERS_STRATEGY	./algorithms/two_pointers.txt	0
 
