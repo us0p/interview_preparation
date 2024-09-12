@@ -1,16 +1,3 @@
-Learn the basics:
-- Lambda functions.
-    - What is.
-    - How does it work.
-    - When to use.
-    - Benefits.
-    - Drawbacks.
-- Kubernetes.
-    - What is.
-    - When to use.
-- Kafka.
-    - What is.
-
 You need to answer the following questions:
 - What is?
 - How does it work (core functionality)?
@@ -18,19 +5,10 @@ You need to answer the following questions:
 - Benefits
 - Drawbacks
 
-About:
-- databases.
-- Architecture principles.
-- Design principles and patterns.
-- DSA.
-
-Portfolio:
-Should use a platform to host your portfólio, you shouldn't create one
-yourself, not in the beginning at least.
-- Projects ideas:
-    - Anime List.
-    - CLI Calendar.
-    - E-Commerce or payment gateway sample.
+Learn the basics:
+- Lambda functions.
+- Kubernetes.
+- Kafka.
 
 Routine:
 3h - Portifolio.
@@ -38,6 +16,29 @@ Routine:
 1:30h - Review.
 2h - Leetcode.
 
-Create a folder or an indice with the pages with all the things you must
-known, update the content of those page as you study further and focus
-in reviewing only those pages.
+Anime List -> learn how to work with asyncio and other features of python.
+E-Commerce server -> learn how to work with Django and Microservices.
+Pattern Mentor -> create a cli tool based on a AI model to perform pattern 
+                  implementation checks in a code base and provide 
+		  meaningful insights of how to improve.
+		  learn how to work with AI.
+
+Technologies -> Should use study time to finish studying concepts.
+Portfolio -> The main goal is to apply SOLID principles and architectural
+	     patterns, everything else can be simple and improve with time.
+Review -> Don't make exercises during review, only read the content to 
+	  make it consistent in your head.
+Problem Solving Skills -> Learn comon problem patterns.
+
+09/11 - 09/13 -> Finish studying concepts.
+09/16 - 10/04 -> Redirect study hour to portifolio, and finish projects.
+10/07 - ... -> Study time is used to:
+	       - Study APIs
+	       - Study Caching
+	       - Learn Kubernetes
+	       - Learn Kafka
+	       - Learn Redis
+	       Portfolio time is splited as follows:
+	       1h -> Prepare for interview questions with AI interviwer
+	       2h -> Implement arquitectural and design patterns
+

@@ -27,6 +27,7 @@ EVENT_DRIVEN_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/mes
 EVENT_SOURCING_ARCHITECTURE_PATTERN	./software_architecture/patterns/event_sourcing.txt	0
 FACADE_PATTERN	./design_patterns/structural/facade.txt	0
 FACTORY_PATTERN	./design_patterns/creational/factory.txt	0
+FLOYD_FAST_SLOW_POINTER	./algorithms/floyd_fast_slow_pointer.txt	0
 GOF_DESIGN_PATTERNS	./design_patterns/classification.txt	0
 GOLDEN_HAMMER_ANTI_PATTERN	./design_patterns/anti_patterns/golden_hammer.txt	0
 GRAPH_DS	./data_structures/graphs/graphs.txt	0

@@ -14,9 +14,10 @@ Algorithms:
     	- GREEDY_ALGORITHMS
     	- RECURSIVE_ALGORITHMS
 	- BACKTRACKING_ALGORITHMS
-	- TWO_POINTERS_STRATEGY
     Problem specific algorithms:
 	- MOORE_VOTING_ALGORITHM *
+	- FLOYD_FAST_SLOW_POINTER
+	- TWO_POINTERS_STRATEGY
 
 Data Structures:
     Arrays:
@@ -54,9 +55,6 @@ Design:
     	   - STATE_PATTERN
     	   - STRATEGY_PATTERN
     	   - TEMPLATE_METHOD_PATTERN
-    Anti-Patterns:
-	- SPAGHETTI_CODE_ANTI_PATTERN *
-	- GOLDEN_HAMMER_ANTI_PATTERN *
     Principles:
 	- OOP
     	- SOLID
