@@ -42,7 +42,7 @@ Design:
 	    - ABSTRACT_FACTORY_PATTERN
 	    - FACTORY_PATTERN
 	    - BUILDER_PATTERN
-	    - PROTOTYPE_PATTERN *
+	    - PROTOTYPE_PATTERN
 	    - SINGLETON_PATTERN
 	Structural:
 	    - ADAPTER_PATTERN
@@ -95,3 +95,4 @@ Technologies
     - SQL
     - POSTGRESQL
     - DOCKER
+    - LAMBDA

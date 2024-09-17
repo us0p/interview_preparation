@@ -1,6 +1,0 @@
-[x] - How do lambda functions get triggered?
-[x] - How to troubleshoot issues in a Serverless application?
-[x] - How does AWS handle auto-scaling with lambda functions?
-[x] - How to manage dependencies and deployment packages?
-[ ] - How to implement autorization and authentication?
-[ ] - In what scenarios might lambda functions not be the right choice?

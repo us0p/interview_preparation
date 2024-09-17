@@ -35,6 +35,7 @@ GREEDY_ALGORITHMS	./algorithms/greedy_algorithms.txt	0
 HASH_TABLE_DS	./data_structures/arrays/hash_table/hash_table.txt	0
 HEAP_DS	./data_structures/graphs/heap.txt	0
 INSERTION_SORT	./algorithms/insertion_sort/insertion_sort_explanation.txt	0
+LAMBDA	./lambda_functions/introduction.txt	0
 LAYERED_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/structural/layered.txt	0
 LINKED_LIST_DS	./data_structures/linked_lists/linked_list.txt	0
 MERGE_SORT	./algorithms/merge_sort/merge_sort_explanation.txt	0

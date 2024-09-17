@@ -6,7 +6,6 @@ You need to answer the following questions:
 - Drawbacks
 
 Learn the basics:
-- Lambda functions.
 - Kubernetes.
 - Kafka.
 
