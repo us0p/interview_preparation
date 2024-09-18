@@ -10,9 +10,9 @@ and query sides can use different data models, storage mechanisms, and even
 different technologies.
 If separate read and write databases are used, they must be kept in sync. 
 Typically this is accomplished by having the write model publish an event 
-whenever it updates the database. Since message brokers and databases usually 
-cannot be enlisted into a single distributed transaction, there can be 
-challenges in guaranteeing consistency when updating the database and 
+whenever it updates the database. Since message brokers and databases 
+usually cannot be enlisted into a single distributed transaction, there can
+be challenges in guaranteeing consistency when updating the database and 
 publishing events.
 
 Command x Queries
@@ -61,16 +61,16 @@ Drawbacks:
   pattern.
 - Messaging: Although CQRS does not require messaging, it's common to use 
   messaging to process commands and publish update events. In that case, 
-  the application must handle message failures or duplicate messages. See 
-  the guidance on Priority Queues for dealing with commands having 
-  different priorities.
+  the application must handle message failures or duplicate messages. 
+  Priority Queues are usually used to deal with commands having different 
+  priorities.
 - Eventual consistency: If you separate the read and write databases, the 
   read data may be stale. The read model store must be updated to reflect 
   changes to the write model store, and it can be difficult to detect when
   a user has issued a request based on stale read data.
 
 When to use CQRS
-- Has a high demand for data consumption
+- Has a high demand for data consumption.
 - Performance of data reads must be tuned separately from the performance 
   of data writes, especially when the number of reads is much greater than
   the number of writes.

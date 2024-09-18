@@ -41,7 +41,7 @@ LINKED_LIST_DS	./data_structures/linked_lists/linked_list.txt	0
 MERGE_SORT	./algorithms/merge_sort/merge_sort_explanation.txt	0
 MESSAGE_QUEUE_STREAMS_ARCHITECTURE_PATTERN	./software_architecture/patterns/message_queues_streams.txt	0
 MICROKERNEL_ARCHITECTURE_PATTERN	./software_architecture/patterns/microkernel.txt	0
-MICROSERVICES_ARCHITECTURE_PATTERN	./software_architecture/patterns/microservices.txt	0
+MICROSERVICES_ARCHITECTURE_PATTERN	./software_architecture/patterns/microservices/introduction.txt	0
 MONGODB	./mongodb/introduction.txt	0
 MONOLITHIC_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/structural/monolithic.txt	0
 MVC_ARCHITECTURE_PATTERN	./software_architecture/patterns/mvc.txt	0
