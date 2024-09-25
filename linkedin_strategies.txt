@@ -1,0 +1,9 @@
+Picking a language:
+If you use stackoverflow survey you can track the least popular languages
+with the highest paying rate in the last year, and, if the language is
+consistent over the survey in the past years, you can then search in 
+Linkedin for the number of available roles for that language, with that you
+can apply to roles that will pay you a good sum and won't have too much 
+competition.
+You'll be taking a based decision if it's worth it to learn a new language or
+the prospects of the language you're currently working with.

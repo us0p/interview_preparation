@@ -14,6 +14,8 @@ similar functionalities are organized into horizontal layers.
 The layered architecture style does not have a restriction on the number 
 of layers that the application can have, as the purpose is to have layers 
 that promote the concept of separation of concerns.
+Implementing a layered architecture involves creating distinct areas of 
+responsibility within your code.
 
 Vocabulary
 - The connector between each layer can be a function call, a query request,
@@ -34,7 +36,7 @@ Vocabulary
 Topological constraints
 - The architecture itself is a topological constraint as it is a specific 
   way of organizing the software systems.
-- Connecters only interact with two layers, and usually, no skipping of 
+- Connectors only interact with two layers, and usually, no skipping of 
   layers is allowed.
 - Communication is usually between one user and one interface/system.
 - Data flow goes two ways (user to system, and back).
@@ -54,3 +56,11 @@ Disadvantages
   become complicated.
 - Data must travel through every layer and processed, slowing down the
   performance.
+
+When to Use Layered Architectures
+- You need a system that is inherently modular, which allows for each 
+  component to be developed and maintained in isolation.
+- Your project demands scalability, be it adding new functionalities or 
+  handling more users without a major overhaul.
+- There's a high likelihood of reusing core pieces of the application 
+  across different projects, maximizing efficiency and consistency.
