@@ -7,3 +7,29 @@ can apply to roles that will pay you a good sum and won't have too much
 competition.
 You'll be taking a based decision if it's worth it to learn a new language or
 the prospects of the language you're currently working with.
+
+Hr's look for profiles based on keywords
+[look for example keywords]
+You need to put the keywords on your title and in the other tabs as well, but the title is the more important.
+
+You can perform SQL query operation on Linkeding search bar
+[put examples here]
+
+there are 5 tabs that Linkedin looks for information when it's going to consider if it should display you as a possible candidate for search:
+i reads your profile from top to bottom.
+title
+about
+experiences
+projects
+experiences
+These are the tabs.
+
+To appear in the first pages of the recruiter search we need 5 things:
+mutue conections with the recruiter
+linkedin activity - measured by linkeding tests, posts, iteractions and etc.
+it's also important to receive recomendation about your skills by other users.
+
+you need:
+find the requirements with the biggest flow of search in your technology.
+put these words in your tabs and in the correct form.
+create strategic connections with people in your area
