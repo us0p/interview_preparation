@@ -9,7 +9,7 @@ The client is responsible for presenting the user interface and handling
 user input, while the server is responsible for processing the requests and
 returning the appropriate response. The server can also handle tasks such 
 as data storage, security, and business logic.
-The servers need not know about clients, but the clients must know the 
+The servers need not to know about clients, but the clients must know the 
 identity of servers.
 
 Advantages
@@ -29,8 +29,8 @@ Disadivantages
 
 The Different Types of Client-Server Architecture
 - 1-Tier: Business logic, presentation, and data layers appear as a single 
-  package since they are stored on the same shared storage device or a 
-  single device. An example is the desktop app working offline and storing 
+  package since they are stored on the same shared storage or a single 
+  device. An example is the desktop app working offline and storing 
   all its data within the same device of operation.
 
 - 2-Tier: Here, the database operates as a separate entity. Business logic 
@@ -48,10 +48,9 @@ The Different Types of Client-Server Architecture
   There is more security and data integrity here.
 
 - N-Tier: This model splits the business logic layer into several layers to
-  ensure performance, stability, and management become better. The 
-  different functions like application processing, data management, and 
-  display may fall into different layers. E-commerce system is the best 
-  example here.
+  ensure performance, stability, and management. The different functions like 
+  application processing, data management, and display may fall into different 
+  layers. E-commerce system is the best example here.
 
 When to use:
 - When you need centralized data storage and logic processing.

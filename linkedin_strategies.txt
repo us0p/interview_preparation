@@ -35,3 +35,14 @@ put these words in your tabs and in the correct form.
 create strategic connections with people in your area
 you can add personal experience in your projects tab.
 you can also add job notifications in the queries that you perform.
+
+your projects should be related to the orientation of the company you want to apply to, like fintech, communication platforms, automobile, streaming, e-commerce, you should commit yourself to projects that most of these companies would be interested.
+also, you need to be able to expose your expertise in the interview, like the technologies that you worked and how you integrated them in your project.
+
+you should also check your profile config to ensure that you aren't privating any of your content that could help you to
+find a position.
+you should set the language in your profile according to the positions that your are aiming.
+
+you need to have at least 1000 connections in your profile to help the recruiters to find your profile, the vast majority
+should be recruiter.
+search for "tech recruiter" to find connections.

@@ -21,21 +21,19 @@ Vocabulary
 - The connector between each layer can be a function call, a query request,
   a data object or any connector that conveys request or information.
 - The naming of layers is quite flexible, but usually a presentation layer,
-  a business layer and a physical layer are always present.
+  a business layer and a data layer are always present.
 - The presentation layer contains all of the classes responsible for 
   presenting the UI/visualization to the end-user and handling bowser 
   communication logic.
 - The business/logic layer contains all the logic that is required by the 
   application to meet its functional requirements. This is where the main 
   logic of the application is represented.
-- The data/physical + persistence layer is where retrievable information is
-  stored. This layer consists of both logical and physical aspects. While the 
-  logical schema specifies conceptual model of data, the physical schema 
-  implements the logical model into physical database platform.
+- The data layer is where retrievable information is stored. This layer 
+  consists of both logical and physical aspects. While the logical schema 
+  specifies conceptual model of data, the physical schema implements the 
+  logical model into physical database platform.
 
 Topological constraints
-- The architecture itself is a topological constraint as it is a specific 
-  way of organizing the software systems.
 - Connectors only interact with two layers, and usually, no skipping of 
   layers is allowed.
 - Communication is usually between one user and one interface/system.

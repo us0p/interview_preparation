@@ -12,10 +12,9 @@ Learn the basics:
 Routine:
 3h - Portifolio.
 1:30h - Study.
-1:30h - Review.
+130h - Review.
 2h - Leetcode.
 
-Anime List -> learn how to work with asyncio and other features of python.
 E-Commerce server -> learn how to work with Django and Microservices.
 Pattern Mentor -> create a cli tool based on a AI model to perform pattern 
                   implementation checks in a code base and provide 
@@ -29,7 +28,6 @@ Review -> Don't make exercises during review, only read the content to
 	  make it consistent in your head.
 Problem Solving Skills -> Learn common problem patterns.
 
-09/11 - 09/13 -> Finish studying concepts.
 09/16 - 10/04 -> Redirect study hour to portifolio, and finish projects.
 10/07 - ... -> Study time is used to:
 	       - Study APIs

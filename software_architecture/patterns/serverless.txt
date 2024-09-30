@@ -27,7 +27,8 @@ Serverless computing offerings typically fall into two groups,
 
 Serverless architecture is ideal for asynchronous, stateless apps that can 
 be started instantaneously. Likewise, serverless is a good fit for use 
-cases that see infrequent, unpredictable surges in demand.
+cases that see infrequent, unpredictable surges in demand or real-time data
+processing IoT and with even-driven architecture.
 
 Pros
 - Serverless computing can increase developer productivity and reduce 
@@ -50,3 +51,39 @@ Cons
   vendor lock-in. Deciding to change providers will also likely come with 
   the cost of upgrading your systems to adhere to the new vendor’s 
   specifications.
+
+Managing State in Serverless
+- External State Stores: Services such as Amazon DynamoDB, Redis, or other 
+  database solutions can be used to store and retrieve application state. 
+  These services are designed to handle high throughput and provide 
+  low-latency access to data, which makes them ideal for serverless 
+  environments.
+- Stateful Workflows: For complex operations that require maintaining state
+  across multiple serverless function invocations, you can use workflow 
+  services like AWS Step Functions. These services allow you to orchestrate
+  multiple Lambda functions and keep track of execution state as the 
+  workflow progresses.
+- In-Memory Caching: In-memory caching solutions like Amazon ElastiCache 
+  can be used to store transient state information. While not suitable for 
+  long-term persistence, caching can significantly improve performance for 
+  frequently accessed data that doesn't require permanent storage.
+- Event Sourcing: Event sourcing involves storing a sequence of events that
+  represent changes to the application's state. By replaying these events, 
+  you can reconstruct the application's state at any point in time. This 
+  approach is particularly beneficial for applications that require 
+  auditing or complex business transactions.
+- Utilize Serverless Components with Built-in State: Some serverless 
+  components come with built-in mechanisms for preserving state. For 
+  example, AWS AppSync uses GraphQL subscriptions to maintain a consistent 
+  state across distributed systems by leveraging real-time data 
+  synchronization.
+
+Serverless Security
+Instead of focusing on network inspection and access control lists, the 
+serverless model shifts the focus of security to IAM permissions, 
+behavioral protection and strong code.
+The main security measure that a serverless function can have is:
+- Access and permissions: Maintain least-privileged access for serverless 
+  functions and other services. For example, if an AWS Lambda function 
+  needs to access a DynamoDB table, make sure it can only perform the 
+  specific action the business logic requires.
