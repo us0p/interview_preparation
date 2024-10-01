@@ -1,8 +1,0 @@
-Enterprise Service Bus - ESB
-Is an architectural pattern that centralized software component performs 
-integrations between applications.
-It performs transformations of data models, handles connectivity and 
-messaging, performs routing, converts communication protocols and 
-potentially manages the composition of multiple requests.
-The ESB can make these integrations and transformations available as a 
-service interface for reuse by new applications.

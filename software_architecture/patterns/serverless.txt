@@ -82,7 +82,14 @@ Serverless Security
 Instead of focusing on network inspection and access control lists, the 
 serverless model shifts the focus of security to IAM permissions, 
 behavioral protection and strong code.
+severless architecture has an increased attack surface as each event input 
+might include different message formats, and various parts of these event 
+messages can contain attacker-controlled or otherwise dangerous inputs. The
+rich set of event sources increases the potential attack surface and 
+introduces complexities when attempting to protect serverless functions 
+against event-data injections.
 The main security measure that a serverless function can have is:
+
 - Access and permissions: Maintain least-privileged access for serverless 
   functions and other services. For example, if an AWS Lambda function 
   needs to access a DynamoDB table, make sure it can only perform the 
