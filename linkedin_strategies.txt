@@ -5,12 +5,13 @@ consistent over the survey in the past years, you can then search in
 Linkedin for the number of available roles for that language, with that you
 can apply to roles that will pay you a good sum and won't have too much 
 competition.
-You'll be taking a based decision if it's worth it to learn a new language or
-the prospects of the language you're currently working with.
+You'll be taking a based decision if it's worth it to learn a new language 
+or the prospects of the language you're currently working with.
 
 Hr's look for profiles based on keywords
 [look for example keywords]
-You need to put the keywords on your title and in the other tabs as well, but the title is the more important.
+You need to put the keywords on your title and in the other tabs as well, 
+but the title is the more important.
 
 You can perform SQL query operation on Linkeding search bar
 [put examples here]
@@ -27,8 +28,10 @@ These are the tabs.
 
 To appear in the first pages of the recruiter search we need 5 things:
 mutue conections with the recruiter
-linkedin activity - measured by linkeding tests, posts, iteractions and etc.
-it's also important to receive recomendation about your skills by other users.
+linkedin activity - measured by linkeding tests, posts, iteractions and 
+etc.
+it's also important to receive recomendation about your skills by other 
+users.
 
 you need:
 find the requirements with the biggest flow of search in your technology.
@@ -37,28 +40,42 @@ create strategic connections with people in your area
 you can add personal experience in your projects tab.
 you can also add job notifications in the queries that you perform.
 
-your projects should be related to the orientation of the company you want to apply to, like fintech, communication platforms, automobile, streaming, e-commerce, you should commit yourself to projects that most of these companies would be interested.
-also, you need to be able to expose your expertise in the interview, like the technologies that you worked and how you integrated them in your project.
+your projects should be related to the orientation of the company you want 
+to apply to, like fintech, communication platforms, automobile, streaming, 
+e-commerce, you should commit yourself to projects that most of these 
+companies would be interested.
+also, you need to be able to expose your expertise in the interview, like 
+the technologies that you worked and how you integrated them in your 
+project.
 
-you should also check your profile config to ensure that you aren't privating any of your content that could help you to
+you should also check your profile config to ensure that you aren't 
+privating any of your content that could help you to
 find a position.
-you should set the language in your profile according to the positions that your are aiming.
+you should set the language in your profile according to the positions that
+your are aiming.
 
-you need to have at least 1000 connections in your profile to help the recruiters to find your profile, the vast majority
+you need to have at least 1000 connections in your profile to help the 
+recruiters to find your profile, the vast majority
 should be recruiter.
 search for "tech recruiter" to find connections.
 
-you need to show your value to the interviwer, not only that, but in your linkeding and resume as well.
-note that there's more opportunities to seniors not because of the experience time they have, but because they add
+you need to show your value to the interviwer, not only that, but in your 
+linkeding and resume as well.
+note that there's more opportunities to seniors not because of the 
+experience time they have, but because they add
 a lot more value than the others.
 
-check the job opportunities and, inside the "requirements" topic, list all the requirements that the opportunity is
-requiring, do that for some opportunities (e.g. 20) and you'll have a list of keywords that you need to have in your
+check the job opportunities and, inside the "requirements" topic, list all 
+the requirements that the opportunity is
+requiring, do that for some opportunities (e.g. 20) and you'll have a list 
+of keywords that you need to have in your
 resume and linkedin to appear in the search.
 
 You can also search job opportunities in the post tab in linkedin py 
-appending the word "vaga" at the beggining and the language or framework you want,
+appending the word "vaga" at the beggining and the language or framework 
+you want,
 also you need to filter for the most recent ones.
-You'll have a list of posts about job opportunities, this is a good way of searching because you won't receive 
+You'll have a list of posts about job opportunities, this is a good way of 
+searching because you won't receive 
 fixed positions like in the job tab.
 the number of comments in the post resembles the number of condidates.
