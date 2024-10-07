@@ -2,9 +2,9 @@ Service Oriented Architecture - SOA
 
 Is an architectural pattern that is used to design and organize 
 software systems as a collection of services that can be accessed 
-over a network, each service provides a business capability, these services
-are autonomous, self-contained units of functionality that can be reused 
-and combined to create new functionality.
+over a network, each service provides a business capability.
+These services are autonomous, self-contained units of functionality that 
+can be reused and combined to create new functionality.
 
 Services are designed to be loosely coupled, meaning that they do not 
 depend on the implementation details of other services, they communicate
@@ -13,7 +13,8 @@ such as HTTPP.
 
 The SOA environment comprises a single data storage layer shared by other 
 connected services. Different enterprise applications access and reuse the 
-same data in SOA implementations.
+same data in SOA implementations. This means that the database is shared
+amongst services.
 
 With SOA, developers break down the software functionalities into service 
 provider and service consumer layers. These layers communicate and exchange
@@ -52,9 +53,8 @@ Each service consists of three components:
 - The implementation, which is the service code.
 
 Benefits:
-- Reusability: Multiple f ont-facing applications use the same SOA 
-  services. 
-- Fault tolerance: Is a service is down only that business capability would
+- Reusability: Multiple applications use the same service.
+- Fault tolerance: If a service is down only that business capability would
   become offline, rather than the entire application like in monolithic 
   systems.
 - Governance: The nature of SOA, involving shared resources, enable the 
@@ -83,11 +83,6 @@ Microservices architecture is an evolution of the SOA architectural style.
 While each SOA service is a full business capability, each microservice is 
 a much smaller software component that specializes in a single task only.
 
-The microservice model divides an SOA service into smaller services. Each 
-microservice operates within its bounded context and runs independently 
-from other services.
-Service-oriented architecture (SOA) encompasses a broader enterprise scope.
-In contrast, microservices apply to a narrower scope.
 For example, inventory management would be an SOA service of an ecommerce 
 system. But the microservice approach would break inventory management down
 into smaller services, such as availability checker, fulfillment, and 
@@ -106,5 +101,5 @@ external APIs, ensuring security, and providing functionalities like
 monitoring and authentication.
 
 API Gateways prioritizes real-time synchronous communication and processing
-of API requests. API gateway is designe dto handle client requests 
+of API requests. API gateway is designed to handle client requests 
 directly.
