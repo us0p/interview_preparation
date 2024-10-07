@@ -15,8 +15,9 @@ You need to put the keywords on your title and in the other tabs as well, but th
 You can perform SQL query operation on Linkeding search bar
 [put examples here]
 
-there are 5 tabs that Linkedin looks for information when it's going to consider if it should display you as a possible candidate for search:
-i reads your profile from top to bottom.
+there are 5 tabs that Linkedin looks for information when it's going to 
+consider if it should display you as a possible candidate for search:
+it reads your profile from top to bottom.
 title
 about
 experiences
@@ -46,3 +47,18 @@ you should set the language in your profile according to the positions that your
 you need to have at least 1000 connections in your profile to help the recruiters to find your profile, the vast majority
 should be recruiter.
 search for "tech recruiter" to find connections.
+
+you need to show your value to the interviwer, not only that, but in your linkeding and resume as well.
+note that there's more opportunities to seniors not because of the experience time they have, but because they add
+a lot more value than the others.
+
+check the job opportunities and, inside the "requirements" topic, list all the requirements that the opportunity is
+requiring, do that for some opportunities (e.g. 20) and you'll have a list of keywords that you need to have in your
+resume and linkedin to appear in the search.
+
+You can also search job opportunities in the post tab in linkedin py 
+appending the word "vaga" at the beggining and the language or framework you want,
+also you need to filter for the most recent ones.
+You'll have a list of posts about job opportunities, this is a good way of searching because you won't receive 
+fixed positions like in the job tab.
+the number of comments in the post resembles the number of condidates.
