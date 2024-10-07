@@ -78,3 +78,36 @@ When to use CQRS
   sourcing, where the temporal failure of one subsystem shouldn’t affect 
   the availability of the others.
 - You can afford stale data.
+
+Command Bus
+Provides a centralized infrastructure for routing commands to their 
+corresponding handlers.
+
+This patterns has three different classes:
+1. Command: Is a class that only contains the needed data to execute the 
+   command. Validations are done in this class and its objects are 
+   immutable.
+2. CommandHandler: Executed the behaviour when taking a specific Command 
+   object as input. It should not be doing any domain logic itself.
+   The relationship between Command and CommandHandler is one-to-one.
+3. CommandBus: After receiving a Command object, CommandBus will route it
+   to the suitable CommandHandler.
+
+Benefits:
+    - Separation of concerns: It allows for the separation of the code that
+      performs an action from the code that requests the action, making the
+      code more maintainable and easier to test.
+    - Architectural boundary: It provides a clear and consistent structure 
+      for the application, making it easier to understand and maintain.
+    - Extendable: It can be extended with new functionality, such as 
+      wrapping commands in database transactions.
+    - Scalability: It can handle a large number of commands and handlers, 
+      making it suitable for large-scale applications.
+
+Drawbacks:
+    - Complexity: It can add complexity to the application, especially if 
+      the commands and handlers are not properly designed.
+    - Over-engineering: It may be overkill for trivial use cases, and may 
+      not be necessary for small applications.
+    - Command complexity: Commands can grow to enormous complexity, just 
+      like all objects, and may require careful design and management.
