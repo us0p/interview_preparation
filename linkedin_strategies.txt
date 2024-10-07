@@ -79,3 +79,18 @@ You'll have a list of posts about job opportunities, this is a good way of
 searching because you won't receive 
 fixed positions like in the job tab.
 the number of comments in the post resembles the number of condidates.
+
+Querying in Linkedin
+1. putting something between "" searches for an exact match.
+2. you can use logical operators like AND, OR, NOT, etc.
+3. you can use LATAM as a filter to ensure that the opportunity is open for latin america.
+4. using "Back" as a filter for "back end" and "back-end" works, but "backend" opportunities won't appear in the search.
+5. enable notifications for the filters you make.
+6. OR filters must be enclosed in ().
+7. applying filters to posts apply a character limit to your search.
+8. common names:
+   - "Junior" OR "Jr" OR "Entry"
+   - "Pleno" OR "Pl" OR "Mid"
+   - "Senio" OR "SR" OR "Sênior"
+   - "Oportunidade" OR "Vaga" OR "Hiring"
+9. should filter posts for the most recent not posts from the last month.
