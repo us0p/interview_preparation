@@ -38,6 +38,7 @@ Data Structures:
 Design:
     Patterns:
 	- GOF_DESIGN_PATTERNS
+	- REPOSITORY_PATTERN
 	Creational:
 	    - ABSTRACT_FACTORY_PATTERN
 	    - FACTORY_PATTERN

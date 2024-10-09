@@ -19,48 +19,44 @@ In DDD, it’s important to pay attention to the following terms:
 - Domain logic: Most commonly, it’s referred to as the business logic. This
   is where your business rules define the way data gets created, stored, 
   and modified.
-- Domain model: Includes the ideas, knowledge, data, metrics, and goals 
-  that revolve around that problem you’re trying to solve. It contains all
-  the rules and patterns that will help you deal with complex 
-  business logic.
+- Domain model: A system of abstractions that describes selected aspects of
+  a domain and can be used to solve problems related to that domain.
 - Subdomain: A domain consists of several subdomains that refer to 
   different parts of the business logic.
-- Bounded context: Is a central pattern in domain-driven design that 
-  contains the complexity of the application. This is where you implement 
-  the code, after you’ve defined the domain and the subdomains.
-  Bounded contexts actually represent boundaries in which a certain 
-  subdomain is defined and applicable. One entity can have different names in 
-  different contexts. When a subdomain within the bounded context changes,
-  the entire system doesn’t have to change too. That’s why developers use 
-  adapters between contexts.
+- Bounded context: This is where you implement the code, after you’ve 
+  defined the domain and the subdomains. Bounded contexts actually 
+  represent boundaries in which a certain subdomain is defined and 
+  applicable.
 - The Ubiquitous Language: The Ubiquitous Language is a methodology that 
   refers to the same language domain experts and developers use when they 
   talk about the domain they are working on.
-  There’s a gap between the terminology used in daily discussions and the 
-  terms used in the code. That’s why it’s necessary to define a set of 
-  terms that everyone uses. All the terms in the ubiquitous language are 
-  structured around the domain model.
+  All the terms in the ubiquitous language are structured around the domain
+  model.
 - Value objects and aggregates: Value objects have attributes, but can’t 
   exist on their own. For example, the shipping address can be a value 
-  object. Large and complicated systems have countless entities and value 
+  object. 
+- Entities: Are objects that are defined by its identity and not by their 
+  attributes. Such an object must be matched with another object even 
+  though attributes differ. An object must be distinguished from other 
+  objects even though they might have the same attributes. Such objects are
+  usually used to represent core concepts in the business domain.
+- Aggregates: Large and complicated systems have countless entities and value 
   objects. That’s why the domain model needs some kind of structure. This 
   will put them into logical groups that will be easier to manage. These 
   groups are called aggregates. They represent a collection of objects that
   are connected to each other, with the goal to treat them as units. 
   Moreover, they also have an aggregate root. This is the only entity that 
   any object outside of the aggregate can reference to.
-- Domain service: The domain service is an additional layer that also 
-  contains domain logic. It’s part of the domain model, just like entities 
-  and value objects. At the same time, the application service is another 
-  layer that doesn’t contain business logic. However, it’s here to 
-  coordinate the activity of the application, placed above the domain 
-  model.
+- Domain service: is an object that implements business logic or business 
+  rules related to domain objects. It is a stateless, operation-centric 
+  class that encapsulates domain logic or operations that don't naturally 
+  fit within the boundaries of an Entity or a Value Object.
+  They can be used by Application Services and other Domain Services, but 
+  not directly by the presentation layer.
 
 Advantages:
 - Simpler communication: Thanks to the Ubiquitous Language, communication 
-  between developers and teams becomes much easier. As the ubiquitous 
-  language is likely to contain simpler terms developers refer to, there’s
-  no need for complicated technical terms.
+  between developers and teams becomes much easier.
 
 Downsides:
 - Deep domain knowledge is needed. Even for the most technologically 
@@ -76,3 +72,15 @@ Downsides:
   technical complexity can be very challenging for business-oriented domain
   experts. This could cause many limitations that might not be solvable for
   all team members.
+
+Repository Pattern
+Mediates between the domain and data mapping layers using a collection-like
+interface for accessing domain objects.
+It isolates domain objects from details of the database access code.
+A Repository mediates between the domain and data mapping layers, acting 
+like an in-memory domain object collection.
+It's used to abstract querying data from the domain model which otherwise 
+would make value objects and aggregates meaningless, making it impossible 
+for these objects to enforce the rules of the domain model.
+Without it domain logic moves into queries and application layer code, and 
+the entities and value objects become mere data containers.
