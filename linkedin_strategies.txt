@@ -94,3 +94,33 @@ Querying in Linkedin
    - "Senio" OR "SR" OR "Sênior"
    - "Oportunidade" OR "Vaga" OR "Hiring"
 9. should filter posts for the most recent not posts from the last month.
+10. OR filters should be the last ones in the querie.
+
+using queries in the "jobs" tab will filter for text in the TITLE of the opportunity, it won't filter text in the job description.
+so using texts like "hiring" or "LATAM" in the "jobs" tabs, won't be very effective.
+If you want to search for text inside the description, you should apply the search in the "posts" tab, as it will search for the specified text in the body of the post.
+
+You can also apply these active search queries on Google an search for opportunities that are also outside of Linkedin
+you should filter for the indexes of the last month.
+
+you can also use the query on google:
+site:linkedin.com + query 
+and filter for date of the indexing and it'll redirect you to the opportunity.
+
+if you want to search opportunities that aren't in linkedin:
+query + "- site:likedin.com"
+this will apply the query and remove all results that lead to linkedin.com
+
+if you're searching on Google, you can change "Latam" for "Remote" and the opportunities will probably have a higher
+salary.
+
+also is good to notice that most opportunities aren't in linkedin anymore as it has become very expensive to post
+a job opportunity.
+that's why using google is a good choice, also it helps in finding new platform directed for what you want,
+for example turing, which is focused to help developers to work for US companies.
+
+you can use chat gpt to filter the keywords of descriptions of opportunities that you would apply to, and with that
+you would be able to add more relevant keywords to your profile and also have a solid understanding about what
+you should study, or, what the market is requiring the most.
+a good filter would be: "keywords related to programing languages and frameworks/libraries".
+your should do this with 10 to 20 job descriptions.
