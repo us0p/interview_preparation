@@ -23,7 +23,7 @@ title
 about
 experiences
 projects
-experiences
+competence
 These are the tabs.
 
 To appear in the first pages of the recruiter search we need 5 things:
@@ -124,3 +124,42 @@ you would be able to add more relevant keywords to your profile and also have a 
 you should study, or, what the market is requiring the most.
 a good filter would be: "keywords related to programing languages and frameworks/libraries".
 your should do this with 10 to 20 job descriptions.
+
+projection pilar
+a lot of recruiters use bots to search linkedin through key words related to the technology the opportunity is asking.
+this pilar is about projecting what you do or want to do in a more clearer and organized way in your linkedin profile.
+to do this you must identify the most requested keywords related to the technology you work with.
+
+to test if your profile keywords are aligned with what the market expects you can move your localization in linkedin to
+another city in the country you want an opportunity (preference for big cities), also the country/city must have a high
+demand for the tecnology market with a professional defit. An example is Portugal - Lisboa.
+YOU SHOULD USE THIS ONLY TO TEST YOUR PROFILE.
+If you receive opportunities by using this test, it means that your profile is aligned with what keywords the market is looking for, but you shouldn't accept the offer
+as these opportunities are ofter directed to professionals that actually live in that area.
+If your profile is aligned with the propper keywords, is expected that your profile receives a job offer in the next 2-5 days.
+If you receive the job offer, you need to get your localization back to normal and work in your relevance.
+
+expansion pilar
+recruiters use the boolean search that you use to search opportunities to search cadidates, if you want to appear in the first page for the recruiter, you need to have
+a high number of mutual connections with the recruiter.
+this means that havin a high number of connections is good but it's not enough.
+to do this you need to make connections with people that have the same technology that you projected in the previous pilar.
+there are other this to pay attention to:
+1 - the number of mutual connection with HR's searching for LATAM devs. Connection with HR's that doesn't build up the number of connection with international HR's wont be very usefull.
+2 - keywords.
+3 - keywords weight, you can increase that by receiving recomendations in your skills.
+4 - activity. being active in linkedin will have a TREMENDUOS impact in the number of times you appear in the search, only 1 week without beeing active will impact your visibility.
+    to build this activity you need:
+    a. comment
+    b. writing posts (high efective)
+
+battle field pilar
+you need to understand the mind of the recruiter
+map the most occuring questions in the interview and study them with antecedence.
+you need to provide useful information abou the value you can bring to the company.
+
+making questions about the opportunity is key, some good questions are:
+1. what is the challenge that the company is facing to open this new position.
+
+It's a good strategy to make connections with the recruiters from your country, as international recruiters will have mutual connections with them and devs as well.
+adding only international recruiters wont lead to a high number of meaningfull connections.
