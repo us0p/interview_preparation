@@ -87,7 +87,7 @@ This patterns has three different classes:
 1. Command: Is a class that only contains the needed data to execute the 
    command. Validations are done in this class and its objects are 
    immutable.
-2. CommandHandler: Executed the behaviour when taking a specific Command 
+2. CommandHandler: Execute the behaviour when taking a specific Command 
    object as input. It should not be doing any domain logic itself.
    The relationship between Command and CommandHandler is one-to-one.
 3. CommandBus: After receiving a Command object, CommandBus will route it
