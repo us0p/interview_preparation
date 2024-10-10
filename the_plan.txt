@@ -15,6 +15,9 @@ Routine:
 130h - Review.
 2h - Leetcode.
 
+Need more projects to endorse the capabilities as a web developer with python
+Need more projects to endorse the capabilities with Kubernetes, Lambda, Nest.js, Kafka and Redis
+
 E-Commerce server -> learn how to work with Django and Microservices.
 Pattern Mentor -> create a cli tool based on a AI model to perform pattern 
                   implementation checks in a code base and provide 
