@@ -163,3 +163,40 @@ making questions about the opportunity is key, some good questions are:
 
 It's a good strategy to make connections with the recruiters from your country, as international recruiters will have mutual connections with them and devs as well.
 adding only international recruiters wont lead to a high number of meaningfull connections.
+
+Add skills to your about page both in the text and in the skill set at the end of configuration.
+
+Build projects with focus in optimization and performance.
+also in your experiences, the optimization and performances that your bought to the team should be the first ones in the description of each experience.
+and add keywords afterwards.
+also if possible, add numbers to represent the impact of your work.
+the performance might be increase in invoicing and etc.
+aldo, performance can mean not also system performance but also team performance.
+
+to add experience about technologies that you never actually worked with or if you never really worked, you can add projects that you built as "Freelance" and add keywords in the title and description to represent the value of your work.
+it's good to have an open experience (experience that shows that you are still workin in it), it shows linkedin that you have interest in that language, this is good bc linkedin favours employed users.
+
+you should also add a tab of idioms and add your english as advanced.
+
+
+your cover picture should be something meaningfull about what you do.
+
+should add most important keyworkds to the experience title, the same as the tab title.
+
+you can only add bulleted lists to represents your skills in the about tab, all the other tabs the skills must appear inside paragraphs to add context to them.
+
+soft skill are very important for more experienced developers, as in their level, most applicants have the same skill level, what will be a differential is how each one approach the problem.
+
+
+how to perform in an interview
+
+when connection with the interviwer in a dm or post, you should be objective and send only the relevant information, like the title of the opportunity you're talking about (they work with a lot o proccesses at the same time so it's good to reference to
+keep their mind fresh), the match that you have with that opportunity and finally end it trying to schedule a talk or with some question to incentive the recruiter to answer you back.
+
+when adding skills about cloud providers you should add information about particular services (probably in the about or skills tabs)
+
+don't dismiss opportunities only by the required years of experience, if you're close on what they're asking or you think you are doing great with that skill, it's worth to try.
+
+your CV should have at most 2 pages.
+
+another good question to ask is how the team organizes itself.
