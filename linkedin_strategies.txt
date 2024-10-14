@@ -200,3 +200,6 @@ don't dismiss opportunities only by the required years of experience, if you're 
 your CV should have at most 2 pages.
 
 another good question to ask is how the team organizes itself.
+
+How to add project url to your projects in linkedin:
+https://medium.com/@stefaniamak/unveiling-the-forbidden-gem-how-to-add-show-project-button-url-to-your-linkedin-projects-section-377c73eb27b7
