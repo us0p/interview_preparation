@@ -126,3 +126,5 @@ the fundamental device types are:
 There are other ways of classifying driver modules that are orthogonal to 
 the above device types. In general, some types of drivers work with 
 additional layers of kernel support functions for a given type of device.
+
+security issues
