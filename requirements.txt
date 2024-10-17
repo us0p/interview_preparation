@@ -1,14 +1,9 @@
--- Software architecture further topics
-[ ] - Load balancing
-[ ] - Partitioning
-[ ] - Sharding
-
 -- theorical skills
 [ ] - APIs
+    [ ] - Authentication: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
 [ ] - Caching
-[ ] - Architecture principles
-[ ] - Architectural patterns
-[ ] - PoSA patterns
+[ ] - Internet
+[ ] - Web Security
 [x] - understanding of the entire development lifecycle (SDLC).
     [x] - CI/CD.
 [x] - basic understanding of design patterns.
@@ -59,7 +54,7 @@
     [x] - tries.
     [x] - graphs.
     [x] - sets.
-[ ] - good understanding of the basic algorithms.
+[x] - good understanding of the basic algorithms.
     [x] - linear search.
     [x] - binary search.
     [x] - breadth-fisrt search.
@@ -72,13 +67,6 @@
     [x] - merge sort.
     [x] - quick sort.
     [x] - dijkstra.
-    [ ] - kruskal.
-    [ ] - prim.
-    [ ] - knuth-morris-pratt.
-    [ ] - rabin-karp.
-    [ ] - ford-fulkerson.
-    [ ] - edmonds-karp.
-    [ ] - geometric algorithms.
 [x] - understand some algorithm concepts and when to apply them.
     [x] - dynamic programing.
     [x] - greedy algorithms.
@@ -98,8 +86,8 @@
     [x] - Path coverage.
     [x] - Test objects.
 
-[ ] - tecnologies.
-    [ ] - python.
+Tecnologies.
+    [x] - python.
     [ ] - django.
     [ ] - docker.
     [ ] - kubernetes.
@@ -108,16 +96,6 @@
     [ ] - postgresql.
     [ ] - mongodb.
     [ ] - lambda.
-    ------job ready-----
-    [ ] - sql.
-    [ ] - sqlite.
-    [ ] - flask.
-    [ ] - fastapi.
-    [ ] - nodejs.
     [ ] - javascript.
-    [ ] - git.
-    [ ] - nginx.
-    [ ] - firebase.
-    [ ] - influxdb.
-    [ ] - cassandra.
-    [ ] - neo4j.
+    [ ] - typescript.
+    [ ] - node.js
