@@ -1,7 +1,7 @@
 ## Routine
-1. review concepts - 1h
+1. review concepts - 30m
 2. learn concepts - 1h
-3. code challenge practice - 1h
+3. code challenge practice - 30m
 4. english practice - 15m
 5. project - 3h
 6. read a book - 1h
@@ -9,6 +9,9 @@
 ## Todo
 - [ ] Plan a routine to stay up to date.
 - [ ] Common interview questions, their objectives and how to answer.
+
+# English topics
+- [ ] Common expressions (focus in business and office vocabulary).
 
 # Linkedin - Increase organic flow
 
