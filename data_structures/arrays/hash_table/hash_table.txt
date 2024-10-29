@@ -47,7 +47,7 @@ There are two traditional ways to deal with collisions:
      you add a new item, you add it as the head of the stack.
    - thus, collisions will create a stack that can be looked upon in that
      location.
-   - is usually faster than open addressing, as you don't have to traverte 
+   - is usually faster than open addressing, as you don't have to traverse 
      the whole table every time you get a collision.
    - it uses more memory as the size of the table is not fixed anymore.
    - if your hash function produces a lot of collisions your will end up 
