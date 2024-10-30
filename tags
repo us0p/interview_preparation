@@ -1,4 +1,4 @@
-ABSTRACT_FACTORY_PATTERN	./design_patterns/creational/abstract_factory.txt	0
+ABSTRACT_FACTORY_PATTERN	./design_patterns/creational/abstract_factory.md	0
 ACID	./databases/ACID.txt	0
 ADAPTER_PATTERN	./design_patterns/structural/adapter.txt	0
 ARRAY_DS	./data_structures/arrays/array.txt	0
