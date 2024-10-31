@@ -16,7 +16,7 @@ COMPONENT_ARCHITECTURE_PRINCIPLE	./software_architecture/principles/component_pr
 COMPOSITE_PATTERN	./design_patterns/structural/composite.txt	0
 COUPLING_COHESION_ARCHITECTURE_PRINCIPLES	./software_architecture/principles/coupling_vs_cohesion.txt	0
 CQRS_ARCHITECTURE_PATTERN	./software_architecture/patterns/cqrs.txt	0
-DDD_ARCHITECTURE_PATTERN	./software_architecture/patterns/ddd.txt	0
+DDD_ARCHITECTURE_PATTERN	./software_architecture/patterns/ddd.md	0
 DECORATOR_PATTERN	./design_patterns/structural/decorator.txt	0
 DEPTH_FIRST_SEARCH	./algorithms/depth_first/depth_first_explanation.txt	0
 DIVIDE_CONQER_ALGORITHMS	./algorithms/divide_and_conquer_algorithms.txt	0

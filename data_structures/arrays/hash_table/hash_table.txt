@@ -1,3 +1,7 @@
+[ ] - What is hashing
+[ ] - Direct Address Table
+[ ] - Double hasing
+
 Terms:
 - Load factor: amount of data per amount of storage.
 - Collision: when 2 keys maps to the same cell.

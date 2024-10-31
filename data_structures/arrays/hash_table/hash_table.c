@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+// define advantages and disadvantages of each method, for example, which
+// size each method generates the least collisions.
+
 int get_key_value(char *key) {
   int key_value = 0;
   for (char *c = key; *c != '\0'; c++) {
@@ -15,30 +18,20 @@ int hash_function_division_method(int key, int arrSize) {
   return key % arrSize;
 }
 
-int hash_function_mid_square(int key, int arrSize) {
+int hash_function_mid_square_method(int key, int arrSize) {
+  // the number of digits to take from the middle is less than or equal to
+  // the maximum number of digits the last index of the table has.
+  // a table with size 10, has index 0..9, it needs only 1 digit from the
+  // middle. a table with size 1000, has indexes 0..999, it needs 1 to 3 digits
+  // from the middle.
+
+  // Note: your middle number must be consistent:
+  // if you need to take 1 middle digit from the number 123, two is the only
+  // choice. but if you need to take 1 middle digit from the number 1234, you
+  // can pick 2 or 3, but your choice must be consistent.
+  int last_index = arrSize - 1;
   int sqr = key * key;
-  // how to determine te number of digits to take from the middle element?
 
-  // if it's based on the fact that the number can be even of odd, this means
-  // that the key might only have 1 to 2 digits, thus the range of possible
-  // values or, table size, must be within the range 0..99
-
-  // calculates the mid number of sqr by removing from the start and end of the
-  // number at the same time; 12: sqr -> 144 mid -> remove 1 frot start and 4
-  // from the end result -> 4
-
-  // 123:
-  // sqr -> 15129
-  // mid ->
-  // remove 1 from start and 9 from the end
-  // remove 5 from the start and 2 from the end
-  // result -> 1
-
-  // 50:
-  // sqr -> 2500
-  // mid ->
-  // remove 2 from the start and 0 from the end
-  // result -> 50
   return (key * key) % arrSize;
 }
 
