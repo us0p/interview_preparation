@@ -11,6 +11,7 @@
     - Apply concepts
     - Have fun
 4. English practice - 15m
+5. Linkedin care - 30m
 
 ## Code challenge routine
 **Rules**  
