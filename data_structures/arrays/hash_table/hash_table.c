@@ -1,4 +1,5 @@
 #include <math.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -29,10 +30,21 @@ int hash_function_mid_square_method(int key, int arrSize) {
   // if you need to take 1 middle digit from the number 123, two is the only
   // choice. but if you need to take 1 middle digit from the number 1234, you
   // can pick 2 or 3, but your choice must be consistent.
-  int last_index = arrSize - 1;
-  int sqr = key * key;
+  uint64_t last_index = arrSize > 1 ? arrSize - 1 : 1;
+  uint64_t sqr = (uint64_t)pow(key, 2);
 
-  return (key * key) % arrSize;
+  uint64_t number_of_digits = (uint64_t)log10(last_index) + 1;
+  uint64_t number_of_digits_sqr = (uint64_t)log10(sqr) + 1;
+  number_of_digits_sqr = number_of_digits_sqr > 0 ? number_of_digits_sqr : 1;
+  uint64_t base = number_of_digits > 2 ? number_of_digits : 2;
+
+  uint64_t first_half_sqr =
+      (uint64_t)sqr / pow(10, number_of_digits_sqr / base);
+  uint64_t mod = (uint64_t)pow(10, number_of_digits);
+
+  uint64_t mid_square = first_half_sqr % mod;
+
+  return mid_square % arrSize;
 }
 
 int hash_function_folding_method(int key, int arrSize) {
@@ -60,38 +72,41 @@ typedef struct Person {
 } Person;
 
 int main(void) {
-  srand(time(NULL));
+  // srand(time(NULL));
 
-  int arrSize = 100;
-  Person **arr = (Person **)malloc(sizeof(Person) * arrSize);
+  // int arrSize = 100;
+  // Person **arr = (Person **)malloc(sizeof(Person) * arrSize);
 
-  Person *p1 = (Person *)malloc(sizeof(Person));
-  p1->job = "Developer";
-  p1->age = rand() % 75;
-  p1->name = "jose";
-  arr[hash_function(get_key_value(p1->name), arrSize)] = p1;
+  // Person *p1 = (Person *)malloc(sizeof(Person));
+  // p1->job = "Developer";
+  // p1->age = rand() % 75;
+  // p1->name = "jose";
+  // arr[hash_function(get_key_value(p1->name), arrSize)] = p1;
 
-  Person *p2 = (Person *)malloc(sizeof(Person));
-  p2->job = "Developer";
-  p2->age = rand() % 75;
-  p2->name = "maria";
-  arr[hash_function(get_key_value(p2->name), arrSize)] = p2;
+  // Person *p2 = (Person *)malloc(sizeof(Person));
+  // p2->job = "Developer";
+  // p2->age = rand() % 75;
+  // p2->name = "maria";
+  // arr[hash_function(get_key_value(p2->name), arrSize)] = p2;
 
-  Person *p3 = (Person *)malloc(sizeof(Person));
-  p3->job = "Developer";
-  p3->age = rand() % 75;
-  p3->name = "pedro";
-  arr[hash_function(get_key_value(p3->name), arrSize)] = p3;
+  // Person *p3 = (Person *)malloc(sizeof(Person));
+  // p3->job = "Developer";
+  // p3->age = rand() % 75;
+  // p3->name = "pedro";
+  // arr[hash_function(get_key_value(p3->name), arrSize)] = p3;
 
-  for (int i = 0; i < arrSize; i++) {
-    Person *p = arr[i];
-    printf("%d: ", i);
-    if (p) {
-      printf("name: %s, ", p->name);
-      printf("job: %s, ", p->job);
-      printf("age: %d\n", p->age);
-      continue;
-    }
-    puts("NULL");
-  }
+  // for (int i = 0; i < arrSize; i++) {
+  //   Person *p = arr[i];
+  //   printf("%d: ", i);
+  //   if (p) {
+  //     printf("name: %s, ", p->name);
+  //     printf("job: %s, ", p->job);
+  //     printf("age: %d\n", p->age);
+  //     continue;
+  //   }
+  //   puts("NULL");
+  // }
+  hash_function_mid_square_method(597, 465);
+  hash_function_mid_square_method(1, 465);
+  hash_function_mid_square_method(22, 465);
 }

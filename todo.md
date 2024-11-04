@@ -1,7 +1,7 @@
 ## Routine
-1. Code challenge 2h
+1. Code challenge 2h -> Hash Set
 2. Concepts review 2h:
-    1. (mon) -> databases
+    1. (mon) -> databases -> Sharding in MongoDB
     2. (tue) -> design principles
     3. (wed) -> design patterns
     4. (thu) -> system design and architecture
