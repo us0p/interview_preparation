@@ -20,22 +20,6 @@ Disadvantages of using greedy algorithms:
 - Greedy algorithms aren't applicable to problems where the greedy choice does
   not lead to an optimal solution.
 
-Applications:
-- Network design: Greedy algorithms can be used to design efficient networks, 
-  such as minimum spanning trees, shortest paths, and maximum flow networks. 
-- Machine learning: Greedy algorithms can be used in machine learning 
-  applications, such as feature selection, clustering, and classification
-- Image processing: Greedy algorithms can be used to solve a wide range of image 
-  processing problems, such as image compression, denoising, and segmentation. 
-- Combinatorial optimization: Greedy algorithms can be used to solve combinatorial 
-  optimization problems, such as the traveling salesman problem, graph coloring, 
-  and scheduling. Although these problems are typically NP-hard, greedy algorithms 
-  can often provide close-to-optimal solutions that are practical and efficient.
-- Game theory: Greedy algorithms can be used in game theory applications, such as 
-  finding the optimal strategy for games like chess or poker. 
-- Financial optimization: Greedy algorithms can be used in financial applications, 
-  such as portfolio optimization and risk management.
-
 Advantages: 
 - The greedy approach is easy to implement.
 - Typically have less time complexity.
@@ -62,3 +46,19 @@ Disadvantages:
 - Greedy algorithms may be sensitive to small changes in the input, which can result 
   in large changes in the output. This can make the algorithm unstable and 
   unpredictable in some cases.
+
+Applications:
+- Network design: Greedy algorithms can be used to design efficient networks, 
+  such as minimum spanning trees, shortest paths, and maximum flow networks. 
+- Machine learning: Greedy algorithms can be used in machine learning 
+  applications, such as feature selection, clustering, and classification
+- Image processing: Greedy algorithms can be used to solve a wide range of image 
+  processing problems, such as image compression, denoising, and segmentation. 
+- Combinatorial optimization: Greedy algorithms can be used to solve combinatorial 
+  optimization problems, such as the traveling salesman problem, graph coloring, 
+  and scheduling. Although these problems are typically NP-hard, greedy algorithms 
+  can often provide close-to-optimal solutions that are practical and efficient.
+- Game theory: Greedy algorithms can be used in game theory applications, such as 
+  finding the optimal strategy for games like chess or poker. 
+- Financial optimization: Greedy algorithms can be used in financial applications, 
+  such as portfolio optimization and risk management.
