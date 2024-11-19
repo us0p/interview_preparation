@@ -1,44 +1,50 @@
-Builder
+# Builder
 Lets you construct complex objects step by step. The pattern allows you to 
 produce different types and representations of an object using the same 
-construction code.
+construction code.  
 
-Problem
+## Problem
 Imagine a complex object that requires laborious, step-by-step 
 initialization of many fields and nested objects. Such initialization code 
 is usually buried inside a monstrous constructor with lots of parameters.
 The constructor with lots of parameters has its downside: not all the 
-parameters are needed at all times.
+parameters are needed at all times.  
 In most cases most of the parameters will be unused, making the constructor
-calls pretty ugly.
+calls pretty ugly.  
 
-Solution
+## Solution
 This pattern suggests that you extract the object construction code out of 
-its own class and move it to separate object called builder.
+its own class and move it to separate object called builder.  
+
 The Builder doesn’t allow other objects to access the product during the 
-build steps.
+build steps.  
+
 The builder object has the steps for constructing the product object as a set
-of its methods (i.e. buildWalls(), buildDoor()).
+of its methods (i.e. buildWalls(), buildDoor()).  
+
 The important part is that you don’t need to call all of the steps. You can
 call only those steps that are necessary for producing a particular 
-configuration of an object.
+configuration of an object.  
+
 Some of the construction steps might require different implementation when
-you need to build various representations of the product.
+you need to build various representations of the product.  
 In this case, you can create several different builder classes that 
-implement the same set of building steps, but in a different manner.
+implement the same set of building steps, but in a different manner.  
+
 You can further extract the calls to the builder steps used to construct a
 product into a separate class director. The director defines the order in
 which to execute the building steps, while the builder provides the 
-implementation.
+implementation.  
 Having a director class in your program isn’t strictly necessary.
 However, the director class might be a good place to put various 
 construction routines so you can reuse them across your program.
 In addition, the director class completely hides the details of product 
 construction from the client code. The client only needs to associate a 
 builder with a director, launch the construction with the director, and get
-the result from the builder.
+the result from the builder.  
 
-Structure
+## Structure
+!["structure example"](https://refactoring.guru/images/patterns/diagrams/builder/structure-indexed.png)
 1. A builder interface that defines the common steps to all types of 
    builders. Note that if the hierarchy of products that your builder
    supports is too complex, you should leave the fetching product method
@@ -62,7 +68,7 @@ Structure
    constructor. Then the director uses that builder object for all further 
    construction.
 
-Applicability
+## Applicability
 1. If your constructor has many optional parameters.
 2. If you want your code to be able to create different representations of
    some product.
@@ -70,7 +76,7 @@ Applicability
    possible to defer execution of a step or even call steps recursively 
    which is pretty handy when building an object tree.
 
-Pros:
+## Pros:
 - You can construct objects step-by-step, defer construction steps or run 
   steps recursively.
 - You can reuse the same construction code when building various 
@@ -78,6 +84,6 @@ Pros:
 - Single Responsibility Principle. You can isolate complex construction 
   code from the business logic of the product.
 
-Cons:
+## Cons:
 - The overall complexity of the code increases since the pattern requires 
   creating multiple new classes.
