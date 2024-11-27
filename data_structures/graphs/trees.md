@@ -68,3 +68,19 @@ working with.
 - Find
 - Insert
 - Delete
+
+## Balanced Binary Tree
+Is a binary tree that follow the following conditions:
+- The absolute difference of heights of left and right subtrees at any 
+  node is at most 1.
+- For each node, its left subtree is a balanced binary tree.
+- For each node, its right subtree is a balanced binary tree.
+
+One of its properties is that a balanced tree has a height proportional to
+`O(log n)`, where n is the number of nodes.
+This ensures that operations like search, insertion, and deletion take 
+`O(logg n)` time in the worst case.
+
+> Note that the height of a given node in the three is the maximum value 
+  between it's left and right side. A node with 3h in the left and 0h in 
+  the right, has 3h.
