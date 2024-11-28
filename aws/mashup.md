@@ -306,3 +306,239 @@ Serverless compute engine for containers. Works with both ECS and EKS.
 When usin Fargate, you do not need to provision or manage servers. Fargate 
 manages your server infrastructure for you.
 You pay only for the resources that are required to run your containers.
+
+## Regions
+Throughout the globe, AWS builds Regions to be closest to where the 
+business traffic demands. Locations like Paris, Tokyo, Sao Paulo, Dublin, 
+Ohio. Inside each Region, we have multiple data centers that have all the 
+compute, storage, and other services you need to run your applications. 
+Each Region can be connected to each other Region through a high speed 
+fiber network, controlled by AWS.
+it's important to know that you, the business decision maker, gets to 
+choose which Region you want to run out of. And each Region is isolated 
+from every other Region in the sense that absolutely no data goes in or out
+of your environment in that Region without you explicitly granting 
+permission for that data to be moved.
+  
+When determining the right Region for your services, data, and 
+applications, consider the following four business factors:
+- **Compliance with data governance and legal requirements:** Depending on 
+  your company and location, you might need to run your data out of 
+  specific areas. For example, if your company requires all of its data to 
+  reside within the boundaries of the UK, you would choose the London 
+  Region.
+- **Proximity to your customers:** Selecting a Region that is close to your
+  customers will help you to get content to them faster. 
+- **Available services within a Region:** Sometimes, the closest Region 
+  might not have all the features that you want to offer to customers. AWS  
+  is frequently innovating by creating new services and expanding on 
+  features within existing services. However, making new services available
+  around the world sometimes requires AWS to build out physical hardware 
+  one Region at a time.
+- **Pricing:** Pricing can vary from Region to Region.
+
+## Availability Zone (AZ)
+Is a single data center or a group of data centers within a Region.
+Availability Zones are located tens of miles apart from each other. This is
+close enough to have low latency (the time between when content requested 
+and received) between Availability Zones. However, if a disaster occurs in 
+one part of the Region, they are distant enough to reduce the chance that 
+multiple Availability Zones are affected.
+A best practice is to run applications across at least two Availability 
+Zones in a Region.
+Planning for failure and deploying applications across multiple 
+Availability Zones is an important part of building a resilient and highly 
+available architecture.
+Many of the AWS services run at the Region level, meaning they run 
+synchronously across multiple AZs without any additional effort on your 
+part.
+Regional services are by definition already highly available at no 
+additional cost of effort on your part.
+A Regions consists of three or more Availability Zones.
+
+## Edge locations
+Is a site that Amazon CloudFront uses to store cached copies of your 
+content closer to your customers for faster delivery.
+- **Origin:** Is where your content is generated.
+- **Edge location:** Instead of requiring your customers to get their data 
+  from the `origin`, you can cache copy locally at an edge location that is
+  close to your customers.
+- **Customer:** When a customer in another Region requests one of your 
+  files, Amazon CloudFront retrieves the file from the cache in the edge 
+  location and delivers the file to the customer. The file is delivered to 
+  the customer faster because it came from the edge location near the 
+  customer Regions instead of the original source in origin.
+  
+Caching copies of data closer to the customers all around the world uses 
+the concept of content delivery networks, or CDNs.
+The AWS CDN is called `Amazon CloudFront`.
+ Amazon CloudFront is a service that helps deliver data, video, 
+applications, and APIs to customers around the world with low latency and 
+high transfer speeds. Amazon CloudFront uses what are called Edge 
+locations, all around the world, to help accelerate communication with 
+users, no matter where they are.
+WS Edge locations, also run more than just CloudFront. They run a domain 
+name service, or DNS, known as `Amazon Route 53`, helping direct customers 
+to the correct web locations with reliably low latency.
+Introducing AWS Outposts, where AWS will basically install a fully 
+operational mini Region, right inside your own data center. That's owned 
+and operated by AWS, using 100% of AWS functionality, but isolated within 
+your own building.
+
+## Ways to interact with AWS services
+- **AWS Management Console:** web-based interface for accessing and 
+  managing AWS services. You can quickly access recently used services and 
+  search for other services by name, keyword or acronym. The console 
+  includes wizards and automated workflows that can simplify the process of
+  completing tasks. You can also use the AWS Console mobile application to 
+  perform tasks such as monitoring resources, viewing alarms, and accessing
+  billing information.
+- **AWS Command Line Interface (CLI):** use to save time when making API 
+  requests. It enables the controls of multiple AWS services directly from 
+  the command line within one tool. By using AWS CLI, you can automate the 
+  actions that your services and applications perform through scripts.
+- **Software Development Kits (SDK):** use to access and manage AWS 
+  services. SDKs make it easier for you to use AWS services through API 
+  designed for your programming language or platform.
+
+## AWS Elastic Beanstalk
+Is a service that helps you provision EC2-based environments.
+Instead of clicking around the console or writing multiple commands to 
+build out your network, EC2 instances, scaling and Elastic Load Balancers, 
+you can instead provide your application code and desired configurations to
+the AWS Elastic Beanstalk service, which then takes that information and 
+builds out your environment for you. AWS Elastic Beanstalk also makes it 
+easy to save environment configurations, so they can be deployed again 
+easily.
+- Adjust capacity
+- Load balancing
+- Automatic scaling
+- Application health monitoring
+
+## AWS Cloud Formation
+Allows you to treat your infrastructure as code, it's not limited to 
+EC2-based solutions. Allows you to define a wide variety of AWS resources 
+in a declarative way using JSON or YAML text-based documents called 
+CloudFormation templates.
+Once you define your resources in a CloudFormation template, CloudFormation
+will parse the template and begin provisioning all the resoures you defined
+in parallel. You can run the same CloudFormation template in multiple 
+accounts or multiple regions, and it will create identical environments 
+across them.
+This means that you can build an environment by writing lines of code 
+instead of using the AWS Management Console to individually provision 
+resources.
+It determines the right operations to perform when managing your stack and 
+rolls back changes automatically if it detects errors.
+
+## Amazon Virtual Private Cloud (VPC)
+A VPC lets you provision a logically isolated section of the AWS Cloud 
+where you can launch AWS resources in a virtual network that you define.
+These resources can be public facing so they have access to the internet, 
+or private with no internet access, usually for backend services like 
+databases or application servers. The public and private grouping of 
+resources are known as subnets and they are ranges of IP addresses in your 
+VPC.
+It's a networking service that you can use to establish boundaries around 
+your AWS resources.
+A subnet is a section of a VPC in which you can group resources based on 
+security or operational needs. Subnets can be public or private.
+In a VPC, subnets can communicate with each other, for example, you might 
+have an application that involves EC2 instances in a public subnet 
+communicating with databases that are located in a private subnet.
+
+## Internet Gateway
+To allow public traffic from the internet to access your VPC, you attach an
+`internet gatway` to the VPC.
+
+!["internet gateway"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1732824000/pyQOXWbI_QH3VNbAxvPixQ/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%204%20-%20Internet%20Gateway.png)
+
+Without an internet gateway, no one can access the resources within your 
+VPC.
+If you have a VPC that includes only private resources you can use a 
+virtual private gateway.
+
+## Virtual Private Gateway
+The virtual private gateway is the component that allows protected internet
+traffic to enter into the VPC.
+It enables you to establish a `virtual private network` connection between 
+your VPC and a private network, such as an on-premises data center or 
+internal corporate network.
+It allows traffic into the VPC only if it is comming from an approved 
+network.
+
+!["virtual private gateway"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1732824000/pyQOXWbI_QH3VNbAxvPixQ/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%204%20-%20Virtual%20private%20gateway.png)
+
+## AWS Direct Connect
+Service that lets you establish a dedicated private connection between your
+data center and a VPC.
+
+!["direct connect"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1732824000/pyQOXWbI_QH3VNbAxvPixQ/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%204%20-%20AWS%20Direct%20Connect.png)
+
+## Network traffic in a VPC
+When a customer requests data from an application hosted in AWS, this 
+request is sent as a packet.
+It enters into a VPC through an internet gateway. Before a packet can enter
+into a subnet or exit from a subnet, it checks for permissions. These 
+permissions indicate who sent the packet and how the packet is trying to 
+communicate with the resources in a subnet.
+The VPC component that checks packet permissions for subnets is a 
+`network access control list (ACL)`.
+
+## Network ACLs
+It's a `virtual firewal` that controls inbound and outbound traffic at the 
+subnet level.
+  
+Imagine that you are in an airport. In the airport, travelers are trying to
+enter into a different country. You can think of the travelers as packets 
+and the passport control officer as a network ACL. The passport control 
+officer checks travelers’ credentials when they are both entering and 
+exiting out of the country. If a traveler is on an approved list, they are 
+able to get through. However, if they are not on the approved list or are 
+explicitly on a list of banned travelers, they cannot come in.  
+  
+Each AWS account includes a default network ACL. When configuring your VPC,
+you can use your account's default network ACL or create custom network 
+ACLs.  
+By default, your account's default network ACL allows all inboud and 
+outbound traffic, but you can modify it by adding your own rules.
+For custom network ACLs, all inbound and outbound traffic is denied until
+you add rules to specify which traffic to allow. Additionally, all network
+ACLs have an explicit deny rule. This rule ensures that if a packet doesn't
+match any of the other rules on the list, the packet is denied.
+
+## Stateless packet filtering
+ACLs perform stateless packet filtering. They remember nothing and check 
+packets that cross the subnet border each way; inbound and outbound.
+When a packet response for a request comes back to the subnet, the network
+ACL does not remember your previous request. The network ACL checks the 
+packet response against its list of rules to determine whether to allow or 
+deny.
+After a packet has entered a subnet, it must have its permissions evaluated
+for resources within the subnet, such as EC2 instances.
+
+!["ACL stateless filtering"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1732824000/pyQOXWbI_QH3VNbAxvPixQ/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%204%20-%20Network%20ACL%202.png)
+
+## Security groups
+Is a virtual firewall that controls inbound and outbound traffic for an EC2
+instance.
+By default, a security group denies all inbound traffic and allows all 
+outbound traffic. You can add custom rules to configure which traffic 
+should be allowed; any other traffic would then be denied.
+If you have multiple EC2 instances within the same VPC, you can associate
+them with the same security group or use different security groups for each
+instance.
+
+## Stateful packet filtering
+Security groups perform stateful packet filtering. They remember previuos 
+decisions made for incoming packets.
+Consider the same example of sending a request from an EC2 instance to the 
+internet.
+When a packet response for that request returns to the instance, the 
+security group remembers your previous request. The security group allows 
+the response to proceed, regardless of inbound security group rules.
+
+!["Security group stateful filtering"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1732824000/pyQOXWbI_QH3VNbAxvPixQ/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%204%20-%20Security%20group%202.png)
+
+With both network ACLs and security groups, you can configure custom rules
+for the traffic in your VPC.
