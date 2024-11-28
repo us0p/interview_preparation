@@ -8,7 +8,7 @@ BINARY_SEARCH	./algorithms/binary_search/binary_search_explanation.txt	0
 BOUNDARIES_ARCHITECTURE_PRINCIPLE	./software_architecture/principles/boundaries.txt	0
 BREADTH_FIRST_SEARCH	./algorithms/breadth_first/breadth_first_explanation.txt	0
 BUBBLE_SORT	./algorithms/bubble_sort/bubble_sort_explanation.txt	0
-BUILDER_PATTERN	./design_patterns/creational/builder.txt	0
+BUILDER_PATTERN	./design_patterns/creational/builder.md	0
 CAP	./databases/CAP_theorem.txt	0
 CLIENT_SERVER_ARCHITECTURE_STYLE	./software_architecture/architectural_styles/distributed/client_server.txt	0
 COMMAND_PATTERN	./design_patterns/behavioral/command.txt	0
