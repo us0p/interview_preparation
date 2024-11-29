@@ -19,6 +19,7 @@ Studying is divided in two parts:
 **Concepts to review**
 - Unit Testing
 - Patterns and Principles
+  - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
 - Event-Driven Architecture
 - Mircroservices Architecture
 
@@ -26,7 +27,25 @@ Studying is divided in two parts:
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
 solve problems.
 
-TODO: add week division over topics.
+- array
+  - hash-table
+    - set
+- graph
+  - spanning-tree
+- tree
+  - heap
+  - binary-tree
+  - trie
+  - set
+- linked-list
+  - stack
+  - queue
+
+- mon -> array
+- tue -> linked-list
+- wed -> tree
+- thu -> graph
+- fri -> interview prep list
 
 ## Coding
 Should be used to create projects which shows practical experience with 
@@ -39,6 +58,12 @@ required expertise in real jobs, those being:
 - Pattern Mentor: Create a cli tool based on a AI model to perform pattern 
   implementation checks in a code base and provide meaningful insights of 
   how to improve.
+- Refactor: A code repository with projects with bad designs that the user 
+  can clone and refactor the application to apply some pattern or principle
+  to improve the maintanability, scalability and testability of the 
+  application.
+  - [Projects in C# you can try to refactor to your language and apply some design patterns](https://github.com/dodyg/practical-aspnetcore)
+- [Microservice project ideas](https://github.com/mjebrahimi/Awesome-Microservices-DotNet?tab=readme-ov-file#sample-projects)
 
 ## English topics
 - Expressions.

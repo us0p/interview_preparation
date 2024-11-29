@@ -1,15 +1,22 @@
 Terms:
-- root: the first node.
-- height: the longest path from the root to the most recent childish node.
-- binary tree: nodes in this tree can have any number of children betwee
+- **root:** the first node.
+- **height:** the longest path from the root to the most recent childish node.
+- **binary tree:** nodes in this tree can have any number of children betwee
   0 and 2.
-- general tree: nodes in this tree can have any number of children.
+- **general tree:** nodes in this tree can have any number of children.
 - leaves: a node without children.
-- branching factor: the average number of child nodes that each non-leaf 
+- **branching factor:** the average number of child nodes that each non-leaf 
   node posseses.
+- **diameter:** the length of the longest path between any two nodes in a 
+  tree. This path may or may not pass through the root. The length of a 
+  path between two nodes is represented by the number of edges between 
+  them.
+- **tilt:** is the absolute difference between the sum of all left subtree 
+  node values and all right subtree node values. If a node does not have a 
+  left child, then the sum of the left subtree node values is treated as 0.
+  The rule is similar if the node does not have a right child.
 
-Tree
-
+# Tree
 It's a data structure in which, starting from a single point, you have many 
 possible paths.
 For example, the file system of your computer is a tree, you have the 
