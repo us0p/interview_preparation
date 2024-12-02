@@ -1,4 +1,4 @@
-Array
+# Array
 
 Is a contiguous memory space, in which contains a certain amount of bytes.
 All elements of an array are of the same type.

@@ -5,6 +5,10 @@
 - **30m:** English
 - **30m:** Linkedin
 
+## Pomodoro timers
+- **2h:** (50m/w + 10m/r) * 2
+- **3h:** 40m/w + 15m/sr + 30m/lr
+
 ## Study
 Studying is divided in two parts:
 - Study (gather new concepts and ideas)

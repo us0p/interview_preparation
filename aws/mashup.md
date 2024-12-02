@@ -372,7 +372,9 @@ content closer to your customers for faster delivery.
 Caching copies of data closer to the customers all around the world uses 
 the concept of content delivery networks, or CDNs.
 The AWS CDN is called `Amazon CloudFront`.
- Amazon CloudFront is a service that helps deliver data, video, 
+CDN: A network that delivers edge content to users based on their 
+geographic location.
+Amazon CloudFront is a service that helps deliver data, video, 
 applications, and APIs to customers around the world with low latency and 
 high transfer speeds. Amazon CloudFront uses what are called Edge 
 locations, all around the world, to help accelerate communication with 
@@ -542,3 +544,308 @@ the response to proceed, regardless of inbound security group rules.
 
 With both network ACLs and security groups, you can configure custom rules
 for the traffic in your VPC.
+
+## DNS
+You can think of DNS as being the phone book of the internet. DNS is the 
+process of translating a domain name to an IP address.
+- When you enter the domain name into your browser, this request is sent to
+  a customer DNS resolver.
+- The customer DNS resolver asks the company DNS server fo the IP address 
+  that corresponds to the website.
+- The companyy DNS server responds by providing the IP address for the 
+  website, e.g. 192.0.2.0.
+
+## Amazon Route 53
+Is a DNS web service. Amazon Route 53 connects user requests to 
+infrastructure running in AWS. It can route users to infrastructure outside
+of AWS.
+Another feature of Route 53 is the ability to manage the DNS records for 
+domain names. You can register new domain names directly in Route 53.
+
+The following example describes how Route 53 and Amazon CloudFront work 
+together to deliver content to customers.
+
+## Route 53 routing policies
+- Latency-based routing
+- Geolocation DNS
+- Geoproximity routing
+- Weighted round robin
+
+!["CloudFront and Route 53"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1733162400/ukxv5YovX_2x68VXheSfAg/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/CPE%20Digital%20-%20Module%208%20-%20Amazon%20Route%2053.png)
+
+- A customer requests data from the application by going to the company's 
+  website.
+- Amazon Route 53 uses DNS resolution to identifyy the company's 
+  corresponding IP address, e.g. 192.0.2.0. This information is sent back 
+  to the customer.
+- The customer's request is sent to the nearest edge location through 
+  Amazon CloudFront.
+- Amazon CloudFront connects to the Application Load Balancer, which sends 
+  the incoming packet to an Amazon EC2 instance.
+
+## Instance stores
+Block-level storage volumes behave like physical hard drives. An instance 
+store provides temporary block-level storage for an Amazon EC2 instance. An
+instance store is disk storage that is physically attached to the host 
+computer for an EC2 instance, and therefore has the same lifespan as the 
+instance.
+AWS recommends instances stores for use cases that involve temporary data 
+that you do not need in the long term.
+
+## Amazon Elastic Block Store (EBS)
+A service that provides block-level storage volumes that you can use with 
+EC2 instances. If you stop or terminate an EC2 instance, all the data on 
+the attached EBS volume remains available.
+Because EBS volumes are for data that needs to persist, it's important to 
+back up the data. You can take incremental backups of EBS volumes by 
+creating EBS snapshots.
+
+!["EBS snapshot"](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1733162400/ukxv5YovX_2x68VXheSfAg/tincan/fe470bc5add63f94f005d3da17a6db8131e78b9e/assets/EBS_snapshots.png)
+
+An EBS snapshot is an incremental backup. This means that the first backupt
+taken of a volume copies all the data. For subsequents backups, only the 
+blocks of data that have changed since the most recent.
+Incremental backups are different from full backups, in which all the data 
+in a storage volume copies each time a backup occurs. 
+
+## EBS characteristics
+- Sizes up to 16 TiB
+- Survive termination of their EC2 instance
+- Solid state by default
+- HDD options
+
+## Object storage
+In object storage, each object consists of data, metadata, and a key.
+The data might be an image, video, text document, or any other type of 
+file.
+Metadata contains information about what the data is, how it's used, the 
+object size, and so on. An object key is its unique identifier.
+Unlike block storage services, in object storage services, when a file is 
+modified, the entire object is updated.
+It's a good model if you consume the files as whole, as each file is 
+treated as an object.
+It's not a good model if you need to consume and update pieces of your 
+files, as for each update, a new object would need to be created.
+
+## Amazon Simple Storage Service (S3)
+Is a service that provides object-level storage. It stores data as objects 
+in buckets.
+You can upload any type of file to S3. S3 offers unlimited storage space. 
+The maximum file size for an object in S3 is 5TB.
+When you upload a file to S3, you can set permissions to control visibility
+and access to it.
+You can also use S3 versioning feature to track changes to your objects 
+over time.
+
+## S3 storage classes
+When selecting an S3 storage class, consider these two factors:
+- How often you plan to retrieve your data
+- How available you need your data to be
+
+The storage classes are:
+- **Standard:** Provides high availability for objects. It has a higher 
+  cost than other storage classes intended for infrequently accessed data 
+  and archival storage.
+  - Designed for frequently accessed data.
+  - Stores data in a minimum of three Availability Zones.
+- **Standard-Infrequent Access (Standard-IA):** Ideal for data infrequently
+  accessed but requires high availability when needed. It provides the same
+  level of availability as Standard but with lower storage price and higher
+  retrieval price.
+  - Ideal for infrequently accessed data.
+  - Similar to S3 standard but has lower storage price and higher retrieval
+  price.
+- **One Zone-Infrequent Access (One Zone-IA):** It stores data in a single 
+  Availability Zone. This makes it a good storage class to consider if the 
+  following conditions apply:
+  - You want to save costs on storage.
+  - You can easily reproduce your data in the event of an Availability Zone
+  failure.
+  - Stores data in a single Availability Zone.
+  - Has a lower storage price than S3 Standard-IA.
+- **Intelligent-Tiering:** Here, S3 monitors objects' access patterns. If 
+  you haven't accessed an object for 30 consecutive days, S3 automatically 
+  moves it to the infrequent access tier, Standard-IA. If you access an 
+  object in the infrequent access tier, S3 automatically mover it to the 
+  frequent access tier, Standard.
+  - Ideal for data with unknown or changing access patterns.
+  - Requires a small monthly monitoring and automation fee per object.
+- **Glacier Instant Retrieval:** When you decide between the options for 
+  archival storage, consider how quickly you must retrieve the archived 
+  objects. You can retrieve objects stored in the S3 Glacier Instant 
+  Retrieval storage class within milliseconds, with the same performance as
+  Standard.
+  - Works well for archived data that required immediate access.
+  - Can retrieve objects within a few milliseconds.
+- **Glacier Flexible Retrieval:** Low-cost storage class that is ideal for 
+  data archiving. You can retrieve your data from S3 Glacier Flexible 
+  Retrieval from 1 minute to 12 hours.
+  - Low-cost storage designed for data archiving.
+  - Able to retrieve objects within a few minutos to hours.
+- **Glacier Deep Archive:** Supports long-term retention and digital 
+  preservation for data that might be accessed once or twice in a year. 
+  This storage class is the lowest-cost storage in the AWS Cloud, with data
+  retrieval from 12 to 48 hours. All objects from this storage class are 
+  replicated and stored across at least three geographically dispersed 
+  Availability Zones.
+  - Lower-cost object storage class ideal for archiving.
+  - Able to retrieve objects within 12 hours.
+- **Outposts:** Delivers object storage to your on-premises AWS Outposts 
+  environment. It's designed to store data durably and redundantly across 
+  multiple devices and servers on your Outposts. It works well for
+  workloads with local data residency requirements that must satisfy 
+  demanding performance needs by keeping data close to on-premises 
+  applications.
+  - Creates S3 buckets on S3 Outposts.
+  - Makes it easier to retrieve, store, and access data on AWS Outposts.
+
+## S3 Characteristics
+- Unlimited Storage
+- Individual objects up to 5000GBs
+- Specialized in write once/read many
+- 99.999999999% durability
+- Web enabled, every object already has an URL
+- Regionally distributed
+- Offers cost savings
+- Serverless
+
+## Amazon Elastic File System (EFS)
+Scalable file system used with AWS Cloud services and on-premisses 
+resources.
+As you add and remove files, EFS grows and shrings automatically. It can 
+scale on demand to petabytes without dirupting applications
+
+In file storage, multiple clients can access data that is stored in shared 
+file folders. In this approach, a storage server uses block storage with a 
+local file system to organize files. Clients access data through file 
+paths.
+Compared to block storage and object storage, file storage is ideal for use
+cases in which a large number of services and resources need to access the 
+same data at the same time.
+
+## Amazon EBS x Amazon EFS
+**EBS:**
+- Stores data in a single Availability Zone
+- To attach an EC2 instance to an EBS volume, both the EC2 instance and EBS
+  volume must reside within the same AZ.
+
+**EFS:**
+- Stores data in and across multiples AZs.
+- The duplicate storage enables you to access data concurrently from all 
+  the AZs in the Region where a file system is located. Additionally, 
+  on-premises servers can access EFS using Direct Connect.
+
+## Amazon Relational Database Service (RDS)
+Is a service that enables you to run relational databases in the AWS Cloud.
+It's a managed service that automates tasks such as hardware provisioning, 
+database setup, patching, and backups.
+You can integrate RDS with other services to fulfill your business and 
+operational needs, such as using Lambda to query your database from a 
+serverless application.
+RDS is available on six database engines:
+- Amazon Aurora
+- PostgreSQL
+- MySQL
+- MariaDB
+- Oracle Database
+- Microsoft SQL Server
+
+## Amazon Aurora
+It's an enterprise-class relational database. it is compatible with MySQL 
+and PostgreSQL. It is up to five times faster than standard MySQL and up to
+three times faster than standard PostgreSQL.
+
+## Amazon DynamoDB
+Is a key-value database service. It delivers single-digit millisecond 
+performance at any scale.
+DynamoDB is serverless, which means that you do not have to provision, 
+patch, or mange servers.
+You also do not have to install, maintain, or operate software.
+
+As the size of your database shrinks or grows, DynamoDB automatically 
+scales to adjust for changes in capacity while maintaining consistent 
+performance.
+This makes it a suitable choice for use cases that require high performance
+while scaling.
+
+## Amazon RDS vs Amazon DynamoDB
+**RDS:**
+- Automatic high availability; recovery provided
+- Customer (AWS user) ownership of data
+- Customer (AWS user) ownership of schema
+- Customer (AWS user) control of network
+
+**DynamoDB:**
+- Key-value
+- Massive throughput capabilities
+- PB size potential
+- Granular API access
+
+## Amazon Redshift
+Is a data warehousing service that you can use for big data analytics.
+It offers the ability to collect data from many sources and helps you to 
+understand relationships and trends across your data.
+It's massively scalable.
+Redshift nodes in multiple petabyte sizes is very common. In fact, in 
+cooperation with Amazon Redshift Spectrum, you can directly run a single 
+SQL query against exabytes of unstructured data running in data lakes. 
+Redshift uses a variety of innovations that allow you to achieve up to 10 
+times higher performance than traditional databases, when it comes to these
+kinds of business intelligence workloads. 
+
+In order to handle the velocity of real time read/write functionality, most
+relational databases tend to function fabulously at certain capacities. The
+problem with historical analytics, data that answers questions like, "Show 
+me how production has improved since we started", is the data collection 
+never stops.
+In fact, with modern telemetry and the explosion of IoT, the volume of data
+will overwhelm even the beefiest traditional relational database. Not just 
+the volume, but the variety of data can be a problem. You want to run 
+business intelligence or BI projects against data coming from different 
+data stores like your inventory, your financial, and your retail sales 
+systems? 
+A single query against multiple databases sounds nice, but traditional 
+databases don't handle them easily. 
+Once data becomes too complex to handle with traditional relational 
+databases, you've entered the world of data warehouses. Data warehouses are
+engineered specifically for this kind of big data, where you are looking at
+historical analytics as opposed to operational analysis. 
+
+## AWS Database Migration Service (DMS)
+Enables you to migrate relational databases, nonrelational databases, and 
+other types of data stores.
+With DMS, you move data between a source and a target database. The source 
+and target databases can be of the same type or not.
+During the migration, your source database remains operational, reducing 
+downtime for any applications that rely on the database.
+
+If the databases are of the same type, they are called, 
+`Homogenous databases`, e.g. MySQL to RDS for MySQL, Oracle to RDS for 
+Oracle.
+
+The source can be:
+- On-premises
+- Amazon EC2
+- Amazon RDS
+
+The target can be:
+- Amazon EC2
+- Amazon RDS
+
+You must then create a migration task with connections between the source 
+and target databases.
+
+If the database aren't of the same type, the yare called, 
+`Heterogeneous databases` and it's a two-step process.
+We must first convert the schema structure, data types and database code 
+using the AWS Schema convertion tool.
+This will convert the Schema and code to match that of the target database.
+Then we use DMS to migrate data from the source to the target.
+
+**Some use cases:**
+- Development and test database migrations: Enabling developers to test 
+  applications against production data without affecting production users.
+- Database consolidation: Combining several databases into a single 
+  database.
+- Continuous replication: Sending ongoing copies of your data to other 
+  target sources instead of doing a one-time migration.
