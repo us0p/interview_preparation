@@ -26,6 +26,13 @@ Studying is divided in two parts:
 - Backend: overall backend knowledge.
 - Node.js runtime: understand event loop, memory model, threads and 
   streams.
+- Clean Architecture
+- Clean Code
+- Terraform
+- Grafana
+- Docker
+- Kubernetes
+- MongoDB
   
 **Concepts to review**
 - Unit Testing
@@ -33,6 +40,8 @@ Studying is divided in two parts:
   - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
 - Event-Driven Architecture
 - Mircroservices Architecture
+- SOLID
+- DDD
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
