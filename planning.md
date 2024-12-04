@@ -1,9 +1,15 @@
-## Routine - 8h
+## Routine - 9h
 - **3h:** Study
 - **2h:** DSA
 - **3h:** Coding
 - **30m:** English
 - **30m:** Linkedin
+
+## Leisure Routine - 6h
+- **1h:30m:** LoL
+- **3h:** Gaming
+- **30m:** Watch something
+- **1h:** Reading
 
 ## Pomodoro timers
 - **2h:** (50m/w + 10m/r) * 2
@@ -15,8 +21,9 @@ Studying is divided in two parts:
 - Review (revisit and further knoledge already studied)
   
 **Concepts to study**
-- Cloud computing: overal cloud understanding, and introduction to common 
+- Cloud computing: overall cloud understanding, and introduction to common 
   services used in microservice architecture.
+- Backend: overall backend knowledge.
 - Node.js runtime: understand event loop, memory model, threads and 
   streams.
   
