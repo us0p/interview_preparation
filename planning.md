@@ -20,7 +20,7 @@ Studying is divided in two parts:
 - Study (gather new concepts and ideas)
 - Review (revisit and further knoledge already studied)
 - alterei alguma coisa
-- exemplo de conflito
+- alterei outra coisa
 
   
 **Concepts to study**
