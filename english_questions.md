@@ -1,6 +1,12 @@
 # English questions
 Common English questions, what they really want to know and my responses.
 
+## Relevant Career highlights
+- 3 years of career (2021-2024)
+- Direct contact with clients
+- Concurrent project management
+- Implementing tests in a testless environment
+
 ## General and Behavioral Questions
 - Tell me about yourself.
     - Your ability to summarize relevant career highlights and experiences.
@@ -8,6 +14,21 @@ Common English questions, what they really want to know and my responses.
     - Your communication skills and confidence in presenting yourself.
     > Provide a concise narrative that ties your past experiences to the 
     position.
+
+    make this sound more like a talk and use more key words about 
+    technical aspects.
+    demonstrate experience to work collaboratively.
+
+    R: I work with web development since 2021 and have almost 3 years of 
+    professional experience. During my experiences i mostly worked as a 
+    fullstack developer. I'm used to have direct contact with clients to 
+    gather requirements and to provide reports about the sprint.
+    I have experience in working with many concurrent projects and i'm 
+    always worried about the quality of my work, that's why, in one of my 
+    previuos experiences i was the first developer to apply tests to the 
+    code base and use Test Driven Development to delivery a project with a 
+    higher approvement by the client.
+
 - Why are you interested in this position/company?
     - Whether you've researched the company and understand their mission or
       values.

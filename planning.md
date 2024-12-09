@@ -1,9 +1,9 @@
 ## Routine - 9h
-- **3h:** Study
-- **2h:** DSA
-- **3h:** Coding
 - **30m:** English
 - **30m:** Linkedin
+- **3h:** Coding
+- **2h:** DSA
+- **3h:** Study
 
 ## Leisure Routine - 6h
 - **1h:30m:** LoL
@@ -33,6 +33,11 @@ Studying is divided in two parts:
 - Docker
 - Kubernetes
 - MongoDB
+
+## Courses
+- [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
+- [Papers on distributed systems](https://github.com/theanalyst/awesome-distributed-systems)
+- [More about distributed systems](https://github.com/binhnguyennus/awesome-scalability)
   
 **Concepts to review**
 - Unit Testing
@@ -84,6 +89,7 @@ required expertise in real jobs, those being:
   application.
   - [Projects in C# you can try to refactor to your language and apply some design patterns](https://github.com/dodyg/practical-aspnetcore)
 - [Microservice project ideas](https://github.com/mjebrahimi/Awesome-Microservices-DotNet?tab=readme-ov-file#sample-projects)
+- [Distributed systems ideas](https://github.com/roma-glushko/awesome-distributed-system-projects)
 
 ## English topics
 - Expressions.
@@ -99,6 +105,7 @@ required expertise in real jobs, those being:
    
 ## Todo
 - [ ] Plan a routine to stay up to date.
+- [ ] Create freelancer approach.
 - [ ] Update CV.
    - [x] - PT
    - [ ] - EN
