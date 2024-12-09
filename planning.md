@@ -19,6 +19,8 @@
 Studying is divided in two parts:
 - Study (gather new concepts and ideas)
 - Review (revisit and further knoledge already studied)
+- alterei alguma coisa
+
   
 **Concepts to study**
 - Cloud computing: overall cloud understanding, and introduction to common 
