@@ -1,6 +1,13 @@
 # English questions
 Common English questions, what they really want to know and my responses.
 
+## Exercices
+Professional experience background: list every meaningful project you ever 
+worked on, the challenges, the outcome, how did you solve the challenges, 
+the technical responsibilities and what you are proud of.
+Talk about the projects you worked, you need to be able to talk about them 
+with clarity and confidence.
+
 ## Relevant Career highlights
 - 3 years of career (2021-2024)
 - Direct contact with clients
@@ -23,11 +30,17 @@ Common English questions, what they really want to know and my responses.
     professional experience. During my experiences i mostly worked as a 
     fullstack developer. I'm used to have direct contact with clients to 
     gather requirements and to provide reports about the sprint.
-    I have experience in working with many concurrent projects and i'm 
-    always worried about the quality of my work, that's why, in one of my 
-    previuos experiences i was the first developer to apply tests to the 
-    code base and use Test Driven Development to delivery a project with a 
-    higher approvement by the client.
+    I have experience in working with many concurrent projects and in those
+    projects i mostly worked with the MERN stack. I'm always worried about 
+    the quality of my work, that's why, in one of my previuos experiences i
+    was the first developer to apply tests to the code base and use Test 
+    Driven Development to delivery a project with a higher approval by the 
+    client.
+    I have experience working with multifunctional teams and environments.
+    and i'm always eager to learn and experiment with new technologies, i 
+    love what i do.
+
+- Why should we hire you?
 
 - Why are you interested in this position/company?
     - Whether you've researched the company and understand their mission or

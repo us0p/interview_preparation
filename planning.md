@@ -1,9 +1,9 @@
 ## Routine - 9h
 - **30m:** English
 - **30m:** Linkedin
-- **3h:** Coding
+- **3h:** Coding, Freelas
 - **2h:** DSA
-- **3h:** Study
+- **3h:** Study, Courses, Events
 
 ## Leisure Routine - 6h
 - **1h:30m:** LoL
