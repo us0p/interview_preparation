@@ -1,4 +1,4 @@
-Spanning Tree
+# Spanning Tree
 A spanning tree is defined as a tree-like subgraph of a connected, 
 undirected graph that includes all the vertices of the graph.
 

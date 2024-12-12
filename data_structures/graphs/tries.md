@@ -1,4 +1,4 @@
-Tries
+# Tries
 It can perform lookup in constant time.
 A trie is always bounded by some limiter.
 
@@ -8,7 +8,8 @@ our trie is the number of letters in the alphabet.
 The typical structure of a trie is a node which contains:
 
 - children: Array[x]<Node> (x is the bouded size of the array).
-- isWord: boolean.
+- check: boolean (checks if some condition is met, (e.g. if the set of 
+  letters at this point is a word).
 
 in the exemple of auto-completion:
 - the root node has a children array of size 26.

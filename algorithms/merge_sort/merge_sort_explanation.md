@@ -1,4 +1,4 @@
-Merge Sort
+# Merge Sort
 The divide and conquer strategy is used in this algorithm.
 Here we divide the sorting array in the middle and keep halving its parts
 until we get to an array of only one element.

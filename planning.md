@@ -19,6 +19,16 @@
 Studying is divided in two parts:
 - Study (gather new concepts and ideas)
 - Review (revisit and further knoledge already studied)
+
+Should take notes only about concepts, patterns and principles.
+Should not take notes about the functionality or details about tools and 
+technologies, the understanding of these things should be from practical 
+experience, taking notes about it won't help as you won't remember all the 
+details you noted about all the tools, and when you need to remember or 
+learn some detail you'll probably go to the tool documentation anyway.
+You should maintain a list of the most required technologies in the market 
+and try to be familiar with most of them by using them in side projects and
+keep up to date with them.
   
 **Concepts to study**
 - Cloud computing: overall cloud understanding, and introduction to common 

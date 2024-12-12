@@ -1,4 +1,4 @@
-Quick Sort
+# Quick Sort
 Is an algorithm that sorts the array in place and has an simmilar idea to 
 binary search. 
 It halves the number of elements at each iteration, it does that by weakly 
@@ -27,8 +27,8 @@ note that after partitioning the array, you'll always have a weak sorted array,
 meaning that everything at the left of the pivot is smaller than the pivot and
 everything at the right is greater than.
 
-Time Complexity:
-- Average Case: 𝜃(log n).
+## Time Complexity
+- Average Case: 𝜃(n log n).
 - Worst Case: O(n²) - This occurs when the pivot selection is consistently poor.
   This occurs when the pivot is the smallest or greatest element. When the
   pivot is always the smallest or greatest of the set, the partitioning step

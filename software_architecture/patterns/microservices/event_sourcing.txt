@@ -1,1 +1,0 @@
-/home/us0p/projects/interview_preparation/software_architecture/patterns/event_sourcing.txt

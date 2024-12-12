@@ -1,4 +1,4 @@
-Bubble Sort
+# Bubble Sort
 In bubble sort you’ll have to iterate over the array and swap adjacent 
 elements if the previous one is larger than the next.
 For each iteration of the whole array, the largest item will always be 

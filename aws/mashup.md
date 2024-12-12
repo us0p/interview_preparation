@@ -48,7 +48,7 @@ The three cloud computing deployment models are:
 - Stop guessing cpacity: With cloud computing, you don't have to predict 
   how much infrastructure capacity you will need before deploying an 
   application.
-- Benefit from massice economies of scale: by using cloud computing, you 
+- Benefit from massive economies of scale: by using cloud computing, you 
   can achieve a lower variable cost than you can get on your own.
 - Increase speed and agility: cloud provides you with more time to 
   experiment and innovate. When computing in data centers, it may take 
@@ -232,7 +232,7 @@ The `maximum capacity` sets the maximum number of instances to provide.
 ## Elastic Load Balancing (ELB)
 Automatically distributes incoming application traffic across multiple 
 resources, such as Amazon EC2 instances.
-It acts as a single point of contact for all incoming gweb traffic to your 
+It acts as a single point of contact for all incoming web traffic to your 
 Auto Scaling group.
 This means that as you add or remove EC2 instances, these requests route to
 the load balancer first.
@@ -290,7 +290,7 @@ of containers. At a large scale, imagine how much time it might take for
 you to monitor memory usage, security, logging, and so on.
 
 ## Amazon Elastic Container Service (ECS)
-Is a highlyyy scalable, high-performance container management system that 
+Is a highly scalable, high-performance container management system that 
 enables you to run and scale containerized applications on AWS.
 ECS supports Docker containers.
 AWS supports the use of open-source Docker Community Edition and 

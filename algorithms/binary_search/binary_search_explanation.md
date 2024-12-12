@@ -1,4 +1,4 @@
-Binary Search
+# Binary Search
 In an ordered array, we can check the middle element of the set and
 check if the element is smaller, greater or equal to what we're looking
 for.

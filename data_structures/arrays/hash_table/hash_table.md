@@ -3,15 +3,13 @@
 [ ] - Double hasing
 
 Terms:
-- Load factor: amount of data per amount of storage.
-- Collision: when 2 keys maps to the same cell.
 - Linear probing: is a technique used to resolve collisions in hash tables.
   The hash function calculates the hash code, and the search starts from 
   that index, moving sequentially until the target key is found or an empty
   cell is encountered. When the end of the array is reached you modulo it 
   to look over every space in the table.
 
-Hash Table (Map)
+# Hash Table (Map)
 A hash table is an array with a hash function. A hash table provides 
 constant time lookup, insert, deletion and update.
 
@@ -27,14 +25,24 @@ A hash function should:
 An ideal hash function would always hash different inputs to different 
 locations.
 
-Example of simple hash functions implementations are:
-- Division method: divides the key by a prime number and uses the remainder
-  as a hash. Has a poor distribution if the prime number is not chosen
-  wisely.
-- Multiplication method: picks a constant A (0 < A < 1) which is used to
-  multiply the key. The fractional part of the product is then multiplied
-  by a chosen prime number to get the hash value. The coice of the prime
-  number is less important.
+## Load Factor
+represents how full the table is. it's defined as the ratio of the number 
+of elements in the table to the total number of slots or  
+
+`ld = ne/ns`  
+
+A low load factor means the table has many empty slots, leading to fewer 
+collisions and faster operations. Many hash tables resize when the load 
+factor exceeds a certain threshold (e.g. `0.7`). Resizing typically 
+involves creating a new, larger table and rehashing all elements.
+
+Lower load factors reduce collision rates, improving speed at the cost of 
+higher memory usage.
+Higher load factors save memory but may increase the time complexity of 
+operations due to collisions.
+
+## Colisions
+When 2 keys maps to the same cell.
 
 There are two traditional ways to deal with collisions:
 1. open addressing.

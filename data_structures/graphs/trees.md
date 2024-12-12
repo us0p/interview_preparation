@@ -1,10 +1,10 @@
 Terms:
 - **root:** the first node.
 - **height:** the longest path from the root to the most recent childish node.
-- **binary tree:** nodes in this tree can have any number of children betwee
+- **binary tree:** nodes in this tree can have any number of children between
   0 and 2.
 - **general tree:** nodes in this tree can have any number of children.
-- leaves: a node without children.
+- **leaves:** a node without children.
 - **branching factor:** the average number of child nodes that each non-leaf 
   node posseses.
 - **diameter:** the length of the longest path between any two nodes in a 
@@ -33,7 +33,7 @@ format of the tree:
   - children: *Node[]
   - value: any
 
-Traversing a tree:
+## Traversing a tree
 Traversing is the action of visiting every node.
 There are three traversal techniques:
 - preorder: visit the node and then you go to the next node, the root will
@@ -51,7 +51,7 @@ visit each node (First in, Last Out).
 Depth First preserves the shape of the traversing (the direction of the arrows) 
 of the tree.
 
-Breadth-First Search:
+## Breadth-First Search
 This is the opposite of a Depth First Search so instead of using a Stack we’ll 
 using a Queue.
 it visits each node of the current level, before going to the next one. This is
@@ -59,7 +59,7 @@ valid for every tree, not only binary trees.
 Breadth First doesn’t preserves the shape of the traversing (the direction of 
 the arrows) of the tree.
 
-Binary Search Tree (BST):
+## Binary Search Tree (BST):
 A binary search tree is just a binary tree with two rules:
 - Everything at the left side of the root is less or equal to the root.
 - Everything at the right side of the root is greater than it.
@@ -69,9 +69,10 @@ when we say root, we’re not specifically saying the root of the tree, but each
 individual point.
 It’s good to know that in a BST an in-order traversal produces an ordered array.
 
-Methods:
+## Methods
 The time complexit of the methods will depend on which type of tree your are
 working with.
+A binary tree for example, takes `O log(n)` in average.
 - Find
 - Insert
 - Delete

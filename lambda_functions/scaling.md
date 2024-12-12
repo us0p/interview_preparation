@@ -1,16 +1,17 @@
-Function Scaling
+# Function Scaling
 Concurrency is the number of in-flight requests that your AWS Lambda 
 function is handling at the same time. For each concurrent request, Lambda
 provisions a separate instance of your execution environment. As your 
 functions receive more requests, Lambda automatically handles scaling the 
 number of execution environments until you reach your account's concurrency
 limit. By default, Lambda provides your account with a total concurrency 
-limit of 1,000 concurrent executions across all functions in an AWS Region.
+limit of `1,000 concurrent executions across all functions in an AWS 
+Region`.
 To support your specific account needs, you can request a quota increase 
 and configure function-level concurrency controls so that your critical 
 functions don't experience throttling.
 
-Understanding concurrency
+## Understanding concurrency
 Lambda invokes your function in a secure and isolated execution 
 environment. To handle a request, Lambda must first initialize an execution
 environment (the Init phase), before using it to invoke your function 
@@ -34,8 +35,8 @@ requests that it's handling at the same time. In response to an increase in
 your function's concurrency, Lambda provisions more execution environment 
 instances to meet request demand.
 
-Calculating concurrency for a function
-C = (avg req p/ second) * (avg req duration in seconds)
+## Calculating concurrency for a function
+`C = (avg req p/ second) * (avg req duration in seconds)`
 What does a concurrency of 50 mean in practice? If the average request 
 duration is 500 ms, then you can think of an instance of your function as 
 being able to handle two requests per second. Then, it takes 50 instances 
@@ -43,10 +44,10 @@ of your function to handle a load of 100 requests per second. A concurrency
 of 50 means that Lambda must provision 50 execution environment instances 
 to efficiently handle this workload without any throttling.
 
-Understanding reserved concurrency and provisioned concurrency
-By default, your account has a concurrency limit of 1,000 concurrent 
-executions across all functions in a Region. Your functions share this pool
-of 1,000 concurrency on an on-demand basis. Your functions experiences 
+## Understanding reserved concurrency and provisioned concurrency
+By default, your account has a concurrency limit of `1,000 concurrent 
+executions across all functions in a Region`. Your functions share this 
+pool of 1,000 concurrency on an on-demand basis. Your functions experiences 
 throttling (that is, they start to drop requests) if you run out of 
 available concurrency.
 Some of your functions might be more critical than others. As a result, you

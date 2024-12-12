@@ -1,4 +1,4 @@
-AWS Lambda
+# AWS Lambda
 Is an event-driven compute service that runs instances of your functions to
 process events. You can invoke your function directly using the Lambda API,
 or you can configure an AWS service or resource to invoke your function.
@@ -11,7 +11,7 @@ Lambda automatically tracks the number of requests, the latency per
 request, and the number of requests resulting in an error and publishes the
 associated metrics.
 
-AWS Step Functions
+## AWS Step Functions
 Step Functions is a serverless orchestration service that lets you easily 
 coordinate multiple Lambda functions into flexible workflows that are easy 
 to debug and change. Step Functions will keep your Lambda functions free of
@@ -22,7 +22,7 @@ language to define state machines.
 This language is used to define the workflow of your state machine and to
 bind lambda functions to each step in your workflow.
 
-Lambda key concepts:
+## Lambda key concepts
 Function
 Is a resource that you can invoke to run your code in lambda. A function
 has code to process the events that you pass into the function or that

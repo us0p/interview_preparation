@@ -60,13 +60,13 @@ Test automation samples are available in
 https://github.com/aws-samples/serverless-test-samples
 
 Although the test runs locally, it interacts with cloud-based resources. 
-These resources have been deployed using the AWS Serverless Application 
-Model and AWS SAM command line tool. The test code first retrieves the 
-deployed stack outputs, which includes the API endpoint, function ARN, and 
-security role. Next, the test sends a request to the API endpoint, which 
-responds with a list of Amazon S3 buckets. This test runs entirely against 
-cloud-based resources to verify those resources are deployed, secured, and 
-work as expected.
+These resources have been deployed using the `AWS Serverless Application 
+Model (SAM) and AWS SAM command line tool (which is not part os AWS CLI)`. 
+The test code first retrieves the deployed stack outputs, which includes 
+the API endpoint, function ARN, and security role. Next, the test sends a 
+request to the API endpoint, which responds with a list of Amazon S3 
+buckets. This test runs entirely against cloud-based resources to verify 
+those resources are deployed, secured, and work as expected.
 Unlike local testing, testing in the cloud requires additional resources 
 which may incur service costs. Creating isolated testing environments may 
 increase the burden on your DevOps teams, especially in organizations with 
