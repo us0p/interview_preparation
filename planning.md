@@ -1,19 +1,19 @@
-## Routine - 9h
-- **30m:** English
-- **30m:** Linkedin
-- **3h:** Coding, Freelas
-- **2h:** DSA
-- **3h:** Study, Courses, Events
+## Routine - 12h
+1. **3h:** Study
+2. **1h 30m:** DSA
+3. **3h:** Coding
+4. **3h:** Exams
+5. **30m:** English
+6. **1h:** Linkedin
 
-## Leisure Routine - 6h
-- **1h:30m:** LoL
-- **3h:** Gaming
-- **30m:** Watch something
-- **1h:** Reading
+## Points of attention
+- What causes dealys during the activities to cause them to finish after 
+  the estimated time?
 
 ## Pomodoro timers
 - **2h:** (50m/w + 10m/r) * 2
 - **3h:** 40m/w + 15m/sr + 30m/lr
+- **1h 30m:** 20m/w + 5m/sr + 20m/lr
 
 ## Study
 Studying is divided in two parts:
