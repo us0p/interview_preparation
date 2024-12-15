@@ -1,3 +1,12 @@
+## Todo
+- [ ] Plan a routine to stay up to date.
+- [ ] Create freelancer approach.
+- [ ] Update CV.
+   - [x] - PT
+   - [ ] - EN
+- [ ] Add metrics to experiences on linkedin.
+- [ ] Change linkedin cover.
+ 
 ## Routine - 12h
 1. **3h:** Study
 2. **1h 30m:** DSA
@@ -33,31 +42,25 @@ keep up to date with them.
 **Concepts to study**
 - Cloud computing: overall cloud understanding, and introduction to common 
   services used in microservice architecture.
+- Lambda functions
 - Backend: overall backend knowledge.
-- Node.js runtime: understand event loop, memory model, threads and 
-  streams.
+- Node.js runtime: understand event loop (how to use it in practice), 
+  memory model, threads and streams.
 - Clean Architecture
+- Exagonal Architecture
 - Clean Code
 - Terraform
 - Grafana
 - Docker
 - Kubernetes
-- MongoDB
+- MongoDB: Experience working with distributed databases.
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
 - [Papers on distributed systems](https://github.com/theanalyst/awesome-distributed-systems)
 - [More about distributed systems](https://github.com/binhnguyennus/awesome-scalability)
+- [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
   
-**Concepts to review**
-- Unit Testing
-- Patterns and Principles
-  - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
-- Event-Driven Architecture
-- Mircroservices Architecture
-- SOLID
-- DDD
-
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
 solve problems.
@@ -84,10 +87,7 @@ solve problems.
 
 ## Coding
 Should be used to create projects which shows practical experience with 
-required expertise in real jobs, those being:
-- Event-Driven architecture
-- Microservices architecture
-- Unit testing
+required expertise in real jobs.
 
 ### Project Ideas
 - Pattern Mentor: Create a cli tool based on a AI model to perform pattern 
@@ -106,19 +106,12 @@ required expertise in real jobs, those being:
 - Vocabulary.
 - Practice to interview questions, specially what to say for the question 
   "tell me about yourself".
+- Should add a list of what to say about the projects that you've worked 
+  with, the challenges that you faced, how did you solved them, the 
+  results of your actions and also talk about the technical aspects.
 
 ## Linkedin
 - Increase number of connections - 20x/day.
 - Write posts - 1x/week.
   - Thoghts about pattern and principles.
   - DSA challenges sollutions and thoghts.
-   
-## Todo
-- [ ] Plan a routine to stay up to date.
-- [ ] Create freelancer approach.
-- [ ] Update CV.
-   - [x] - PT
-   - [ ] - EN
-- [ ] Add metrics to experiences.
-- [ ] Get endorsements for most important skills.
-- [ ] Change linkedin cover.
