@@ -1,15 +1,15 @@
-## Routine - 9h
-- **30m:** English
-- **30m:** Linkedin
-- **3h:** Coding, Freelas
-- **2h:** DSA
-- **3h:** Study, Courses, Events
+## Todo
+- [ ] Create freelancer approach.
+- [ ] Add metrics to experiences linkedin.
+- [ ] Change linkedin cover.
 
-## Leisure Routine - 6h
-- **1h:30m:** LoL
-- **3h:** Gaming
-- **30m:** Watch something
-- **1h:** Reading
+## Routine - 12h
+- **30m:** English
+- **1h 30m:** Linkedin, Job applications
+- **3h:** Side projects
+- **1h:** DSA
+- **3h:** Study, Courses, Events
+- **3h:** University exams
 
 ## Pomodoro timers
 - **2h:** (50m/w + 10m/r) * 2
@@ -38,11 +38,13 @@ keep up to date with them.
   streams.
 - Clean Architecture
 - Clean Code
+- DDD
 - Terraform
 - Grafana
 - Docker
 - Kubernetes
 - MongoDB
+- CI/CD pipeline configuration
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -50,13 +52,17 @@ keep up to date with them.
 - [More about distributed systems](https://github.com/binhnguyennus/awesome-scalability)
   
 **Concepts to review**
-- Unit Testing
-- Patterns and Principles
+- Unit, Integration and e2e testing
+- Test doubles
+- Patterns 
   - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
-- Event-Driven Architecture
-- Mircroservices Architecture
 - SOLID
-- DDD
+- OOP
+- DSA
+- Database concepts
+- Architecture styles
+- Mircroservices Architecture
+- Architecture principles
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
@@ -82,14 +88,10 @@ solve problems.
 - thu -> graph
 - fri -> interview prep list
 
-## Coding
-Should be used to create projects which shows practical experience with 
-required expertise in real jobs, those being:
-- Event-Driven architecture
-- Microservices architecture
-- Unit testing
-
-### Project Ideas
+## Side Project Ideas
+- Stay up to date: A software that pulls updates about specified techs from
+  many sources to give you the most recent information about the tech 
+  world.
 - Pattern Mentor: Create a cli tool based on a AI model to perform pattern 
   implementation checks in a code base and provide meaningful insights of 
   how to improve.
@@ -106,19 +108,11 @@ required expertise in real jobs, those being:
 - Vocabulary.
 - Practice to interview questions, specially what to say for the question 
   "tell me about yourself".
+- Practice describing past projects, what was your role, challenges you 
+  faced, how you solved them and the result of the projects.
 
 ## Linkedin
 - Increase number of connections - 20x/day.
 - Write posts - 1x/week.
   - Thoghts about pattern and principles.
   - DSA challenges sollutions and thoghts.
-   
-## Todo
-- [ ] Plan a routine to stay up to date.
-- [ ] Create freelancer approach.
-- [ ] Update CV.
-   - [x] - PT
-   - [ ] - EN
-- [ ] Add metrics to experiences.
-- [ ] Get endorsements for most important skills.
-- [ ] Change linkedin cover.

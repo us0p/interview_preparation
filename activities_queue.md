@@ -1,3 +1,3 @@
-# Todo
-NestJS documentation
-AWS practioner couse
+| Side project | Courses               |
+|--------------|-----------------------|
+| Pitstop      | AWS Cloud practcioner |

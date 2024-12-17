@@ -25,7 +25,7 @@ than to scale it vertically by adding powerful servers. Sharding can be
 implemented at both application or the database level.
 
 Most common partitioning criteria:
-- Has based: Divides the rows into different partitions based on a hashing 
+- Hash based: Divides the rows into different partitions based on a hashing 
   algorithm rather than grouping database rows based on continuous indexes.
   The disadvantage of this method is that dynamically adding/removing 
   database servers becomes expensive.
