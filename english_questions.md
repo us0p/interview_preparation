@@ -1,3 +1,37 @@
+## Project contextualization
+AbaTech: It was my first project at the company, i had to work with a 
+framework that i didn't have any familiarity with and they where off the 
+schedule. My first delivery was the mvp and i did it in 1 week more or 
+less, they were really surprised by my quick learning ability and the 
+client was really satisfied with the initial results.
+During the project lifetime i was responsible for the alignments with the 
+client, gathering requirements and providing reports about the sprints, 
+tasks priorization and software development.
+The project goal was to become a SaaS for pshycology clinics, it should 
+manage patient's medical reports, clinical history, involved psychologists,
+assigned treatments, room availability and time availability for 
+psychologists agenda. Later on, it was decided to also include the contract
+management of the clinic in the system.
+After 2 years of deligent work, the system was a robust source of 
+information and management of the clinic's psychology department, the 
+medical reports and patient schedules were more organized and in time, they
+had a serious issue with delayed medical reports, we estimated an improve 
+of 20% of the productivity of the psychologits and with the contract 
+management system, the clinic's accounting department which had to renovate
+patients' contracts every year leading them to manually compose and send 
+many contracts every year had an imrove of productiviy in the end of the 
+year of estimated 50% as the proccess became fully automated.
+At the time i resigned, there were other clinics seeking to implement the 
+system to their clinics as well and the client we were developing a mobile 
+solution of the system so that psychologists could access the system 
+directly from their phone leading to a better user experience.
+Looking back i consider the result of the project as a success and that it 
+was in the way of achieving its SaaS goal. I'm proud of the results as i 
+single handled managed and delivery almost all of it, it was a great source
+of learning specially in the side of project management and quality 
+ensurance which lead me to have a much greater concearn about the quality 
+and impact of my work.
+
 # English questions
 Common English questions, what they really want to know and my responses.
 

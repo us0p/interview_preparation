@@ -1138,3 +1138,90 @@ them from the AWS Management Console. Findings include recommended steps
 for remediation. You can also configure AWS Lambda functions to take 
 remediation steps automatically in response to GuardDuty’s security 
 findings.
+
+## Cloud Watch
+Web service that enables monitoring and managing of various metrics and the
+possibility to configure alarm and actions based on data from those 
+metrics.
+
+## CloudTrail
+Records API calls for your account. The recorded information includes the 
+indentity of the API caller, the time of the API call, the source IP 
+address of the API caller, and more.
+
+## Trusted Advisor
+Web service that inspects your AWS environment and provides real-time 
+recommendations in accordance with AWS best practices.
+It compares its findings to AWS best practices in five gategories:
+1. cost optmization
+2. performance
+3. security
+4. fault tolerance
+5. service limits
+
+## AWS Free Tier
+Enables you to begin using certain services without having to worry about 
+incurring costs for the specified period.
+Three types of offers are abailable:
+- Always free, for example, AWS Lambda allows 1 million free requests and 
+  up to 3.2 million seconds of compute time per month.
+- 12 Months free following your initial sign-up date to AWS.
+- Trials, short term offers that start from the date you activate a 
+  particular service. The length of each trial might vary by number of days
+  or the amount of usage in the service.
+
+## How AWS pricing works
+- **Pay for what you use:** For each service, you pay for exatcly the 
+  amount of resources that yyou actually use, without requiring long-term 
+  contracts or complex licensing.
+- **Pay less when you reserve:** Some services offer reservation options 
+  that provide a significant discount compared to On-Demand instance 
+  pricing.
+- **Pay less with volume-based discounts when you use more:** Some services
+  offer tiered pricing, so the per-unit cost is incrementally lower with 
+  increased usage.
+
+## AWS Pricing Calculator
+Lets you explore AWS services and create an estimate for the cost of your 
+use cases on AWS. You can organize your AWS estimates by groups that you 
+define. A group can reflect how your company is organized, such as 
+providing estimates by cost center.
+
+## Consolidated billing
+AWS Organizations provides the option for consolidated billing, which is a 
+feature that enables you to receive a single bill for all AWS accounts in 
+your organization. By consolidating, you can easily track the combined 
+costs of all the linked accounts in your organization. The default maximum 
+number of accounts allowed for an organization is 4, but you can contact 
+AWS Support to increase your quota.
+
+## AWS Budgets
+Lets you create budgets to plan your service usage, service costs, and 
+instance reservations.
+The information in AWS Budget updates three times a day.
+You can also set custom alerts when your usage exceeds (or is forecasted to
+exceed) the budgeted amount.
+
+## AWS Cost Explorer
+A tools that lets you visualize, understand, and manage your AWS costs and 
+usage over time.
+It provides a default report of the costs and usage for your top five 
+cost-accruing AWS services. You can apply custom filters and groups to 
+analyze your data.
+
+## AWS Support 
+A group of four different support plans that help you troubleshoot issues, 
+lower costs, and efficiently use AWS services.
+- Basic: Free
+- Developer
+- Business
+- Enterprise On-Ramp
+- Enterprise
+
+The enterprise On-Ramp and enterprise support plans include access to a 
+**Technical Account Manager (TAM)**
+
+## AWS Marketplace
+Is a digital catalog that includes thousands of software listings from 
+independent software vendors. You can use it to find, test and buy software
+that runs on AWS.

@@ -51,7 +51,7 @@ keep up to date with them.
 - Docker
 - Kubernetes
 - MongoDB: Experience working with distributed databases.
-- CI/CD pipeline configuration
+- Jenkins (CI/CD pipeline configuration)
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
