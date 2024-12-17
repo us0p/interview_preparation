@@ -5,15 +5,20 @@
 
 ## Routine - 12h
 - **30m:** English
-- **1h 30m:** Linkedin, Job applications
+- **1h:** Linkedin, Job applications
 - **3h:** Side projects
-- **1h:** DSA
+- **1h 30m:** DSA
 - **3h:** Study, Courses, Events
 - **3h:** University exams
+
+## Points of attention
+- What causes dealys during the activities to cause them to finish after 
+  the estimated time?
 
 ## Pomodoro timers
 - **2h:** (50m/w + 10m/r) * 2
 - **3h:** 40m/w + 15m/sr + 30m/lr
+- **1h 30m:** 20m/w + 5m/sr + 20m/lr
 
 ## Study
 Studying is divided in two parts:
@@ -33,23 +38,26 @@ keep up to date with them.
 **Concepts to study**
 - Cloud computing: overall cloud understanding, and introduction to common 
   services used in microservice architecture.
+- Lambda functions
 - Backend: overall backend knowledge.
-- Node.js runtime: understand event loop, memory model, threads and 
-  streams.
+- Node.js runtime: understand event loop (how to use it in practice), 
+  memory model, threads and streams.
 - Clean Architecture
+- Exagonal Architecture
 - Clean Code
 - DDD
 - Terraform
 - Grafana
 - Docker
 - Kubernetes
-- MongoDB
+- MongoDB: Experience working with distributed databases.
 - CI/CD pipeline configuration
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
 - [Papers on distributed systems](https://github.com/theanalyst/awesome-distributed-systems)
 - [More about distributed systems](https://github.com/binhnguyennus/awesome-scalability)
+- [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
   
 **Concepts to review**
 - Unit, Integration and e2e testing
