@@ -4,9 +4,9 @@
 - [ ] Change linkedin cover.
 
 ## Routine - 12h
+- **3h:** Side projects
 - **30m:** English
 - **1h:** Linkedin, Job applications
-- **3h:** Side projects
 - **1h 30m:** DSA
 - **3h:** Study, Courses, Events
 - **3h:** University exams
