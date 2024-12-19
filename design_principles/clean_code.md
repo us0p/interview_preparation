@@ -700,7 +700,8 @@ class Employee {
   // ...
 }
 
-// Bad because Employees "have" tax data. EmployeeTaxData is not a type of Employee
+// Bad because Employees "have" tax data. EmployeeTaxData is not a type of 
+// Employee
 class EmployeeTaxData extends Employee {
   constructor(ssn, salary) {
     super();
@@ -731,5 +732,175 @@ class Employee {
     this.taxData = new TaxData(ssn, salary)
   }
   // ...
+}
+```
+
+## Testing
+The main point is to just make sure you are reaching your coverage goals 
+before launching any feature, or refactoring an existing one.
+
+Single concept per test
+```javascript
+// bad:
+import assert from "assert";
+
+describe("MomentJS", () => {
+  it("handles date boundaries", () => {
+    let date;
+
+    date = new MomentJS("1/1/2015");
+    date.addDays(30);
+    assert.equal("1/31/2015", date);
+
+    date = new MomentJS("2/1/2016");
+    date.addDays(28);
+    assert.equal("02/29/2016", date);
+
+    date = new MomentJS("2/1/2015");
+    date.addDays(28);
+    assert.equal("03/01/2015", date);
+  });
+});
+
+// good:
+import assert from "assert";
+
+describe("MomentJS", () => {
+  it("handles 30-day months", () => {
+    const date = new MomentJS("1/1/2015");
+    date.addDays(30);
+    assert.equal("1/31/2015", date);
+  });
+
+  it("handles leap year", () => {
+    const date = new MomentJS("2/1/2016");
+    date.addDays(28);
+    assert.equal("02/29/2016", date);
+  });
+
+  it("handles non-leap year", () => {
+    const date = new MomentJS("2/1/2015");
+    date.addDays(28);
+    assert.equal("03/01/2015", date);
+  });
+});
+```
+
+## Formatting
+Function callers and callees should be close. If a function calls another, 
+keep those functions vertically close in the source file.
+We tend to read code from top-to-bottom, like a newspaper. Because of this,
+make your code read tha way.
+```javascript
+// bad:
+class PerformanceReview {
+  constructor(employee) {
+    this.employee = employee;
+  }
+
+  lookupPeers() {
+    return db.lookup(this.employee, "peers");
+  }
+
+  lookupManager() {
+    return db.lookup(this.employee, "manager");
+  }
+
+  getPeerReviews() {
+    const peers = this.lookupPeers();
+    // ...
+  }
+
+  perfReview() {
+    this.getPeerReviews();
+    this.getManagerReview();
+    this.getSelfReview();
+  }
+
+  getManagerReview() {
+    const manager = this.lookupManager();
+  }
+
+  getSelfReview() {
+    // ...
+  }
+}
+
+const review = new PerformanceReview(employee);
+review.perfReview();
+
+// good:
+class PerformanceReview {
+  constructor(employee) {
+    this.employee = employee;
+  }
+
+  perfReview() {
+    this.getPeerReviews();
+    this.getManagerReview();
+    this.getSelfReview();
+  }
+
+  getPeerReviews() {
+    const peers = this.lookupPeers();
+    // ...
+  }
+
+  lookupPeers() {
+    return db.lookup(this.employee, "peers");
+  }
+
+  getManagerReview() {
+    const manager = this.lookupManager();
+  }
+
+  lookupManager() {
+    return db.lookup(this.employee, "manager");
+  }
+
+  getSelfReview() {
+    // ...
+  }
+}
+
+const review = new PerformanceReview(employee);
+review.perfReview();
+```
+
+## Comments
+Only comment things that have business logic complexity. Comments are an 
+apology, not a requirement. Good code mostly documents itself.
+```javascript
+// bad:
+function hashIt(data) {
+  // The hash
+  let hash = 0;
+
+  // Length of string
+  const length = data.length;
+
+  // Loop through every character in data
+  for (let i = 0; i < length; i++) {
+    // Get character code.
+    const char = data.charCodeAt(i);
+    // Make the hash
+    hash = (hash << 5) - hash + char;
+    // Convert to 32-bit integer
+    hash &= hash;
+  }
+}
+
+// good:
+function hashIt(data) {
+  let hash = 0;
+  const length = data.length;
+
+  for (let i = 0; i < length; i++) {
+    const char = data.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+
+    // Convert to 32-bit integer
+    hash &= hash;
+  }
 }
 ```

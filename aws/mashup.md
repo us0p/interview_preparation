@@ -1153,10 +1153,14 @@ address of the API caller, and more.
 Web service that inspects your AWS environment and provides real-time 
 recommendations in accordance with AWS best practices.
 It compares its findings to AWS best practices in five gategories:
-1. cost optmization
-2. performance
-3. security
-4. fault tolerance
+1. cost optmization: Includes checks for unused or idle resources that 
+   could be eliminated and provide cost savings.
+2. performance: Helps improve the performance of services by providing 
+   recommendations for how to take advantage of provisioned throughput.
+3. security: Includes checks that review permissions and identify which AWS
+   security features to enable.
+4. fault tolerance: Includes checks to help improve an application's 
+   availability and redundancy.
 5. service limits
 
 ## AWS Free Tier
@@ -1225,3 +1229,111 @@ The enterprise On-Ramp and enterprise support plans include access to a
 Is a digital catalog that includes thousands of software listings from 
 independent software vendors. You can use it to find, test and buy software
 that runs on AWS.
+
+## Cloud Adoption Framework (CAF)
+It organizes guidance into six areas of focus, called **Perspectives**.
+Each perspective addresses distinct responsibilities. The planning process 
+helps the right people across the organization prepare for the changes 
+ahead.
+
+In general, the **Business, People, and Governance** perspectives focus on 
+business capabilities, whereas the **Platform, Security, and Operations** 
+perspective focus on technical capabilities.
+
+- Business Perspective: Ensures that IT aligns with business needs and that
+  IT investments link to key business results.
+- People Perspective: Supports development of an organization-wide change 
+  management strategy for successful cloud adoption.
+- Governance Perspective: Focuses on the skills and processes to align IT 
+  strategy with business strategy. This ensures that you maximize the 
+  business value and minimize risks.
+- Platform Perspective: Includes principles and patterns for implementing 
+  new solutions on the cloud, and migrating on-premises workloads to the 
+  cloud.
+- Security Perspective: Ensures that the organization meets security 
+  objectives for visibility, auditability, control, and agility.
+- Operations Perspective: Helps you to enable, run, use, operate, and 
+  recover IT workloads to the level agreed upon with your business 
+  stakeholders.
+
+## 6 strategies for migration (6 r's)
+When migrating applications to the cloud, six of the most common migrations
+strategies that you can implement are:
+- Rehosting: aka "lift-and-shift" involves moving applications without 
+  changes.
+- Replatforming: aka "lift, tinker, and shift", involves making a few cloud
+  optimizations to realize a tagible benefit. Optimization is achieved 
+  without changing the core architecture of the application.
+- Refactoring: Involves reimagining how an application is architected and 
+  developed by using cloud-native features.
+- Repurchasing: Involves moving from a traditional license to a 
+  software-as-a-service model.
+- Retaining: Consists of keeping applications that are critical for the 
+  business in the source environment. This might include applications that 
+  require major refactoring before they can be migrated, or, work that can 
+  be postponed until a later time.
+- Retiring: Process of removing applications that are no longer needed.
+
+## AWS Snow Family
+Are a collection of physical devices that help to physically transport up 
+to exabytes of data into and out of AWS.
+
+- Snow Cone: Small, rugged, and secure edge computing and data transfer 
+  device.
+- Snowball: offers two types of devices:
+    - Snowball Edge Storage Optimized: Devices are well suited for 
+      large-scale data migrations and recurring transfer workflows, in 
+      addition to local computing with higher capacity needs.
+    - Snowball Edge Compute Optmized: Provides powerful computing resources
+      for use cases such as machine learning, full motion video analysis, 
+      and local computing stacks.
+- Snowmobile: An exabyte-scale data transfer service used to move large 
+  amounts of data to AWS.
+
+## Artificial Intelligence
+- Convert speech to text with Amazon Transcribe.
+- Discover patterns in text with Amazon Comprehend.
+- Identify potentially fraudulent online activities with Amazon Fraud 
+  Detector.
+- Build voice and text chatbots with Amazon Lex.
+- Remove the difficult work of development of machine learning with 
+  SageMaker.
+- Amazon Augmented AI (Amazon A2I) provides built-in human review workflows 
+  for common machine learning use cases, such as content moderation and 
+  text extraction from documents. With Amazon A2I, a person can also 
+  create their own workflows for machine learning models built on Amazon 
+  SageMaker or any other tools.
+
+## Amazon Q Developer
+Machine learning-powered code generator that provides you with code 
+recommendations in real time.
+
+## AWS Well-Architected Framework
+Helps you understand how to design and operate reliable, secure, efficient,
+and cost-effective systems in the AWS Cloud.
+It's based on six-pillars
+- Operational excellence: Ability to run and monitor sstems to deliver 
+  business value and to continually improve supporting processes and 
+  procedures. Design principles for operational excellence in the cloud 
+  include performing operations as code, annotating documentation, 
+  anticipating failure, and frequently making small, reversible changes.
+- Security: Ability to protect information, systems, and assets while 
+  delivering business value through risk assessments and mitigation 
+  strategies.
+- Reliability: Ability of a system to, Recover from infrastructure or 
+  service disruption, dynamically acquire computing resources to meet 
+  demand, mitigate disruptions such as misconfigurations or transient 
+  network issues. It includes testing recovery procedures, scaling 
+  horizontally to increcase aggregate syystem availability, and 
+  automatically recovering from failure.
+- Performance efficiency: Ability to use computing resources efficiently to
+  meet sstem requirements and to maintain that efficiency as demand changes
+  and technologies evolve.
+- Cost optmization: Ability to run systems to deliver business value at the
+  lowest price point, it includes adopting a consumption model, analyzing 
+  and attributing expenditure, and using managed services to reduce the 
+  cost of ownership.
+- Sustainability: Ability to continually improve sustainability impacts by 
+  reducing energy consumption and increasing efficienc across all 
+  components of a workload by maximizing the benefits from the provisioned 
+  resources and minimizing the total resources required.

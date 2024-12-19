@@ -12,13 +12,12 @@
 - **3h:** University exams
 
 ## Points of attention
-- What causes dealys during the activities to cause them to finish after 
+- What causes delays during the activities to cause them to finish after 
   the estimated time?
 
 ## Pomodoro timers
-- **2h:** (50m/w + 10m/r) * 2
-- **3h:** 40m/w + 15m/sr + 30m/lr
-- **1h 30m:** 20m/w + 5m/sr + 20m/lr
+- **3h:** 45m/w + 10m/sr + 25m/lr -> 75% work rate
+- **1h 30m:** 25m/w + 5m/sr + 5m/lr -> 83% work rate
 
 ## Study
 Studying is divided in two parts:
@@ -42,9 +41,10 @@ keep up to date with them.
 - Backend: overall backend knowledge.
 - Node.js runtime: understand event loop (how to use it in practice), 
   memory model, threads and streams.
+- JavaScript
+- Typescript
 - Clean Architecture
 - Exagonal Architecture
-- Clean Code
 - DDD
 - Terraform
 - Grafana
@@ -52,6 +52,8 @@ keep up to date with them.
 - Kubernetes
 - MongoDB: Experience working with distributed databases.
 - Jenkins (CI/CD pipeline configuration)
+- APIDog
+- Jest
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -71,6 +73,7 @@ keep up to date with them.
 - Architecture styles
 - Mircroservices Architecture
 - Architecture principles
+- Clean Code
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
