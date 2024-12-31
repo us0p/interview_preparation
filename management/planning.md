@@ -1,6 +1,7 @@
 ## Todo
-- [ ] Create freelancer approach.
-- [ ] Add metrics to experiences linkedin.
+- [ ] Create a list of concepts to review every morning.
+- [ ] Create Morning routine that need to be executed every day.
+- [ ] Change experiences from backend to fullstack in linkedin.
 - [ ] Change linkedin cover.
 
 ## Routine - 12h
@@ -35,6 +36,13 @@ and try to be familiar with most of them by using them in side projects and
 keep up to date with them.
   
 **Concepts to study**
+- Docker, Docker Compose, Configuration details, Docker swarn
+- Hexagonal Architecture
+- Onion Architecture
+- Screaming Architecture
+- DCI Architecture
+- BCE Architecture
+- Kafka, Kafka Connect (configurations), KRaft
 - Cloud computing: overall cloud understanding, and introduction to common 
   services used in microservice architecture.
 - Lambda functions
@@ -43,17 +51,17 @@ keep up to date with them.
   memory model, threads and streams.
 - JavaScript
 - Typescript
-- Clean Architecture
-- Exagonal Architecture
 - DDD
 - Terraform
 - Grafana
-- Docker
 - Kubernetes
 - MongoDB: Experience working with distributed databases.
 - Jenkins (CI/CD pipeline configuration)
-- APIDog
 - Jest
+- APIDog
+- Logging
+- Nest
+- Redis
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -62,18 +70,13 @@ keep up to date with them.
 - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
   
 **Concepts to review**
-- Unit, Integration and e2e testing
-- Test doubles
-- Patterns 
-  - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
 - SOLID
 - OOP
 - DSA
 - Database concepts
-- Architecture styles
 - Mircroservices Architecture
-- Architecture principles
 - Clean Code
+- Clean Architecture
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
@@ -100,6 +103,9 @@ solve problems.
 - fri -> interview prep list
 
 ## Side Project Ideas
+- AI Quizz: define a set of documents which you should review every day and
+  make an AI assistant that will make questions based on the separated 
+  documents, wich you should answer with your own words.
 - Stay up to date: A software that pulls updates about specified techs from
   many sources to give you the most recent information about the tech 
   world.
@@ -124,6 +130,3 @@ solve problems.
 
 ## Linkedin
 - Increase number of connections - 20x/day.
-- Write posts - 1x/week.
-  - Thoghts about pattern and principles.
-  - DSA challenges sollutions and thoghts.
