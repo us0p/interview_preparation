@@ -1,16 +1,36 @@
 ## Todo
-- [ ] Create a list of concepts to review every morning.
-- [ ] Create Morning routine that need to be executed every day.
+- [x] Create a list of concepts to review every morning.
+- [x] Create Morning routine that need to be executed every day.
 - [ ] Change experiences from backend to fullstack in linkedin.
 - [ ] Change linkedin cover.
+- [ ] Search techniques to read and solve problems faster.
 
 ## Routine - 12h
+- **1h:** Review
+- **1h:** Problem Solving
+- **30m:** Keyboard
+- **2h:** Study, Courses, Events
 - **3h:** Side projects
 - **30m:** English
-- **1h:** Linkedin, Job applications
-- **1h 30m:** DSA
-- **3h:** Study, Courses, Events
+- **30m:** Linkedin, Job applications
 - **3h:** University exams
+- **30m:** Essay
+- **1h:** Reading
+
+## University study plan
+The exam will have 3h of duration.
+I'm estimating 30 minutes for the essay and 150 minutes for the 46 
+questions.
+This leaves and average of 3 minutes per question.
+
+The study plan will follow the calendar provided by Hexag, having 24 
+lessons per week, with 5 blocks per day, in which
+- 4 blocks for lessons
+- 1 block for exercises, 2 exercises per lesson, with 2 extra exercises for
+  lessons with difficulties.
+
+Each block of work is 30 minutes long and it's followed by a block of rest 
+of 6 minutes.
 
 ## Points of attention
 - What causes delays during the activities to cause them to finish after 
@@ -19,6 +39,8 @@
 ## Pomodoro timers
 - **3h:** 45m/w + 10m/sr + 25m/lr -> 75% work rate
 - **1h 30m:** 25m/w + 5m/sr + 5m/lr -> 83% work rate
+- **1h:** 50m/w + 10m/lr -> 83% work rate
+- **2h:** 30m/w + 5m/r + 20m/lr -> 75% work rate
 
 ## Study
 Studying is divided in two parts:
@@ -62,6 +84,11 @@ keep up to date with them.
 - Logging
 - Nest
 - Redis
+- AWS
+- Design Patterns
+- Architecture principles
+- APIs
+- Tests
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -69,12 +96,71 @@ keep up to date with them.
 - [More about distributed systems](https://github.com/binhnguyennus/awesome-scalability)
 - [Simple patterns explanations](https://github.com/kamranahmedse/design-patterns-for-humans)
   
-**Concepts to review**
+## Review
+**Solidified concepts**
 - SOLID
 - OOP
 - DSA
+    - Algorithms
+        - binary search
+        - bubble sort
+        - linear search
+        - quick sort
+        - merge sort
+        - floyd's fast slow pointer
+        - sliding window
+        - two pointers
+    - Data Structures
+        - dynamic array
+        - hash table
+        - array
+        - trees
+        - linked list
+        - queue
+        - stacks
+
+**Must review**
+- DSA
+    - Algorithms
+        - breadth_first
+        - depth_first
+        - dijkstra_shortest_path
+        - insertion_sort
+        - selection_sort
+    - Data Structures
+        - graphs
+        - heap
+        - spanning_tree
+        - tries
+        - sets
 - Database concepts
+    - ACID
+    - BASE
+    - CAP_theorem
+    - PACELC
+    - n+1_problem
+    - replication
+    - sharding
 - Mircroservices Architecture
+    - database_per_service
+    - saga
+    - command-side_replica
+    - api_composition
+    - cqrs
+    - event_sourcing
+    - transactional_outbox
+    - transaction_log_tailing
+    - polling_publisher
+    - idempotent_consumer
+    - api_gateway
+    - circuit_breaker
+    - log_aggregation
+    - application_metrics
+    - audit_logging
+    - distributed_tracing
+    - exception_tracking
+    - health_check_api
+    - cdc
 - Clean Code
 - Clean Architecture
 
