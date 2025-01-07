@@ -1,9 +1,9 @@
-N+1 Problem
+# N+1 Problem
 Typically, this happens when you structure your code so that you first do 
 a query to get a list of records, then subsequently do another query for 
 each of those records.
 
-For example:
+## Example
 You have a recipie table with 4 items.
 You have an ingredidient table with N items, each ingredient belongs to a 
 recipie.
@@ -22,7 +22,7 @@ contrast, a single query, even if it's complex, can be optimized by the
 database server and only requires one trip to the database, which will 
 usually be much faster than many small queries.
 
-Causes of the N+1 Problem
+## Causes of the N+1 Problem
 - Lazy Loading: Many ORM frameworks use lazy loading by default. Lazy 
   loading means that related data is fetched from the database only when 
   it is accessed. This can lead to N+1 queries when developers access 
@@ -34,27 +34,6 @@ Causes of the N+1 Problem
   frameworks, allows you to retrieve related data for multiple objects in 
   a single query.
 
-How to prevent N+1 Problems
+## How to prevent N+1 Problems
 To avoid this problem you should fetch all the elements at once, usually
 joining the related table in the first query.
-
-Below are some strategies that you can look up to:
-- Eager Loading: Use to fetch related data upfront, reducing the need for 
-  additional queries. Most ORM frameworks provide mechanisms to specify 
-  when and how related data should be loaded, allowing you to optimize 
-  database queries.
-- Batch Fetching: Make use of batch fetching capabilities provided by your 
-  ORM framework to retrieve related data in batches rather than one-by-one. 
-  This can significantly reduce the number of database queries.
-- DTO Projections: Consider using Data Transfer Object projections to fetch 
-  only the necessary data from the database. This approach can help minimize 
-  the amount of data retrieved, resulting in faster queries.
-- Caching: Implement caching mechanisms to store frequently accessed data in 
-  memory. Caching can help reduce the need for repetitive database queries, 
-  improving response times and reducing database load.
-- Pagination and Filtering: Implement pagination and filtering to limit the 
-  number of records retrieved in a single query. This can be particularly 
-  useful when dealing with large datasets.
-- Query Optimization: Regularly review and optimize your database queries. 
-  Analyze query execution plans and use database profiling tools to identify 
-  and resolve performance bottlenecks.

@@ -1,5 +1,5 @@
 # Networking
-Container networking refers to the ability for containers to connect to an 
+Container networking refers to the ability for containers to connect to and
 communicate with each other, or to non-Docker workloads.
 
 Containers have networking enabled by default, and they can make outgoing 

@@ -59,36 +59,37 @@ keep up to date with them.
   
 **Concepts to study**
 - Docker, Docker Compose, Configuration details, Docker swarn
+- Kafka, Kafka Connect (configurations), KRaft
+- Nest
+- DDD
+
 - Hexagonal Architecture
 - Onion Architecture
 - Screaming Architecture
 - DCI Architecture
 - BCE Architecture
-- Kafka, Kafka Connect (configurations), KRaft
+- Backend: overall backend knowledge
+- Design Patterns
+- Tests and Testing strategies
+
 - Cloud computing: overall cloud understanding, and introduction to common 
   services used in microservice architecture.
 - Lambda functions
-- Backend: overall backend knowledge.
 - Node.js runtime: understand event loop (how to use it in practice), 
   memory model, threads and streams.
 - JavaScript
 - Typescript
-- DDD
+- Jest
 - Terraform
 - Grafana
 - Kubernetes
 - MongoDB: Experience working with distributed databases.
 - Jenkins (CI/CD pipeline configuration)
-- Jest
-- APIDog
 - Logging
-- Nest
 - Redis
 - AWS
-- Design Patterns
 - Architecture principles
-- APIs
-- Tests
+- gRPC
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -119,6 +120,16 @@ keep up to date with them.
         - queue
         - stacks
 
+**Reviewing**
+- Database concepts
+    - ACID
+    - BASE
+    - CAP_theorem
+    - PACELC
+    - n+1_problem
+    - replication
+    - sharding
+
 **Must review**
 - DSA
     - Algorithms
@@ -133,14 +144,6 @@ keep up to date with them.
         - spanning_tree
         - tries
         - sets
-- Database concepts
-    - ACID
-    - BASE
-    - CAP_theorem
-    - PACELC
-    - n+1_problem
-    - replication
-    - sharding
 - Mircroservices Architecture
     - database_per_service
     - saga

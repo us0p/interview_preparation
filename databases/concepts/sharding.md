@@ -1,10 +1,10 @@
-Data Partitioning
+## Data Partitioning
 Data partitioning is a technique to break up a database into many smaller 
 parts. It is the process of splitting up a database or a table across 
 multiple machines to improve the manageability, performance, and 
 availability of a database.
 
-Popular partitioning methods:
+Popular partitioning methods
 - Horizontal partitioning (sharding): In this strategy, we split the table
   data horizontally (in different machines) based on the range of values 
   defined by the partition key. It's also referred as database sharding.
@@ -12,17 +12,13 @@ Popular partitioning methods:
   We divide tables into relatively smaller tables with few elements, and
   each part is present in a separate partition.
 
-Sharding
+# Sharding
 Sharding is a database architecture pattern related to horizontal 
 partitioning, which is the practice of separating one table's rows into 
 multiple different tables, known as partitions or shards. Each partition 
 has the same schema and columns, but also a subset of the shared data. 
 Likewise, the data held in each is unique and independent of the data held 
 in other partitions.
-The justification for data sharding is that, after a certain point, it is 
-cheaper and more feasible to scale horizontally by adding more machines 
-than to scale it vertically by adding powerful servers. Sharding can be 
-implemented at both application or the database level.
 
 Most common partitioning criteria:
 - Hash based: Divides the rows into different partitions based on a hashing 
@@ -43,14 +39,14 @@ Most common partitioning criteria:
   partition is further subdivided into sub-partitions using the same or some 
   other method.
 
-When to use sharding?
+When to use sharding
 - Leveraging existing hardware instead of high-end machines.
 - Maintain data in distinct geographic regions.
 - Quickly scale by adding more shards.
 - Better performance as each machine is under less load.
 - When more concurrent connections are required.
 
-Advantages
+## Advantages
 - Availability: Provides logical independence to the partitioned database, 
   ensuring the high availability of our application. Here individual 
   partitions can be managed independently.
@@ -65,7 +61,7 @@ Advantages
 - Data Manageability: Divides tables and indexes into smaller and more 
   manageable units.
 
-Disadvantages
+## Disadvantages
 - Complexity: Sharding increases the complexity of the system in general.
 - Joins across shards: Once a database is partitioned and spread across 
   multiple machines it is often not feasible to perform joins that span 

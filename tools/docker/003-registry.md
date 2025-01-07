@@ -4,5 +4,5 @@ can be either public or private.
 
 ## Registry vs repository
 A registry is a centralized location that stores and manages container 
-images, wheres a repository is a collection of related container images 
+images, whereas a repository is a collection of related container images 
 within a registry.
