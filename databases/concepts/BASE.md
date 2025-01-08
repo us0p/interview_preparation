@@ -12,4 +12,3 @@
 ## ACID vs BASE:
 - The ACID model provides a consistent system.
 - The BASE model provides high availability.
-

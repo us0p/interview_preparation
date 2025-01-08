@@ -18,3 +18,6 @@ Consider a scenario, in which you are making a request to Signup up and
 getting the confirmation after an hour. According to the CAP theorem, this 
 system is available but such latency is unacceptable in any real-world 
 application.
+
+Note that prioritizing consistency may result in increcased latency, while 
+in others, prioritizing latency may lead to reduced consistency.

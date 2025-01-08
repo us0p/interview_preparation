@@ -1,18 +1,22 @@
 ## Todo
 - [x] Create a list of concepts to review every morning.
 - [x] Create Morning routine that need to be executed every day.
-- [ ] Change experiences from backend to fullstack in linkedin.
-- [ ] Change linkedin cover.
+- [x] Change experiences from backend to fullstack in linkedin.
+- [x] Change linkedin cover.
 - [ ] Search techniques to read and solve problems faster.
 
 ## Routine - 12h
+**Morning Routine**
 - **1h:** Review
 - **1h:** Problem Solving
-- **30m:** Keyboard
-- **2h:** Study, Courses, Events
-- **3h:** Side projects
 - **30m:** English
+- **30m:** Keyboard
+
 - **30m:** Linkedin, Job applications
+- **2h:** Study, Courses, Events
+
+- **3h:** Side projects
+
 - **3h:** University exams
 - **30m:** Essay
 - **1h:** Reading
@@ -63,6 +67,7 @@ keep up to date with them.
 - Nest
 - DDD
 
+- Event Programming patterns
 - Hexagonal Architecture
 - Onion Architecture
 - Screaming Architecture
@@ -90,6 +95,7 @@ keep up to date with them.
 - AWS
 - Architecture principles
 - gRPC
+- Cassandra (common used as event store)
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
@@ -119,8 +125,6 @@ keep up to date with them.
         - linked list
         - queue
         - stacks
-
-**Reviewing**
 - Database concepts
     - ACID
     - BASE
@@ -129,6 +133,9 @@ keep up to date with them.
     - n+1_problem
     - replication
     - sharding
+
+**Reviewing**
+- Clean Code
 
 **Must review**
 - DSA
@@ -164,7 +171,6 @@ keep up to date with them.
     - exception_tracking
     - health_check_api
     - cdc
-- Clean Code
 - Clean Architecture
 
 ## DSA

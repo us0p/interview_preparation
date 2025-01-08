@@ -22,7 +22,7 @@ patients' contracts every year leading them to manually compose and send
 many contracts every year had an imrove of productiviy in the end of the 
 year of estimated 50% as the proccess became fully automated.
 At the time i resigned, there were other clinics seeking to implement the 
-system to their clinics as well and the client we were developing a mobile 
+system to their clinics as well and the client was developing a mobile 
 solution of the system so that psychologists could access the system 
 directly from their phone leading to a better user experience.
 Looking back i consider the result of the project as a success and that it 
@@ -31,6 +31,40 @@ single handled managed and delivery almost all of it, it was a great source
 of learning specially in the side of project management and quality 
 ensurance which lead me to have a much greater concearn about the quality 
 and impact of my work.
+
+**improve text**
+Lince: It was one of many projects that a client had with us. I was 
+responsible for it, and it was my last project at Clickativo.
+The client behind this project was a company that hosted many events and 
+show rooms all around Brazil in the area of furniture, appliances and 
+mattresses. The goal of the project was to provide a system that the 
+clients that signed contracts for events should be able to access and 
+personalize some documents and some envent criterias according to the 
+contract they signed. The MVP of the project was to provide a feature 
+where the client could generate an online form that participants of the 
+event could fill and get a qrcode which would be tracked during the 
+event by the operations team to track how much people are in the event at 
+any given time. The form should be dynamic and the client should be 
+able to compose many forms for a given event.
+To solve this problem i used MongoDB to handle the unstructured nature of 
+the forms' schema.
+The client could choose from a list of predefined components like selects, 
+inputs, textarea and checkboxes and assign them to a form with any guiven 
+value.
+But what i'm most proud in this project was the quality of the work that i 
+delivered, this was the first project in the company were a test driven 
+approach was used and, the first project with unit and integration tests. 
+It was not a requirement, i did it on my own to ensure the quality of the 
+code and reduce the number of round trips between fixes and client approval
+which, during my time at that company, it presented itself as a recurring 
+problem with clients.
+I configured the tests pipeline and used Test Driven approach during the 
+development. During the delivery of the MVP all the tests were passing and 
+i didn't had to make any fix in the system because of errors or missing 
+details, the client were very stisfied and the code were robust and 
+maintainable. The biggest achievement was to be the first to implement 
+tests in the code base and to see the impact of my actions in the client 
+satisfaction.
 
 # English questions
 Common English questions, what they really want to know and my responses.
