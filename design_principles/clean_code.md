@@ -2,6 +2,51 @@
 A guide for producing readable, reusable and refactorable software.
 These are guidelines and nothing more.
 
+## Guidelines list
+- Variables
+    - Use meaningful pronounceable variable names.
+    - Use the same vocabulary for the same type of variable.
+    - Use searchable names.
+    - Avoid magic numbers.
+    - Use explanatory variables
+    - Avoid mental mapping, explicit is better than implicit.
+    - Don't add uneeded context, if your class/object name tells something, 
+      don't repeat that in your variable name.
+- Functions
+    - Use default parameters instead of short circuiting or conditionals.
+    - Your functions should have at most 2 parameters, if strictly 
+      necessary 3.
+    - Functions should do one thing
+    - Function names should say what they do
+    - Functions should only be one level of abstraction.
+    - Bad abstractions can be worse than duplicate code.
+    - Don't use flags as functions parameters, flags tell your user that 
+      this function does more than one thing.
+    - Avoid Side Effects.
+    - Favor functional programming over imperative programming.
+    - Encapsulate conditional in functions.
+    - Avoid negative conditionals.
+- Classes
+    - Avoid conditionals. You can use polymorphism to achieve the same 
+      behaviour as an if statement in many cases.
+    - Avoid type checking between classes, instead consider a more 
+      consistent API.
+    - Use getters and setters. When you want to do more beyond getting an 
+      object property, you don't have to look up and change every accessor 
+      in your codebase.
+    - Make objects have private members.
+    - Use method chaining, it allow your code to be expressive and less 
+      verbose by applying imperative programming.
+    - Prefer composition over inheritance.
+- Tests
+    - Single concept per test.
+- General
+    - Remove dead code, it'll be safe in your version history if you still 
+      need it.
+    - Function callers and callees should be close. If a function calls 
+      another, keep those functions vertically close in the source file.
+    - Only comment things that have business logic complexity.
+
 ## Variables
 Use meaningful and pronounceable variable names.
 ```javascript

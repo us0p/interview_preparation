@@ -33,38 +33,45 @@ ensurance which lead me to have a much greater concearn about the quality
 and impact of my work.
 
 **improve text**
-Lince: It was one of many projects that a client had with us. I was 
-responsible for it, and it was my last project at Clickativo.
-The client behind this project was a company that hosted many events and 
-show rooms all around Brazil in the area of furniture, appliances and 
-mattresses. The goal of the project was to provide a system that the 
-clients that signed contracts for events should be able to access and 
-personalize some documents and some envent criterias according to the 
-contract they signed. The MVP of the project was to provide a feature 
-where the client could generate an online form that participants of the 
-event could fill and get a qrcode which would be tracked during the 
-event by the operations team to track how much people are in the event at 
-any given time. The form should be dynamic and the client should be 
-able to compose many forms for a given event.
-To solve this problem i used MongoDB to handle the unstructured nature of 
-the forms' schema.
-The client could choose from a list of predefined components like selects, 
-inputs, textarea and checkboxes and assign them to a form with any guiven 
-value.
-But what i'm most proud in this project was the quality of the work that i 
-delivered, this was the first project in the company were a test driven 
-approach was used and, the first project with unit and integration tests. 
-It was not a requirement, i did it on my own to ensure the quality of the 
-code and reduce the number of round trips between fixes and client approval
-which, during my time at that company, it presented itself as a recurring 
-problem with clients.
-I configured the tests pipeline and used Test Driven approach during the 
-development. During the delivery of the MVP all the tests were passing and 
-i didn't had to make any fix in the system because of errors or missing 
-details, the client were very stisfied and the code were robust and 
-maintainable. The biggest achievement was to be the first to implement 
-tests in the code base and to see the impact of my actions in the client 
-satisfaction.
+Lince: This was one of several projects that the client had entrusted to 
+us. I had the privilege of being responsible for it, and it marked my final
+project at Clickativo.
+
+The client behind this initiative was a company that organized numerous 
+events and showrooms across Brazil, specializing in furniture, appliances, 
+and mattresses. The MVP of the project was a system designed to enable the 
+company’s clients to create online forms for event participants. These 
+participants could complete the forms and receive a QR code, which the 
+operations team could use to monitor attendance and track the number of 
+people present at the event in real-time.
+
+The system required the forms to be dynamic, allowing the client to compose
+multiple forms for a single event. To address this requirement, I utilized 
+MongoDB to handle the unstructured nature of the forms' schema. I also 
+designed a collection of components, including selects, inputs, text areas,
+and checkboxes, which the client could configure with various options to 
+create customized forms.
+
+What I am most proud of in this project was the high quality of work I 
+delivered. It was the first project at the company to adopt a test-driven 
+development (TDD) approach, as well as the first to include both unit and 
+integration tests. While these were not formal requirements, I took the 
+initiative to implement them to ensure the quality of the code and reduce 
+the number of iterations required for fixes and client approval—a challenge
+I had observed as a recurring issue during my time at the company.
+
+The biggest challenge was to deliver all within the due date, but i mange to
+set up the test pipeline and follow the TDD approach throughout the 
+development process. As a result, by the time the MVP was delivered, all 
+tests were passing, and no fixes were required due to errors or oversights.
+The client was extremely satisfied, and the system was robust and 
+maintainable.
+
+The most significant achievement for me was introducing automated testing 
+into the codebase and witnessing its positive impact on client 
+satisfaction. It was deeply rewarding to see how this initiative 
+contributed to the project's success and paved the way for higher-quality 
+deliverables in the future.
 
 # English questions
 Common English questions, what they really want to know and my responses.
@@ -95,18 +102,18 @@ with clarity and confidence.
     demonstrate experience to work collaboratively.
 
     R: I work with web development since 2021 and have almost 3 years of 
-    professional experience. During my experiences i mostly worked as a 
-    fullstack developer. I'm used to have direct contact with clients to 
-    gather requirements and to provide reports about the sprint.
-    I have experience in working with many concurrent projects and in those
-    projects i mostly worked with the MERN stack. I'm always worried about 
-    the quality of my work, that's why, in one of my previuos experiences i
-    was the first developer to apply tests to the code base and use Test 
-    Driven Development to delivery a project with a higher approval by the 
-    client.
+    professional experience. In those experiences i mostly worked as a 
+    fullstack developer.
+    I'm used to work with many concurrent projects. In those
+    projects i mostly worked with the MERN stack. As a developer
+    i'm always worried about the quality of my work, that's why, in one of 
+    my previuos experiences i was the first developer to apply tests to the
+    code base and use Test Driven Development to delivery a project with a 
+    higher approval by the client.
+    I'm used to have direct contact with clients to gather requirements and
+    to provide reports about the sprint.
     I have experience working with multifunctional teams and environments.
-    and i'm always eager to learn and experiment with new technologies, i 
-    love what i do.
+    and i'm always eager to learn and experiment with new technologies.
 
 - Why should we hire you?
 

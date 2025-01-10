@@ -6,20 +6,16 @@
 - [ ] Search techniques to read and solve problems faster.
 
 ## Routine - 12h
-**Morning Routine**
 - **1h:** Review
 - **1h:** Problem Solving
 - **30m:** English
-- **30m:** Keyboard
-
 - **30m:** Linkedin, Job applications
 - **2h:** Study, Courses, Events
 
-- **3h:** Side projects
+- **1h:** Lunch
 
-- **3h:** University exams
-- **30m:** Essay
-- **1h:** Reading
+- **3h:** Side projects
+- **3h 30m:** University exams + Essay
 
 ## University study plan
 The exam will have 3h of duration.
@@ -45,6 +41,7 @@ of 6 minutes.
 - **1h 30m:** 25m/w + 5m/sr + 5m/lr -> 83% work rate
 - **1h:** 50m/w + 10m/lr -> 83% work rate
 - **2h:** 30m/w + 5m/r + 20m/lr -> 75% work rate
+- **30m:** 25m/2 + 5m/r -> 83% work rate
 
 ## Study
 Studying is divided in two parts:
@@ -60,42 +57,60 @@ learn some detail you'll probably go to the tool documentation anyway.
 You should maintain a list of the most required technologies in the market 
 and try to be familiar with most of them by using them in side projects and
 keep up to date with them.
+
+1. According to recruiters i'm lacking practical experience, so i must 
+   create more projects around what people are looking in a developer.
+2. Those projects should be around the stack that i want to work with.
+3. The vast majority of the opportunities look for a developer which 
+   understand:
+   - unit and integration tests
+   - microservices architecture
+   - cloud services (specialy lambda)
   
 **Concepts to study**
-- Docker, Docker Compose, Configuration details, Docker swarn
-- Kafka, Kafka Connect (configurations), KRaft
-- Nest
-- DDD
+**My stack**
+- Docker, Docker Compose, Docker swarn
+- Nest.js
+- Kafka, Kafka Connect, KRaft
+- Cloud computing: overall cloud understanding
+    - lambda
+    - sns
+    - sqs
+    - s3
+    - API Gateway
+- Node.js runtime: understand event loop (how to use it in practice), 
+  memory model, threads and streams.
+    - socket.io.
+    - sqlite (npm package and internal driver).
+    - swagger
+- MongoDB and how to distribute it.
+- Redis.
+- JavaScript.
+- Typescript.
+- Jest
 
+- DDD
 - Event Programming patterns
+- Backend: overall backend knowledge
+- Tests and Testing strategies
+- Design Patterns
+--- Work ready ---
 - Hexagonal Architecture
 - Onion Architecture
 - Screaming Architecture
 - DCI Architecture
 - BCE Architecture
-- Backend: overall backend knowledge
-- Design Patterns
-- Tests and Testing strategies
+- Architecture principles
+- Data-Oriented Design
+- Entity-Components-System
+- MVVM
+- MVC
+- Extreme programming
 
-- Cloud computing: overall cloud understanding, and introduction to common 
-  services used in microservice architecture.
-- Lambda functions
-- Node.js runtime: understand event loop (how to use it in practice), 
-  memory model, threads and streams.
-- JavaScript
-- Typescript
-- Jest
 - Terraform
 - Grafana
 - Kubernetes
-- MongoDB: Experience working with distributed databases.
 - Jenkins (CI/CD pipeline configuration)
-- Logging
-- Redis
-- AWS
-- Architecture principles
-- gRPC
-- Cassandra (common used as event store)
 
 ## Courses
 - [MIT Distributed Systems](https://pdos.csail.mit.edu/6.824/)
