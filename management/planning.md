@@ -17,6 +17,14 @@
 - **3h:** Side projects
 - **3h 30m:** University exams + Essay
 
+
+- YouTube
+    - Video Editing
+    - Image Editing
+- SaaS
+    - Figma
+    - Marketing
+
 ## University study plan
 The exam will have 3h of duration.
 I'm estimating 30 minutes for the essay and 150 minutes for the 46 
@@ -69,32 +77,33 @@ keep up to date with them.
   
 **Concepts to study**
 **My stack**
-- Docker, Docker Compose, Docker swarn
 - Nest.js
 - Kafka, Kafka Connect, KRaft
+- MongoDB and how to distribute it.
+
+- JavaScript.
+- Typescript.
+- Jest
+- Redis.
+- Node.js runtime: understand event loop (how to use it in practice), 
+  memory model, threads and streams.
+    - socket.io.
+    - sqlite (npm package and internal driver).
+    - swagger
 - Cloud computing: overall cloud understanding
     - lambda
     - sns
     - sqs
     - s3
     - API Gateway
-- Node.js runtime: understand event loop (how to use it in practice), 
-  memory model, threads and streams.
-    - socket.io.
-    - sqlite (npm package and internal driver).
-    - swagger
-- MongoDB and how to distribute it.
-- Redis.
-- JavaScript.
-- Typescript.
-- Jest
-
 - DDD
 - Event Programming patterns
 - Backend: overall backend knowledge
 - Tests and Testing strategies
 - Design Patterns
 --- Work ready ---
+- PostgreSQL
+    - pg_isready
 - Hexagonal Architecture
 - Onion Architecture
 - Screaming Architecture
@@ -150,7 +159,11 @@ keep up to date with them.
     - sharding
 
 **Reviewing**
-- Clean Code
+- Docker, Docker Compose, Docker swarm
+    - How to use the compose properties healthcheck and depends_on to 
+      ensure service startup sequence.
+    - Dockerfile ENTRYPOINT vs CMD
+- Clean Architecture
 
 **Must review**
 - DSA
@@ -186,7 +199,7 @@ keep up to date with them.
     - exception_tracking
     - health_check_api
     - cdc
-- Clean Architecture
+- Clean Code
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
@@ -229,6 +242,9 @@ solve problems.
   - [Projects in C# you can try to refactor to your language and apply some design patterns](https://github.com/dodyg/practical-aspnetcore)
 - [Microservice project ideas](https://github.com/mjebrahimi/Awesome-Microservices-DotNet?tab=readme-ov-file#sample-projects)
 - [Distributed systems ideas](https://github.com/roma-glushko/awesome-distributed-system-projects)
+- AICommitMessage: Provide code changes to the LLM and let it create the 
+  commit message.
+- TradingBot: A bot that performs simple trading operations on ebinex
 
 ## English topics
 - Expressions.
