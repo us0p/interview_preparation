@@ -145,7 +145,6 @@ keep up to date with them.
         - dynamic array
         - hash table
         - array
-        - trees
         - linked list
         - queue
         - stacks
@@ -174,6 +173,7 @@ keep up to date with them.
         - insertion_sort
         - selection_sort
     - Data Structures
+        - trees
         - graphs
         - heap
         - spanning_tree

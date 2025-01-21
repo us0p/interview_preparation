@@ -7,6 +7,8 @@ Terms:
 - **leaves:** a node without children.
 - **branching factor:** the average number of child nodes that each non-leaf 
   node posseses.
+- **height-balanced:** The depth of the two subtrees of every node neves 
+  differs by more than one.
 - **diameter:** the length of the longest path between any two nodes in a 
   tree. This path may or may not pass through the root. The length of a 
   path between two nodes is represented by the number of edges between 
