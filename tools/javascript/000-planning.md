@@ -1,0 +1,10 @@
+- [x] - introduction to JavaScript.
+- [ ] - All about variables.
+    - var
+    - let
+    - const
+    - Hoisting
+    - Variable Scopes
+        - Block
+        - Function
+        - Global

@@ -5,17 +5,40 @@
 - [x] Change linkedin cover.
 - [ ] Search techniques to read and solve problems faster.
 
+Total focus on JS and Node.js runtime
+Learn JS, TS and Node.js fundamentals and details
+
 ## Routine - 12h
-- **1h:** Review
-- **1h:** Problem Solving
-- **30m:** English
-- **30m:** Linkedin, Job applications
-- **2h:** Study, Courses, Events
+Core concepts 2h:
+    mon: OOP, SOLID
+    tue: Clean Architecture, Design Patterns
+    wed: Microservices Architecture, Tests and Testing strategies
+    thu: Backend: overall backend knowledge
+    fri: DSA
 
-- **1h:** Lunch
+JS Ecosystem 1h:
+    mon, fri: JavaScript
+    tue: TypeScript
+    wed: Node.js
+    thu: Nest.js
 
-- **3h:** Side projects
-- **3h 30m:** University exams + Essay
+1h LeetCode - DSA, white board and interview preparation
+1h Advent of Code - problem solving, language practice
+
+25m english
+25m linkedin
+1h lunch
+3h 30m exams
+
+3h personal projects
+    Core Concepts
+    JS Ecosystem
+    Docker
+    Kafka
+    Cloud: lambda, sns, sqs, s3, API Gateway
+    MongoDB
+    Redis
+    PostgreSQL
 
 ## University study plan
 The exam will have 3h of duration.
@@ -69,32 +92,35 @@ keep up to date with them.
   
 **Concepts to study**
 **My stack**
-- Docker, Docker Compose, Docker swarn
-- Nest.js
-- Kafka, Kafka Connect, KRaft
+- Docker
+- Kafka
 - Cloud computing: overall cloud understanding
     - lambda
     - sns
     - sqs
     - s3
     - API Gateway
-- Node.js runtime: understand event loop (how to use it in practice), 
-  memory model, threads and streams.
-    - socket.io.
-    - sqlite (npm package and internal driver).
-    - swagger
-- MongoDB and how to distribute it.
-- Redis.
 - JavaScript.
-- Typescript.
-- Jest
+    - Typescript.
+    - Node.js.
+    - Swagger
+    - Nest.js
+    - Jest
+- MongoDB.
+- Redis.
+- PostgreSQL
 
-- DDD
-- Event Programming patterns
+- DSA
+- Clean Architecture
+- SOLID
+- OOP
+- Microservices
 - Backend: overall backend knowledge
 - Tests and Testing strategies
 - Design Patterns
+
 --- Work ready ---
+- Event Programming patterns
 - Hexagonal Architecture
 - Onion Architecture
 - Screaming Architecture
