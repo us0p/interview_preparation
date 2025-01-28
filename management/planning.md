@@ -40,6 +40,14 @@ JS Ecosystem 1h:
     Redis
     PostgreSQL
 
+
+- YouTube
+    - Video Editing
+    - Image Editing
+- SaaS
+    - Figma
+    - Marketing
+
 ## University study plan
 The exam will have 3h of duration.
 I'm estimating 30 minutes for the essay and 150 minutes for the 46 
@@ -109,12 +117,14 @@ keep up to date with them.
 - MongoDB.
 - Redis.
 - PostgreSQL
+    - pg_isready
 
 - DSA
 - Clean Architecture
 - SOLID
 - OOP
 - Microservices
+- DDD
 - Backend: overall backend knowledge
 - Tests and Testing strategies
 - Design Patterns
@@ -162,7 +172,6 @@ keep up to date with them.
         - dynamic array
         - hash table
         - array
-        - trees
         - linked list
         - queue
         - stacks
@@ -176,7 +185,11 @@ keep up to date with them.
     - sharding
 
 **Reviewing**
-- Clean Code
+- Docker, Docker Compose, Docker swarm
+    - How to use the compose properties healthcheck and depends_on to 
+      ensure service startup sequence.
+    - Dockerfile ENTRYPOINT vs CMD
+- Clean Architecture
 
 **Must review**
 - DSA
@@ -187,6 +200,7 @@ keep up to date with them.
         - insertion_sort
         - selection_sort
     - Data Structures
+        - trees
         - graphs
         - heap
         - spanning_tree
@@ -212,7 +226,7 @@ keep up to date with them.
     - exception_tracking
     - health_check_api
     - cdc
-- Clean Architecture
+- Clean Code
 
 ## DSA
 **Goal:** Understand basic DSA and algorithm strategies to efficiently 
@@ -255,6 +269,9 @@ solve problems.
   - [Projects in C# you can try to refactor to your language and apply some design patterns](https://github.com/dodyg/practical-aspnetcore)
 - [Microservice project ideas](https://github.com/mjebrahimi/Awesome-Microservices-DotNet?tab=readme-ov-file#sample-projects)
 - [Distributed systems ideas](https://github.com/roma-glushko/awesome-distributed-system-projects)
+- AICommitMessage: Provide code changes to the LLM and let it create the 
+  commit message.
+- TradingBot: A bot that performs simple trading operations on ebinex
 
 ## English topics
 - Expressions.
