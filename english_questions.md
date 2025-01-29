@@ -91,29 +91,30 @@ with clarity and confidence.
 
 ## General and Behavioral Questions
 - Tell me about yourself.
-    - Your ability to summarize relevant career highlights and experiences.
-    - How well you can tailor your background to align with the role.
-    - Your communication skills and confidence in presenting yourself.
-    > Provide a concise narrative that ties your past experiences to the 
-    position.
+    I work with web development since 2021 and have almost 3 years of 
+    professional experience.
 
-    make this sound more like a talk and use more key words about 
-    technical aspects.
-    demonstrate experience to work collaboratively.
+    In those experiences i mostly worked as a fullstack developer using 
+    technologies of the MERN stack including others like Docker, 
+    PostgreSQL, MySQL, Typescript, Next.js and some AWS services like S3 
+    and SES.
 
-    R: I work with web development since 2021 and have almost 3 years of 
-    professional experience. In those experiences i mostly worked as a 
-    fullstack developer.
-    I'm used to work with many concurrent projects. In those
-    projects i mostly worked with the MERN stack. As a developer
-    i'm always worried about the quality of my work, that's why, in one of 
-    my previuos experiences i was the first developer to apply tests to the
-    code base and use Test Driven Development to delivery a project with a 
-    higher approval by the client.
-    I'm used to have direct contact with clients to gather requirements and
-    to provide reports about the sprint.
-    I have experience working with multifunctional teams and environments.
-    and i'm always eager to learn and experiment with new technologies.
+    During my last experience, each developer owned a group of projects, 
+    something around 3 or 4 and, the team was small thus you usually had to
+    singlehadled take care of the job, which included, besides coding,
+    direct contact with clients to gather requirements and to provide 
+    reports about the sprint, some times as the owner of the
+    project i also had make technical decisions like the right time to 
+    implement a feature, how something should be implemented, and whether 
+    to use a service or not. 
+    This happened because the company's mission was to not only be a group 
+    of developer who code, but a strategic IT partner for the client.
+
+    It was also a requirement for me to work with many new technologies at 
+    the time, wich was great as i'm always eager to learn and experiment 
+    with new technologies. Right now i'm studying Clean Architecture and 
+    Microservices while i learn some other tecnologies like Kafka, Nest.js 
+    and AWS Lambda.
 
 - Why should we hire you?
 

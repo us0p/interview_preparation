@@ -9,18 +9,22 @@ Total focus on JS and Node.js runtime
 Learn JS, TS and Node.js fundamentals and details
 
 ## Routine - 12h
+- change to 2h for a single subject
 Core concepts 2h:
-    mon: OOP, SOLID
-    tue: Clean Architecture, Design Patterns
-    wed: Microservices Architecture, Tests and Testing strategies
-    thu: Backend: overall backend knowledge
-    fri: DSA
+    DSA
+    Backend: overall backend knowledge
+    OOP
+    SOLID
+    Tests and Testing strategies
+    Clean Architecture
+    Design Patterns
+    Microservices Architecture
 
 JS Ecosystem 1h:
-    mon, fri: JavaScript
-    tue: TypeScript
-    wed: Node.js
-    thu: Nest.js
+    JavaScript
+    TypeScript
+    Node.js
+    Nest.js
 
 1h LeetCode - DSA, white board and interview preparation
 1h Advent of Code - problem solving, language practice

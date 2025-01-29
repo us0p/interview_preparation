@@ -1,10 +1,11 @@
 - [x] - introduction to JavaScript.
 - [ ] - All about variables.
-    - var
-    - let
-    - const
-    - Hoisting
-    - Variable Scopes
-        - Block
-        - Function
-        - Global
+    - [x] var
+    - [x] let
+    - [x] const
+    - [ ] tidy var, let, and const content
+    - [ ] Hoisting
+    - [ ] Unqualified identifier assignment
+    - [ ] Binding
+    - [ ] Block statement
+    - [ ] Static initialization blocs

@@ -51,9 +51,9 @@ By the same token, data formats used in an outer circle should not be used
 by an inner circle, especially if those formats are generate by a framework
 in an outer circle.
 
-## Entities
-Entities encapsulate Enterprise wide business rules. An entity be used by 
-many different applications in the enterprise.
+## Entities - Enterprise Business Rules
+Entities encapsulate Enterprise wide business rules. An entity can be used 
+by many different applications in the enterprise.
 They encapsulate the most general and high-level rules. They are the least 
 likely to change when something external changes.
 They are designed to evolve with the business logic.
@@ -69,7 +69,7 @@ logic across different applications or systems.
 They are often simple objects that contain properties and methods 
 representing the business logic.
 
-## Use Cases
+## Use Cases - Application Business Rules
 The software in this layer contains application specific business rules. It
 encapsulates and implements all of the use cases of the system. These use 
 cases orchestrate the flow of data to and from the entities, and direct 
@@ -97,7 +97,7 @@ For example, an user login use case, uses the `User` entity to validade
 username and password, then aplies the use case business rule and generates
 a JWT and returns the token or an error message.
 
-## Interface Adapters
+## Controllers, Gateways, Presenters - Interface Adapters
 The software in this layer is a set of adapters that convert data from the 
 format most convenient for the use cases and entities, to the format most 
 convenient for some external agency such as the Database or the Web.
@@ -108,7 +108,7 @@ Also in this layer is any other adapter necessary to convert data from some
 external form, such as an external service, to the internal form used by 
 the use cases and entities.
 
-## Frameworks and Drivers
+## DB, Devices, Web, UI, External Interfaces - Frameworks and Drivers
 The outermost layer is generally composed of frameworks and tools such as 
 the Database, the Web Framework, etc. Generally you don’t write much code 
 in this layer other than glue code that communicates to the next circle 
@@ -132,3 +132,25 @@ response to a query. We might call this a RowStructure. We don’t want to
 pass that row structure inwards across a boundary. That would violate The 
 Dependency Rule because it would force an inner circle to know something 
 about an outer circle.
+
+## Common used patterns
+- Repository
+- CQRS
+- Unity of work
+- Mediator
+- Result
+- Dependency Injection
+- Inversion of Control
+- OOP -> Dependency Inversion
+
+## Entity x Model
+Entity represents the core business logic and data for a domain object 
+(note the relation with DDD), residing in the domain layer.
+
+Model is a data structure that represents data in a specific format for 
+presentation or sorage, often adapting the entity data to suit external 
+needs like the UI or database, and typically located in the data access 
+layer.
+
+Essentially, an entity is the "pure" business concept, while a model is a 
+tailored representation of that concept for a specific context.
