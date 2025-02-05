@@ -1,4 +1,43 @@
 # Clean Architecture
+
+## TLDR
+**Goal:**
+- Separation of concerns by dividing software into layers.
+
+**Produce systems that are:**
+- Independent of any external agency
+- Testable
+
+!["clean architecture diagram"](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
+
+**Commonly splited around four areas of software:**
+1. Entities - Enterprise Business Rules
+2. Use cases - Application Business Rules
+3. Controllers, Gateways, Presenters - Interface Adapters
+4. DB, Devices, Web, UI, External Interfaces - Frameworks and Drivers
+
+**Dependency rule:**
+- Source code dependencies always point inwards.
+- The outermost circle is low level concrete details.
+- The inner most circle is the most general.
+- Nothing in an inner circle can know anything at all about something in an
+  outer circle. 
+- The name of something declared in an outer circle must not be mentioned 
+  by the code in an inner circle.
+- Data formats used in an outer circle should not be used by an inner 
+  circle
+- Inner circles are policies, they define interfaces which must be 
+  implemented by outer circles.
+
+**Flow of data:**
+Data that crosses the boundaries are simple data structures. 
+You can use basic structs, simple DTO's, or simply arguments in function 
+calls. The important thing is that isolated, simple, data structures are 
+passed across the boundaries. Don’t pass Entities or Database rows.
+  
+---
+  
+## Getting deeper
 It's a mix of ideas regarding the architecture of software. It's built 
 upon:
 - Hexagonal Architecture

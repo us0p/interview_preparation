@@ -5,52 +5,68 @@
 - [x] Change linkedin cover.
 - [ ] Search techniques to read and solve problems faster.
 
-Total focus on JS and Node.js runtime
-Learn JS, TS and Node.js fundamentals and details
+- [ ] Event Loop
+- [ ] AJAX
+- [ ] modules
+- [ ] CommonJS
+- [ ] ESM
+- [ ] global object Node.js
+- [ ] process.nextTick()
+- [ ] setImmediate()
+- [ ] Event Emitters
+- [ ] npx
+- [ ] Node.js Strams
+- [ ] Node.js child_process
+- [ ] Node.js Cluters
+- [ ] JS and Node.js Memory Leaks
 
 ## Routine - 12h
-- change to 2h for a single subject
-Core concepts 2h:
-    DSA
-    Backend: overall backend knowledge
-    OOP
-    SOLID
-    Tests and Testing strategies
-    Clean Architecture
-    Design Patterns
-    Microservices Architecture
-
-JS Ecosystem 1h:
-    JavaScript
-    TypeScript
-    Node.js
-    Nest.js
-
-1h LeetCode - DSA, white board and interview preparation
-1h Advent of Code - problem solving, language practice
-
 25m english
-25m linkedin
-1h lunch
-3h 30m exams
+1h interview preparation
+    - Common Node.js interview question and answers
+    - Common Web interview question and answers
+    - Common AWS lambda interview question and answer
+    - Common React interview question and answers
+    - Common JavaScript interview question and answers
+1h LeetCode - DSA, white board and interview preparation
+Core concepts 2h:
+    - Clean Architecture
+    - DSA
+    - Backend: overall backend knowledge
+    - OOP
+    - SOLID
+    - Tests and Testing strategies
+    - Design Patterns
+    - Microservices Architecture
+    - JavaScript
+    - TypeScript
+    - Node.js
+    - Nest.js
+    - Docker
+    - Kafka
+    - Cloud: lambda, sns, sqs, s3, API Gateway
+    - MongoDB
+    - Redis
+    - PostgreSQL
+3h work
+    3 projects to present as portfolio:
+        pet-shop system - current knowledge
+        psychology clinic API - lambda 
+        super-market API - microservices
+4h 40m exams
 
-3h personal projects
-    Core Concepts
-    JS Ecosystem
-    Docker
-    Kafka
-    Cloud: lambda, sns, sqs, s3, API Gateway
-    MongoDB
-    Redis
-    PostgreSQL
 
-
+Advent of Code - problem solving, language practice
 - YouTube
     - Video Editing
     - Image Editing
 - SaaS
     - Figma
     - Marketing
+- freelas
+    - upwork
+    - freelancer
+    - 99freelas
 
 ## University study plan
 The exam will have 3h of duration.
@@ -60,12 +76,15 @@ This leaves and average of 3 minutes per question.
 
 The study plan will follow the calendar provided by Hexag, having 24 
 lessons per week, with 5 blocks per day, in which
-- 4 blocks for lessons
-- 1 block for exercises, 2 exercises per lesson, with 2 extra exercises for
-  lessons with difficulties.
+- 5 blocks for lessons
 
-Each block of work is 30 minutes long and it's followed by a block of rest 
+Each block of work is 44 minutes long and it's followed by a block of rest 
 of 6 minutes.
+
+30 minutes to read required books.
+
+during the saturday and sunday you should do a block of 3 hours and 30 
+minutes focused only in exercises of the lessons of the past week.
 
 ## Points of attention
 - What causes delays during the activities to cause them to finish after 
@@ -279,7 +298,6 @@ solve problems.
 
 ## English topics
 - Expressions.
-- Vocabulary.
 - Practice to interview questions, specially what to say for the question 
   "tell me about yourself".
 - Practice describing past projects, what was your role, challenges you 

@@ -117,6 +117,27 @@ with clarity and confidence.
     and AWS Lambda.
 
 - Why should we hire you?
+    - Your value to the company, how your skills, experience, and 
+      personality fit the role.
+    - Your confidence and self-awareness, you should be able to clearly 
+      articulate why you're the right candidate.
+    - Your understanding of the company and role, you know what they need 
+      and how you can contribute
+    - What sets you apart from oher candidates.
+
+    I bring a solid foundation in [technologies]. What sets me apart is my 
+    passion for continuous learning and problem-solving. I’m highly 
+    adaptable, eager to take on challenges, and always looking for ways to 
+    improve my skills.
+    [maybe add something about the position and your fit with it here?]
+
+    [should add a more specific characteristic that sets you apart, 
+    something like your independence and ability to solve problems without 
+    asking for help many times]
+    Additionally, I thrive in team environments and value clear 
+    communication and collaboration. While I may not have years of 
+    experience, my ability to quickly learn and apply new technologies, 
+    make me a great fit for this role.
 
 - Why are you interested in this position/company?
     - Whether you've researched the company and understand their mission or
