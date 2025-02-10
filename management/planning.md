@@ -29,18 +29,73 @@
     - Common React interview question and answers
     - Common JavaScript interview question and answers
 1h LeetCode - DSA, white board and interview preparation
-Core concepts 2h:
-    - Clean Architecture
+Core concepts 5h:
     - DSA
-    - Backend: overall backend knowledge
+    - Tests and Testing strategies
     - OOP
     - SOLID
-    - Tests and Testing strategies
     - Design Patterns
-    - Microservices Architecture
+    - Clean Architecture
+        - use cases should only receive expected data, validation and
+          data conversion should be done in the controller (presenter) 
+          layer, with data, use cases shouldn't receive entities directly, 
+          but it can convert a DTO to an entity if it needs to handle 
+          domain logic.
+        - DTO belongs to the interface and adpters interface as they are 
+          used in the communication between layers.
+        - use cases and entities cannot refer to DTO because of the 
+          dependency rule.
+        - because of that DTOs must be instantiated in the Controller and 
+          passed to the use cases.
+        - if entities and use cases should return plain data structures 
+          (e.g. plain objects).
+        - the difference between DTOs and plain objecst are:
+            - intent, responsibility, and maintainability.
+            - Plain Object (POJO)
+                - purpose: temporary structure to hold data
+                - layer: generated withing the Domain or Use Case Layer.
+                - Dependency: No external dependencies (avoid cross-layer 
+                  dependencies)
+                - Behavior: Usually has no additional logic
+                - Reusability: typically ad-hoc and specific to the use 
+                  case.
+                - Maintainability: can be easiliy modified within the use 
+                  case.
+            - Data Transfer Object (DTO)
+                - purpose: Defined explicitly for data transfer between 
+                  layers.
+                - layer: belongs to the presenter/interface layer.
+                - Dependency: Might be used with libraries like 
+                  serialization tools.
+                - Behavior: may contain formatting, transformation, 
+                  serialization.
+                - Reusability: explicitly structure to match API contracts 
+                  or external systems.
+                - Maintainability: acts as a stable contract, ensuring API 
+                  consistency.
+        - DTO can control how data is exposed, if API response formats 
+          change, we only modify the DTO without affecting the domain 
+          logic.
+        - Repositories shouldn't return entities, that would couple the 
+          framework and drivers layer with the domain layer.
+        - You should always use plain objects as communication between 
+          layers and use objects in the presentation layers (e.g. DTO) to 
+          convert data from the form most convenient for entities and use 
+          cases in the form most convenient for the persistence framework 
+          being used.
+        - the downside is that you always need to convert between different
+          contracts, but the big win is that you got a clear contracs.
+        - DTO
+        - POJO
+        - ad-hoc
+        - comon folder structure
+        - common design patterns -> Design patterns
+            - repository
     - JavaScript
     - TypeScript
     - Node.js
+    - Backend: overall backend knowledge
+    - Microservices Architecture
     - Nest.js
     - Docker
     - Kafka
@@ -48,11 +103,6 @@ Core concepts 2h:
     - MongoDB
     - Redis
     - PostgreSQL
-3h work
-    3 projects to present as portfolio:
-        pet-shop system - current knowledge
-        psychology clinic API - lambda 
-        super-market API - microservices
 4h 40m exams
 
 
