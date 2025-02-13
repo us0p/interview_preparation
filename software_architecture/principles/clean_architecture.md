@@ -1,4 +1,44 @@
 # Clean Architecture
+- DTO - Data Transfer Object
+- DAO - Data Access Object
+- POJO - Plain Old Java/JavaScript Object
+- ad-hoc
+
+- Using POJOS creates the need to convert entities to POJOs which can 
+  increase complexity but it allows for clearer contracts.
+
+- DTO belongs to the interface and adpters interface as they are 
+  used in the communication between layers.
+- the difference between DTOs and plain objecst are:
+    - intent, responsibility, and maintainability.
+    - Plain Object (POJO)
+        - purpose: temporary structure to hold data
+        - layer: generated withing the Domain or Use Case Layer.
+        - Dependency: No external dependencies (avoid cross-layer 
+          dependencies)
+        - Behavior: Usually has no additional logic
+        - Reusability: typically ad-hoc and specific to the use 
+          case.
+        - Maintainability: can be easiliy modified within the use 
+          case.
+    - Data Transfer Object (DTO)
+        - purpose: Defined explicitly for data transfer between 
+          layers.
+        - layer: belongs to the presenter/interface layer.
+        - Dependency: Might be used with libraries like 
+          serialization tools.
+        - Behavior: may contain formatting, transformation, 
+          serialization.
+        - Reusability: explicitly structure to match API contracts 
+          or external systems.
+        - Maintainability: acts as a stable contract, ensuring API 
+          consistency.
+- DTO can control how data is exposed, if API response formats 
+  change, we only modify the DTO without affecting the domain 
+  logic.
+- comon folder structure
+- common design patterns -> Design patterns
+    - repository
 
 ## TLDR
 **Goal:**
@@ -12,9 +52,55 @@
 
 **Commonly splited around four areas of software:**
 1. Entities - Enterprise Business Rules
-2. Use cases - Application Business Rules
-3. Controllers, Gateways, Presenters - Interface Adapters
-4. DB, Devices, Web, UI, External Interfaces - Frameworks and Drivers
+   Represent the business/domain objects that are manipulated by the use 
+   cases. Entities are the most stable part of the architecture.
+   - Model domain objects in a data strorage agnostic way.
+   - Perform validation to ensure that the object isn't in a invalid state.
+   - Objects contain behaviours that are common to all use cases across the
+     system.
+2. Use cases (Interactor, Commands) - Application Business Rules
+   Represent application business rules that are are specific to the 
+   application and not the enterprise. It represents the various ways that 
+   the system can be used.
+   - Perform validation on data to ensure the data is valid for the given 
+     use case.
+   - a use case must be a class with only one method?
+     - It's not a rule rather a recommendation.
+     - naming is more objective and less generic.
+     - if the use case don't focus on one task usually end up being a wrapper 
+       of the repository.
+     - In a big code base the developer must find the right method in the use 
+       case.
+     - it's common for use cases to only wrap a respository function.
+3. Interface Adapters - Controllers, Gateways, Presenters
+   Responsible for converting data between the outside world and the use 
+   case layer.
+   - Controllers handle user input, they select the appropriate use case to
+     execute based on the user input by extracting the input data. It only 
+     delegates to the use case without validating.
+     - controllers shoudld be focused on request handling.
+   - Gateways are responsible for accessing external data sources, shuch as
+     databases or web services.
+     - It's an adapter between a data source and a particular 
+       domain object (Repository).
+     - Repositories are defined in the use case layer and implemented in the 
+       framework and drivers layer. Some implementation allows repositories to 
+       return entities if strictly used inside use cases to avoid conversion 
+       between POJOs and Entities.
+
+   - Presenters are responsible for rendering data in the user interface.
+     - responsible for formatting the output from the Use Case into a 
+       structure suitable for the delivery mechanism (Controller or View).
+     - ensure consistent response structure.
+     - usually sits between use case return value and controller return data, 
+       it transforms raw data into a response-friendly format.
+     - adapts the data returned from the use case for the designed output.
+     - good to use when multiple delivery mechanisms need the same data 
+       format.
+4. Frameworks and Drivers - DB, Devices, Web, UI, External Interfaces
+   Represents interfaces that the system has with the outside world. 
+   Responsible for translating data between application and external 
+   systems.
 
 **Dependency rule:**
 - Source code dependencies always point inwards.
