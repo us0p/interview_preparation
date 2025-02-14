@@ -1,7 +1,51 @@
 # Clean Architecture
-- DTO - Data Transfer Object
-- DAO - Data Access Object
 - POJO - Plain Old Java/JavaScript Object
+  - Is a simple object that doesn't adhere to any specific framework or 
+    requirement.
+  - It typically represents and encapsulates data.
+  - No need to implement interfaces or extend classes.
+  - Can be used in any layer as it's simply a data structure.
+  - may contain business logic but better to keep as simple as possible.
+  - can be defined in any layer as it's just a data container but it's 
+    better to define it in the domain layer to enable a simple data 
+    structure as communication amongst the application.
+  - DTO - Data Transfer Object
+  - are often immutable.
+  - should be used when you have a significant mismatch between the model 
+    in your presentation layer and the underlaing domain.
+  - the whole purpose is to shift data in expensive remote calls.
+  - using it for more than network communication can lead to conversions 
+    from DTO to Domain objects and back can which increases complexity.
+  - An object that carries data between processes.
+  - Useful when you want to transfer data across different layers of an 
+    application or over the network.
+  - It doesn't include business logic, but it can include some methods to 
+    format data.
+  - Can contain serialization and deserialization mechanisms for 
+    transfering data over the wire.
+  - Often requires conversion from and to POJOs or entities, which can be a
+    costly process.
+  - Usually used between layers.
+  - most commonly used in the services layer (?) in a N-tier application to 
+    transfer data between itself and the UI layer, the service layer must 
+    control what data leaves the application layer.
+  - some DTOs belong in the interface adapters layer when they are specific
+    to UI representation, Framework, external services, or if the response 
+    format is differente from the use case (e.g. must be snake_case instead
+    of camelCase).
+- DAO - Data Access Object
+  - Provides an abstract interface for accessing data from a persistent 
+    storage mechanism like a database.
+  - It encapsulates data access logic.
+- DAO x Repository
+  - DAO is an abstraction of data persistance.
+  - Repository is an abstraction of a collection of objects it has a narrower interface.
+  - A Repository can be implemented using a DAO but a DAO shouldn't be 
+    implemented by using a Repository.
+  - a method like Update is appropriate on a DAO, but not in a Repository.
+  - DAO doesn't restrict you to store data of the same type, thus you can 
+    easily have a DAO that deals with related objects.
+  - Repositories handle only one type of objects.
 - ad-hoc
 
 - Using POJOS creates the need to convert entities to POJOs which can 
@@ -37,7 +81,29 @@
   change, we only modify the DTO without affecting the domain 
   logic.
 - comon folder structure
-- common design patterns -> Design patterns
+  - Domain
+    - Entities
+    - Exceptions
+    - Repositories (interfaces)
+    - ?POJOs
+  - Application
+    - Interfaces
+    - UseCases
+        - Entity1
+            - ...usecases
+        - Entity2
+            - ...usecases
+    - ?DTOs
+  - Adapters
+    - Controllers
+    - Middlewares
+    - ViewModels
+    - ?DTOs
+  - Drivers
+    - Databases
+        - Repositories (impl)
+    - Web APIs
+- common design patterns
     - repository
 
 ## TLDR
@@ -56,9 +122,12 @@
    cases. Entities are the most stable part of the architecture.
    - Model domain objects in a data strorage agnostic way.
    - Perform validation to ensure that the object isn't in a invalid state.
+   - Validation is usually made in the constructor and throwing an error if
+     the provided state is invalid, this create less responsibility on the 
+     developer to remember to call validation methods.
    - Objects contain behaviours that are common to all use cases across the
      system.
-2. Use cases (Interactor, Commands) - Application Business Rules
+2. Use cases (Interactor, Commands, Service Layer) - Application Business Rules
    Represent application business rules that are are specific to the 
    application and not the enterprise. It represents the various ways that 
    the system can be used.
@@ -83,7 +152,7 @@
      databases or web services.
      - It's an adapter between a data source and a particular 
        domain object (Repository).
-     - Repositories are defined in the use case layer and implemented in the 
+     - Repositories are defined in the domain layer and implemented in the 
        framework and drivers layer. Some implementation allows repositories to 
        return entities if strictly used inside use cases to avoid conversion 
        between POJOs and Entities.

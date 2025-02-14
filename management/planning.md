@@ -5,21 +5,6 @@
 - [x] Change linkedin cover.
 - [ ] Search techniques to read and solve problems faster.
 
-- [ ] Event Loop
-- [ ] AJAX
-- [ ] modules
-- [ ] CommonJS
-- [ ] ESM
-- [ ] global object Node.js
-- [ ] process.nextTick()
-- [ ] setImmediate()
-- [ ] Event Emitters
-- [ ] npx
-- [ ] Node.js Strams
-- [ ] Node.js child_process
-- [ ] Node.js Cluters
-- [ ] JS and Node.js Memory Leaks
-
 ## Routine - 12h
 25m english
 1h interview preparation
@@ -29,29 +14,41 @@
     - Common React interview question and answers
     - Common JavaScript interview question and answers
 
-1h LeetCode - DSA, white board and interview preparation
+1h LeetCode - DSA and white board
 Core concepts 5h:
     - DSA
-    - Tests and Testing strategies
+    - Testing strategies
     - OOP
     - SOLID
     - Design Patterns
     - Clean Architecture
-    - JavaScript
-    - TypeScript
+        - [x] Todo API
+        - [ ] Review implementation and learn with mistakes
+            - [x] What are DTO, POJO, Repositories?
+            - [x] In which layer does a given objects resides?
+            - [x] Common folder structure
+            - [ ] Rewrite notes in a more consise way
     - Node.js
+        - Event Loop
+        - process.nextTick()
+        - setImmediate()
+        - Event Emitters
+        - Node.js Streams
+        - Node.js child_process
+        - Workers in Node.js e JS
+        - Node.js Cluters
+        - Node.js Memory Leaks
+    - Cloud: lambda, API Gateway
     - Backend: overall backend knowledge
     - Microservices Architecture
-    - Nest.js
+    - Java
     - Docker
     - Kafka
-    - Cloud: lambda, sns, sqs, s3, API Gateway
     - MongoDB
     - Redis
     - PostgreSQL
 
 4h 40m exams
-
 
 Advent of Code - problem solving, language practice
 - YouTube
@@ -61,6 +58,7 @@ Advent of Code - problem solving, language practice
     - Figma
     - Marketing
 - freelas
+    - Vast majority of work is in Java, C# or PHP
     - upwork
     - freelancer
     - 99freelas
@@ -291,8 +289,9 @@ solve problems.
 - [Distributed systems ideas](https://github.com/roma-glushko/awesome-distributed-system-projects)
 - AICommitMessage: Provide code changes to the LLM and let it create the 
   commit message.
-- TradingBot: A bot that performs simple trading operations on ebinex
-- MTP implementation
+- TradingBot: A bot that performs simple trading operations on ebinex.
+- MTP implementation.
+- Simple VIM clone.
 
 ## English topics
 - Expressions.
