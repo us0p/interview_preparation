@@ -23,11 +23,13 @@ Core concepts 5h:
     - Design Patterns
     - Clean Architecture
         - [x] Todo API
-        - [ ] Review implementation and learn with mistakes
+        - [x] Review implementation and learn with mistakes
             - [x] What are DTO, POJO, Repositories?
             - [x] In which layer does a given objects resides?
             - [x] Common folder structure
-            - [ ] Rewrite notes in a more consise way
+            - [x] Rewrite notes in a more consise way
+            - [x] Fix mistakes
+        - [ ] AI Commit
     - Node.js
         - Event Loop
         - process.nextTick()
