@@ -16,39 +16,31 @@
 
 1h LeetCode - DSA and white board
 Core concepts 5h:
-    - DSA
-    - Testing strategies
-    - OOP
-    - SOLID
-    - Design Patterns
-    - Clean Architecture
-        - [x] Todo API
-        - [x] Review implementation and learn with mistakes
-            - [x] What are DTO, POJO, Repositories?
-            - [x] In which layer does a given objects resides?
-            - [x] Common folder structure
-            - [x] Rewrite notes in a more consise way
-            - [x] Fix mistakes
-        - [ ] AI Commit
-    - Node.js
-        - Event Loop
-        - process.nextTick()
-        - setImmediate()
-        - Event Emitters
-        - Node.js Streams
-        - Node.js child_process
-        - Workers in Node.js e JS
-        - Node.js Cluters
-        - Node.js Memory Leaks
-    - Cloud: lambda, API Gateway
-    - Backend: overall backend knowledge
-    - Microservices Architecture
-    - Java
-    - Docker
-    - Kafka
-    - MongoDB
-    - Redis
-    - PostgreSQL
+    -[x] OOP
+    -[x] SOLID
+    -[x] Clean Architecture
+    -[ ] Testing strategies
+        -[ ] Technical debt
+        -[x] Test priorization
+        -[ ] Testing approaches
+        -[ ] Testing Techniques
+        -[ ] TDD
+        -[ ] BDD
+        -[ ] Jest
+    -[ ] DSA
+    -[ ] Design Patterns
+    -[ ] Node.js
+        -[ ] Event Loop
+        -[ ] Event Emitters
+        -[ ] Streams
+        -[ ] child_process
+        -[ ] Workers Threads
+        -[ ] Cluters
+        -[ ] Memory Leaks
+    -[ ] lambda
+    -[ ] Microservices Architecture and others
+    -[ ] Backend: overall backend knowledge
+    -[ ] Scalling a server.
 
 4h 40m exams
 
@@ -273,27 +265,21 @@ solve problems.
 - fri -> interview prep list
 
 ## Side Project Ideas
-- AI Quizz: define a set of documents which you should review every day and
-  make an AI assistant that will make questions based on the separated 
-  documents, wich you should answer with your own words.
 - Stay up to date: A software that pulls updates about specified techs from
   many sources to give you the most recent information about the tech 
   world.
-- Pattern Mentor: Create a cli tool based on a AI model to perform pattern 
-  implementation checks in a code base and provide meaningful insights of 
-  how to improve.
-- Refactor: A code repository with projects with bad designs that the user 
-  can clone and refactor the application to apply some pattern or principle
-  to improve the maintanability, scalability and testability of the 
-  application.
   - [Projects in C# you can try to refactor to your language and apply some design patterns](https://github.com/dodyg/practical-aspnetcore)
 - [Microservice project ideas](https://github.com/mjebrahimi/Awesome-Microservices-DotNet?tab=readme-ov-file#sample-projects)
 - [Distributed systems ideas](https://github.com/roma-glushko/awesome-distributed-system-projects)
 - AICommitMessage: Provide code changes to the LLM and let it create the 
   commit message.
+- AI Docs: Use an AI assistant to generate an OpenAPI spec based on your 
+  project types.
 - TradingBot: A bot that performs simple trading operations on ebinex.
 - MTP implementation.
 - Simple VIM clone.
+- Send images with SMS, should encode the image with huffman to text and 
+  decode after.
 
 ## English topics
 - Expressions.
